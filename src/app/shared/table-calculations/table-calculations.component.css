@@ -1,0 +1,42 @@
+.division-row {
+    font-weight: bold;
+    border-radius: 10px !important;
+}
+
+.division-row td {
+    background-color: rgba(98, 159, 98, 0.53) !important;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 10px;
+}
+
+th {
+    vertical-align: middle;
+    background-color: rgb(241, 241, 241);
+}
+
+
+
+/* .head-first{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.head-last{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+} */
+
