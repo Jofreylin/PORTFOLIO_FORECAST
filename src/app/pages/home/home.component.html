@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-body">
+        <table class="table ">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Shares Owned</th>
+                <th>Dividend Yield</th>
+                <th>Annual Dividend Per Share</th>
+                <th>Annual Dividend Income</th>
+                <th>Compound Frequency Quarterly</th>
+                <th>Frequency Income Dividend</th>
+                <th>New Shares per Quarter</th>
+                <th>Monthly Contribution</th>
+                <th>Monthly New Shares</th>
+                <th>New Shares from Contributions</th>
+                <th>After DRIP</th>
+                <th>Year-End Shares Owned</th>
+                <th>Year-End Stock Price</th>
+                <th>Year-End New Balance</th>
+                <th>Year-End Invested</th>
+                <th>Year-End Return</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr [ngClass]="{'bold-text': data.year % 5 === 0}"  *ngFor="let data of forecastData">
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.year }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.sharesOwned | number:'1.5-5' }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.dividendYield | percent:'1.3-3' }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.annualDividendPerShare | currency }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.annualDividendIncome | currency }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.compoundFrequencyQuarterly }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.frequencyIncomeDividend | currency }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.newSharesPerQuarter | number:'1.5-5' }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.monthlyContribution | currency }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.monthlyNewShares | number:'1.5-5' }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.newSharesFromContributions | number:'1.5-5' }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.afterDRIP | currency }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.yearEndSharesOwned | number:'1.5-5' }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.yearEndStockPrice | currency }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.yearEndNewBalance | currency }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.yearEndInvested | currency }}</td>
+                <td [ngClass]="{'bold-text': data.year % 5 === 0}">{{ data.yearEndReturn | currency }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
