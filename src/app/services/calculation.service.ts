@@ -12,7 +12,7 @@ export class CalculationService {
   dividendTaxRate: number = 0;
   dividendCAGR: number = 0.09476;
   sharePriceCAGR: number = 0.11525;
-  drip: boolean = true;
+  drip: boolean = false;
 
   // Funciones para calcular métricas año por año
   calculateYearMetrics(year: number, previousData: any): any {
