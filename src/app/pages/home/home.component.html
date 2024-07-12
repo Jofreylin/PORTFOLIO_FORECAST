@@ -1,0 +1,44 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Shares Owned</th>
+        <th>Dividend Yield</th>
+        <th>Annual Dividend Per Share</th>
+        <th>Annual Dividend Income</th>
+        <th>Compound Frequency Quarterly</th>
+        <th>Frequency Income Dividend</th>
+        <th>New Shares per Quarter</th>
+        <th>Monthly Contribution</th>
+        <th>Monthly New Shares</th>
+        <th>New Shares from Contributions</th>
+        <th>After DRIP</th>
+        <th>Year-End Shares Owned</th>
+        <th>Year-End Stock Price</th>
+        <th>Year-End New Balance</th>
+        <th>Year-End Invested</th>
+        <th>Year-End Return</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of forecastData">
+        <td>{{ data.year }}</td>
+        <td>{{ data.sharesOwned | number }}</td>
+        <td>{{ data.dividendYield | percent:'1.2-2' }}</td>
+        <td>{{ data.annualDividendPerShare | currency }}</td>
+        <td>{{ data.annualDividendIncome | currency }}</td>
+        <td>{{ data.compoundFrequencyQuarterly }}</td>
+        <td>{{ data.frequencyIncomeDividend | currency }}</td>
+        <td>{{ data.newSharesPerQuarter | number:'1.2-2' }}</td>
+        <td>{{ data.monthlyContribution | currency }}</td>
+        <td>{{ data.monthlyNewShares | number:'1.2-2' }}</td>
+        <td>{{ data.newSharesFromContributions | number:'1.2-2' }}</td>
+        <td>{{ data.afterDRIP | currency }}</td>
+        <td>{{ data.yearEndSharesOwned | number:'1.2-2' }}</td>
+        <td>{{ data.yearEndStockPrice | currency }}</td>
+        <td>{{ data.yearEndNewBalance | currency }}</td>
+        <td>{{ data.yearEndInvested | currency }}</td>
+        <td>{{ data.yearEndReturn | currency }}</td>
+      </tr>
+    </tbody>
+  </table>

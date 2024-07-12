@@ -8,10 +8,15 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask'
 import { NgxSpinnerModule } from "ngx-spinner";
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CalculatorComponent } from './pages/calculator/calculator.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +24,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     AppRoutingModule,
     NgxMaskDirective, 
     NgxMaskPipe,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    SharedModule
   ],
   providers: [
     provideClientHydration(),
