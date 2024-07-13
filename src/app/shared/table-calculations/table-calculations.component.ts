@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CalculationService } from '../../services/calculation.service';
+import { ForecastPost } from '../../utils/models/forecast';
 
 @Component({
   selector: 'app-table-calculations',
@@ -7,8 +8,7 @@ import { CalculationService } from '../../services/calculation.service';
   styleUrl: './table-calculations.component.css'
 })
 export class TableCalculationsComponent {
-
-  years: number[] = [];
+  
   forecastData: any[] = [];
 
   showingColumns = {
@@ -27,11 +27,11 @@ export class TableCalculationsComponent {
   ngOnInit(): void {
 
 
-    for(let i = 1; i <= 45; i++){
-      this.years.push(i)
-    }
+    
+  }
 
-    this.forecastData = this.investmentService.calculateForecast(this.years);
+  generateForecast(data:ForecastPost){
+    this.forecastData = this.investmentService.calculateForecast(data);
   }
 
 }

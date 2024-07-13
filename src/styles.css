@@ -2,11 +2,14 @@
 
 
 
-body{
-    background-color: rgb(249, 250, 254);
+body {
+    /* background-color: rgb(249, 250, 254); */
+    background-color: white;
     font-family: 'Nunito', sans-serif;
     height: 100%;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .card {
@@ -15,8 +18,10 @@ body{
     width: 100%;
     background-color: white;
     border-radius: 20px;
-    
     opacity: 1;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
 }
 
 .card-header {
@@ -24,7 +29,7 @@ body{
     width: 100%;
     border-radius: 20px;
     background-color: rgb(248, 248, 248);
-    
+
     opacity: 1;
 }
 
@@ -33,30 +38,36 @@ body{
     width: 100%;
     border-radius: 20px;
     background-color: white;
-    
+
     opacity: 1;
 }
 
 
-label{
+label {
     font-size: 12px;
     text-transform: uppercase;
 }
 
-.form-control, .form-select{
+.form-control,
+.form-select {
     border-radius: 18px;
 }
 
-.card-header, .card-footer {
+.card-header,
+.card-footer {
     border-radius: 20px;
 }
 
-a{
+a {
     color: #0DCBF0;
     text-decoration: inherit;
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     color: #0591B6;
+}
+
+.btn {
+    border-radius: 20px;
 }

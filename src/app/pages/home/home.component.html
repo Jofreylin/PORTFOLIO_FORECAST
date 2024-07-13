@@ -1,43 +1,64 @@
 <div class="container mb-4">
-  <div class="row">
-    <div class="col-12">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <form class="d-flex flex-wrap align-items-center">
-            <div class="mb-3 me-4">
-              <label for="exampleFormControlInput1" class="form-label">Average Share Price</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+    <div class="row m-0 justify-content-center">
+        <div class="col-12">
+            <div class="card ">
+                <div class="card-body">
+                    <form class="row align-items-center " [formGroup]="valuesForm">
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Average Share Price</label>
+                            <input type="text" prefix="$"  mask="separator.2"
+                                thousandSeparator=","  class="form-control" placeholder="$100.00" formControlName="averageSharePrice">
+                        </div>
+                        <div class="col-md-3 mb-3 "> 
+                            <label class="form-label">Inital Investment Amount</label>
+                            <input type="text" prefix="$"  mask="separator.2"
+                                thousandSeparator=","  class="form-control" placeholder="$20.00" formControlName="investmentAmount">
+                        </div>
+                        <div class="col-md-3 mb-3 "> 
+                            <label class="form-label">Monthly Contribution</label>
+                            <input type="text" prefix="$"  mask="separator.2"
+                                thousandSeparator=","  class="form-control" placeholder="$200.00" formControlName="monthlyContribution">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Holding Years</label>
+                            <input type="text"  mask="separator.0" thousandSeparator=","
+                                class="form-control" placeholder="25" formControlName="years">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Expected Dividend Yield (%)</label>
+                            <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control" placeholder="2.14%" formControlName="expectedDividendYield">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Annual Tax Rate (%)</label>
+                            <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control" placeholder="0%" formControlName="annualTaxRate">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Dividend CAGR (%)</label>
+                            <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control" placeholder="7%" formControlName="dividendCAGR">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Share Price CAGR (%)</label>
+                            <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control" placeholder="12%" formControlName="sharePriceCAGR">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Dividend Reinvestment Plan (DRIP)</label>
+                            <div class="form-check form-switch ms-3">
+                                <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                     formControlName="drip">
+                            </div>
+                        </div>
+                        <div class="col mb-3 text-end d-flex align-items-end justify-content-end">
+                            <button class="btn btn-success me-4" (click)="generateForecast()">Generate Forecast</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="mb-3 me-4">
-              <label for="exampleFormControlInput1" class="form-label">Inital Invest Amount</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="mb-3 me-4">
-              <label for="exampleFormControlInput1" class="form-label">Expected Dividend Yield (%)</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="mb-3 me-4">
-              <label for="exampleFormControlInput1" class="form-label">Tax Rate (%)</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="mb-3 me-4">
-              <label for="exampleFormControlInput1" class="form-label">Dividend CAGR (%)</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="mb-3 me-4">
-              <label for="exampleFormControlInput1" class="form-label">Share Price CAGR (%)</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="mb-3 me-4 form-check">
-              
-              <input class="form-check-input" type="checkbox" value="">
-              <label class="form-check-label">Dividend Reinvestment (DRIP)</label>
-            </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
-<app-table-calculations></app-table-calculations>
+<app-table-calculations #calculationComponent></app-table-calculations>
