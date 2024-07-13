@@ -30,7 +30,7 @@ export class CalculationService {
     const afterDRIP = this.drip ? annualDividendIncome + (year == 1 ? this.investmentAmount : previousData.yearEndNewBalance) : 0;
     const yearEndSharesOwned = sharesOwned + (this.drip ? newSharesPerQuarter * compoundFrequencyQuarterly : 0) + newSharesFromContributions;
     const yearEndStockPrice = (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice) * (1 + this.sharePriceCAGR);
-    const yearEndNewBalance = yearEndSharesOwned * yearEndStockPrice;
+    const yearEndNewBalance = (yearEndSharesOwned * yearEndStockPrice) * (this.annualTaxRate > 0 ? (1 - this.annualTaxRate) : 1);
     const yearEndInvested = previousData.yearEndInvested + this.annualContribution;
     const yearEndReturn = yearEndNewBalance - yearEndInvested;
 

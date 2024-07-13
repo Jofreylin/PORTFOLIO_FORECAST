@@ -40,3 +40,6 @@ th {
     border-bottom-right-radius: 30px;
 } */
 
+input[type=checkbox] {
+    filter: hue-rotate(254deg);
+}

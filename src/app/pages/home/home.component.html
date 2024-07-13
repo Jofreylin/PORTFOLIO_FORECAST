@@ -25,7 +25,7 @@
                                 class="form-control" placeholder="25" formControlName="years">
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label">Expected Dividend Yield (%)</label>
+                            <label class="form-label">Dividend Yield Expected (%)</label>
                             <input type="text" suffix="%"  mask="separator.5"
                                 thousandSeparator="," class="form-control" placeholder="2.14%" formControlName="expectedDividendYield">
                         </div>
@@ -35,12 +35,14 @@
                                 thousandSeparator="," class="form-control" placeholder="0%" formControlName="annualTaxRate">
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label">Dividend CAGR (%)</label>
+                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Annual dividend increase expected"
+                            data-bs-placement="top" title="Annual dividend increase expected">Dividend CAGR (%)</label>
                             <input type="text" suffix="%"  mask="separator.5"
                                 thousandSeparator="," class="form-control" placeholder="7%" formControlName="dividendCAGR">
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label">Share Price CAGR (%)</label>
+                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Annual share price increase expected"
+                            data-bs-placement="top" title="Annual share price increase expected">Share Price CAGR (%)</label>
                             <input type="text" suffix="%"  mask="separator.5"
                                 thousandSeparator="," class="form-control" placeholder="12%" formControlName="sharePriceCAGR">
                         </div>

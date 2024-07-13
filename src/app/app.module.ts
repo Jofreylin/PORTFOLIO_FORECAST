@@ -12,16 +12,20 @@ import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonLayoutComponent } from './layouts/common-layout/common-layout.component';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    CommonLayoutComponent,
     HomeComponent,
     CalculatorComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -36,7 +40,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     provideClientHydration(),
     provideHttpClient(withFetch()),
     provideAnimationsAsync(),
-    provideEnvironmentNgxMask(),
     provideNgxMask()
   ],
   bootstrap: [AppComponent]

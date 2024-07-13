@@ -22,20 +22,26 @@
 .nav-item{
     border-radius: 15px;
     background: rgba(6, 113, 6, 0.649);
-    padding-left: 25px !important;
-    padding-right: 25px !important;
     margin-right: 1rem;
     cursor: pointer;
 }
 
 .nav-item a{
+    border-radius: 15px;
     color: white !important;
     font-weight: bold;
-    padding: 0 ;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .nav-item .active {
+    border-radius: 15px;
     background: rgba(8, 151, 8, 0.649);
+    cursor: pointer;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
 }
 
 .nav-item:hover {
