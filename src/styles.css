@@ -19,6 +19,10 @@ body {
     background-color: white;
     border-radius: 20px;
     opacity: 1;
+}
+
+.custom-shadow{
+    /* border: 2px solid rgb(214, 214, 214) !important; */
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
@@ -50,7 +54,11 @@ label {
 
 .form-control,
 .form-select {
-    border-radius: 18px;
+    border-radius: 18px !important;
+}
+
+input, select, textarea{
+    border-radius: 18px !important;
 }
 
 .card-header,
@@ -59,13 +67,13 @@ label {
 }
 
 a {
-    color: #0DCBF0;
+    color: rgb(53, 107, 53);
     text-decoration: inherit;
     cursor: pointer;
 }
 
 a:hover {
-    color: #0591B6;
+    color: green;
 }
 
 .btn {
@@ -77,11 +85,12 @@ a:hover {
     color: #000000;
     text-transform: uppercase !important;
     font-size: bold !important;
+    border-radius: 18px !important;    
 }
 
 .tooltip {
     background-color: #ffffff !important;
-    border-radius: 5px !important;    
+    border-radius: 18px !important;    
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
@@ -91,3 +100,4 @@ a:hover {
     color: white !important;
     border:  #000000 transparent transparent !important;
 }
+

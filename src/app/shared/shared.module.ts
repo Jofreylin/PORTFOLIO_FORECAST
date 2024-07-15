@@ -5,6 +5,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TableCalculationsComponent } from './table-calculations/table-calculations.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { CagrCalculationModalComponent } from './cagr-calculation-modal/cagr-calculation-modal.component';
+import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -12,18 +14,23 @@ import { BrowserModule } from '@angular/platform-browser';
   declarations: [
     FooterComponent,
     NavbarComponent,
-    TableCalculationsComponent
+    TableCalculationsComponent,
+    CagrCalculationModalComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   exports: [
     FooterComponent,
     NavbarComponent,
-    TableCalculationsComponent
+    TableCalculationsComponent,
+    CagrCalculationModalComponent
+  ],
+  providers: [
   ]
 })
 export class SharedModule { }

@@ -2,6 +2,8 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { TableCalculationsComponent } from '../../shared/table-calculations/table-calculations.component';
 import { ForecastPost } from '../../utils/models/forecast';
+import { MatDialog } from '@angular/material/dialog';
+import { CagrCalculationModalComponent } from '../../shared/cagr-calculation-modal/cagr-calculation-modal.component';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +16,24 @@ export class HomeComponent implements AfterViewInit {
 
   @ViewChild('calculationComponent') calculationComponent!: TableCalculationsComponent;
 
-  constructor(private fb: FormBuilder) { 
+  compoundFrequencies: {text:string, value:number}[] = [
+    {
+      text: 'Annually',
+      value: 1
+    },
+    {
+      text: 'Monthly',
+      value: 12
+    },
+    {
+      text: 'Quarterly',
+      value: 4
+    }
+  ]
+
+  constructor(private fb: FormBuilder,
+    private dialog: MatDialog
+  ) { 
 
     this.valuesForm = this.fb.group({
       averageSharePrice:[null],
@@ -25,6 +44,7 @@ export class HomeComponent implements AfterViewInit {
       annualTaxRate:[null],
       dividendCAGR:[null],
       sharePriceCAGR:[null],
+      dividendCompoundFrequency:[null],
       drip:[true]
     })
 
@@ -48,6 +68,23 @@ export class HomeComponent implements AfterViewInit {
     
     this.calculationComponent.generateForecast(values);
 
+  }
+
+  openCalculationCAGR(type:number){
+    this.dialog.open(CagrCalculationModalComponent,{
+      data:{
+      },
+      disableClose: true,
+      width: '80%'
+    }).afterClosed().subscribe({
+      next:(res)=>{
+        if(!res?.succeeded){
+          return;
+        }
+
+
+      }
+    })
   }
 
   private verifyLastFormSaved(): ForecastPost | null{

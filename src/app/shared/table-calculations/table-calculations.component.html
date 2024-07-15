@@ -22,9 +22,9 @@
                         </label>
                     </div>
                     <div class="form-check me-4">
-                        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="showingColumns.newSharesPerQuarter">
+                        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="showingColumns.newSharesPerPeriod">
                         <label class="form-check-label" >
-                            New Shares per Quarter
+                            New Shares per Period
                         </label>
                     </div>
                     <div class="form-check me-4">
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="card  ">
+            <div class="card  custom-shadow ">
                 <div class="card-body ">
                     <div class="table-responsive" style="width: 100%; height: 70vh;">
                         <table class="table table-borderless table-hover table-sm">
@@ -68,7 +68,7 @@
                                     <th>Annual Dividend Income</th>
                                     <th *ngIf="showingColumns.compoundFrequency" class="text-center">Compound Frequency</th>
                                     <th *ngIf="showingColumns.frequencyIncomeDividend">Frequency Income Dividend</th>
-                                    <th *ngIf="showingColumns.newSharesPerQuarter">New Shares per Quarter</th>
+                                    <th *ngIf="showingColumns.newSharesPerPeriod">New Shares per Period</th>
                                     <th *ngIf="showingColumns.monthlyContribution">Monthly Contribution</th>
                                     <th *ngIf="showingColumns.monthlyNewShares">Monthly New Shares</th>
                                     <th *ngIf="showingColumns.newSharesFromContributions">New Shares from Contributions</th>
@@ -87,9 +87,9 @@
                                     <td>{{ data.dividendYield | percent:'1.3-3' }}</td>
                                     <td *ngIf="showingColumns.annualDividenPerShare">{{ data.annualDividendPerShare | currency }}</td>
                                     <td>{{ data.annualDividendIncome | currency }}</td>
-                                    <td *ngIf="showingColumns.compoundFrequency" class="text-center">{{ data.compoundFrequencyQuarterly }}</td>
+                                    <td *ngIf="showingColumns.compoundFrequency" class="text-center">{{ data.compoundFrequencyDescription || 'NULL' }}</td>
                                     <td *ngIf="showingColumns.frequencyIncomeDividend">{{ data.frequencyIncomeDividend | currency }}</td>
-                                    <td *ngIf="showingColumns.newSharesPerQuarter">{{ data.newSharesPerQuarter | number:'1.5-5' }}</td>
+                                    <td *ngIf="showingColumns.newSharesPerPeriod">{{ data.newSharesPerPeriod | number:'1.5-5' }}</td>
                                     <td *ngIf="showingColumns.monthlyContribution">{{ data.monthlyContribution | currency }}</td>
                                     <td *ngIf="showingColumns.monthlyNewShares">{{ data.monthlyNewShares | number:'1.5-5' }}</td>
                                     <td *ngIf="showingColumns.newSharesFromContributions">{{ data.newSharesFromContributions | number:'1.5-5' }}</td>

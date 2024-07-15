@@ -15,12 +15,27 @@ export class TableCalculationsComponent {
     annualDividenPerShare: false,
     compoundFrequency: false,
     frequencyIncomeDividend: false,
-    newSharesPerQuarter: false,
+    newSharesPerPeriod: false,
     monthlyContribution: false,
     monthlyNewShares: false,
     newSharesFromContributions: true,
     afterDrip: true
   };
+
+  compoundFrequencies: {text:string, value:number}[] = [
+    {
+      text: 'Annually',
+      value: 1
+    },
+    {
+      text: 'Monthly',
+      value: 12
+    },
+    {
+      text: 'Quarterly',
+      value: 4
+    }
+  ]
 
   constructor(private investmentService: CalculationService) { }
 
@@ -30,8 +45,17 @@ export class TableCalculationsComponent {
     
   }
 
+  
+
   generateForecast(data:ForecastPost){
-    this.forecastData = this.investmentService.calculateForecast(data);
+    const forecastData = this.investmentService.calculateForecast(data);
+
+    this.forecastData = forecastData.map(value=>{
+      return {
+        ...value,
+        compoundFrequencyDescription: this.compoundFrequencies.find(x=>x.value == value.dividendCompoundFrequency)?.text
+      }
+    })
   }
 
 }

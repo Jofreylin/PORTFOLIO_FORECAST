@@ -1,7 +1,7 @@
 <div class="container mb-4">
     <div class="row m-0 justify-content-center">
         <div class="col-12">
-            <div class="card ">
+            <div class="card custom-shadow ">
                 <div class="card-body">
                     <form class="row align-items-center " [formGroup]="valuesForm">
                         <div class="col-md-3 mb-3 ">
@@ -30,21 +30,39 @@
                                 thousandSeparator="," class="form-control" placeholder="2.14%" formControlName="expectedDividendYield">
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label">Annual Tax Rate (%)</label>
-                            <input type="text" suffix="%"  mask="separator.5"
-                                thousandSeparator="," class="form-control" placeholder="0%" formControlName="annualTaxRate">
+                            <label class="form-label">Dividend Compound Frequency</label>
+                            <select class="form-select" formControlName="dividendCompoundFrequency">
+                                <option [value]="null" selected disabled>Select one</option>
+                                <option [value]="item.value" *ngFor="let item of compoundFrequencies">{{item.text}}</option>
+                            </select>
                         </div>
                         <div class="col-md-3 mb-3 ">
                             <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Annual dividend increase expected"
-                            data-bs-placement="top" title="Annual dividend increase expected">Dividend CAGR (%)</label>
-                            <input type="text" suffix="%"  mask="separator.5"
-                                thousandSeparator="," class="form-control" placeholder="7%" formControlName="dividendCAGR">
+                            data-bs-placement="top" title="Annual dividend increase expected">Dividend CAGR (%) </label>
+                            
+                            <div class="input-group">
+                                <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control carg-input" placeholder="7%" formControlName="dividendCAGR">
+
+                                <button class="btn  btn-sm ms-2 cagr-btn" ata-bs-toggle="tooltip" data-toggle="tooltip" data-title="See How to Calculate it"
+                                data-bs-placement="top" title="See How to Calculate it" (click)="openCalculationCAGR(1)"><i class="fas fa-eye"></i></button>
+                            </div>
                         </div>
                         <div class="col-md-3 mb-3 ">
                             <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Annual share price increase expected"
                             data-bs-placement="top" title="Annual share price increase expected">Share Price CAGR (%)</label>
-                            <input type="text" suffix="%"  mask="separator.5"
+                            <div class="input-group">
+                                <input type="text" suffix="%"  mask="separator.5"
                                 thousandSeparator="," class="form-control" placeholder="12%" formControlName="sharePriceCAGR">
+
+                                <button class="btn  btn-sm ms-2 cagr-btn" ata-bs-toggle="tooltip" data-toggle="tooltip" data-title="See How to Calculate it"
+                                data-bs-placement="top" title="See How to Calculate it" (click)="openCalculationCAGR(2)"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Annual Tax Rate (%)</label>
+                            <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control" placeholder="0%" formControlName="annualTaxRate">
                         </div>
                         <div class="col-md-3 mb-3 ">
                             <label class="form-label">Dividend Reinvestment Plan (DRIP)</label>
@@ -54,7 +72,7 @@
                             </div>
                         </div>
                         <div class="col mb-3 text-end d-flex align-items-end justify-content-end">
-                            <button class="btn btn-success me-4" (click)="generateForecast()">Generate Forecast</button>
+                            <button class="btn btn-success me-4 mt-4" (click)="generateForecast()">Generate Forecast</button>
                         </div>
                     </form>
                 </div>
