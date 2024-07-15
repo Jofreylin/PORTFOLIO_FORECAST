@@ -18,19 +18,26 @@ export class CalculationService {
 
   // Funciones para calcular métricas año por año
   calculateYearMetrics(year: number, previousData: any): any {
+
     const sharesOwned = (year == 1 ? previousData.sharesOwned : previousData.yearEndSharesOwned);
+
     const dividendYield = previousData.dividendYield * (year == 1 ? 1 : (1 + this.dividendCAGR));
-    const annualDividendPerShare = (year == 1 ? this.averageSharePrice * dividendYield : previousData.yearEndStockPrice * (this.expectedDividendYield + (this.dividendCAGR * this.expectedDividendYield)));
+    const annualDividendPerShare = (year == 1 ? this.averageSharePrice: previousData.yearEndStockPrice) * dividendYield;
     const annualDividendIncome = sharesOwned * annualDividendPerShare;
     const dividendCompoundFrequency = this.dividendCompoundFrequency;
-    const monthlyContribution = this.annualContribution / 12;
     const frequencyIncomeDividend = annualDividendIncome / dividendCompoundFrequency;
     const newSharesPerPeriod = frequencyIncomeDividend / (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice);
+    const afterDRIP = (this.drip && (dividendYield > 0)) ? (annualDividendIncome + (year == 1 ? 0 : previousData.afterDRIP)) : 0;
+
+    const monthlyContribution = this.annualContribution / 12;
     const monthlyNewShares = monthlyContribution / (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice);
     const newSharesFromContributions = 12 * monthlyNewShares;
-    const afterDRIP = this.drip ? annualDividendIncome + (year == 1 ? this.investmentAmount : previousData.yearEndNewBalance) : 0;
+    const balanceFromContributiones = newSharesFromContributions * (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice);
+    
+
     const yearEndSharesOwned = sharesOwned + (this.drip ? newSharesPerPeriod * dividendCompoundFrequency : 0) + newSharesFromContributions;
     const yearEndStockPrice = (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice) * (1 + this.sharePriceCAGR);
+    
     const yearEndNewBalance = (yearEndSharesOwned * yearEndStockPrice) * (this.annualTaxRate > 0 ? (1 - this.annualTaxRate) : 1);
     const yearEndInvested = previousData.yearEndInvested + this.annualContribution;
     const yearEndReturn = yearEndNewBalance - yearEndInvested;

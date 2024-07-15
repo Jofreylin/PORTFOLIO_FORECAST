@@ -10,6 +10,7 @@ import { ForecastPost } from '../../utils/models/forecast';
 export class TableCalculationsComponent {
   
   forecastData: any[] = [];
+  filteredData: any[] = [];
 
   showingColumns = {
     annualDividenPerShare: false,
@@ -37,6 +38,8 @@ export class TableCalculationsComponent {
     }
   ]
 
+  valueAddedToPortfolio: number = 0;
+
   constructor(private investmentService: CalculationService) { }
 
   ngOnInit(): void {
@@ -56,6 +59,19 @@ export class TableCalculationsComponent {
         compoundFrequencyDescription: this.compoundFrequencies.find(x=>x.value == value.dividendCompoundFrequency)?.text
       }
     })
+
+    this.filteredData = this.forecastData.filter((item,index)=>{
+      const year = index + 1;
+      return year === 1 || year % 5 === 0 || year === this.forecastData.length;
+    })
+
+    const lastIndex = this.filteredData.length - 1;
+
+    if(lastIndex < 0){
+      return;
+    }
+
+    this.valueAddedToPortfolio = this.filteredData[lastIndex]?.yearEndNewBalance - this.filteredData[lastIndex]?.yearEndInvested;
   }
 
 }

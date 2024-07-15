@@ -43,3 +43,15 @@ th {
 input[type=checkbox] {
     filter: hue-rotate(254deg);
 }
+
+
+.investment-table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.investment-table th,
+.investment-table td {
+    text-align: center;
+    vertical-align: middle;
+}
