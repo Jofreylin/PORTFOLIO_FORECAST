@@ -39,6 +39,7 @@ export class TableCalculationsComponent {
   ]
 
   valueAddedToPortfolio: number = 0;
+  compoundFrequencyDescription: string = ''
 
   constructor(private investmentService: CalculationService) { }
 
@@ -72,6 +73,7 @@ export class TableCalculationsComponent {
     }
 
     this.valueAddedToPortfolio = this.filteredData[lastIndex]?.yearEndNewBalance - this.filteredData[lastIndex]?.yearEndInvested;
+    this.compoundFrequencyDescription = this.filteredData[lastIndex]?.compoundFrequencyDescription;
   }
 
 }

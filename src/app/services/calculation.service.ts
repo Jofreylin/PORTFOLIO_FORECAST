@@ -6,49 +6,52 @@ import { ForecastPost } from '../utils/models/forecast';
 })
 export class CalculationService {
 
-  private  averageSharePrice!: number;
-  private  investmentAmount!: number;
-  private  annualContribution!: number;
-  private  expectedDividendYield!: number;
-  private  annualTaxRate!: number;
-  private  dividendCAGR!: number;
-  private  sharePriceCAGR!: number;
-  private  dividendCompoundFrequency!: number;
-  private  drip!: boolean;
+  private averageSharePrice!: number;
+  private investmentAmount!: number;
+  private annualContribution!: number;
+  private expectedDividendYield!: number;
+  private annualTaxRate!: number;
+  private dividendCAGR!: number;
+  private sharePriceCAGR!: number;
+  private dividendCompoundFrequency!: number;
+  private drip!: boolean;
 
   // Funciones para calcular métricas año por año
   calculateYearMetrics(year: number, previousData: any): any {
 
-    const sharesOwned = (year == 1 ? previousData.sharesOwned : previousData.yearEndSharesOwned);
+    const isInitialYear = year === 1;
+    const previousSharesOwned = isInitialYear ? previousData.sharesOwned * (1 + this.sharePriceCAGR) : previousData.yearEndSharesOwned;
 
-    const dividendYield = previousData.dividendYield * (year == 1 ? 1 : (1 + this.dividendCAGR));
-    const annualDividendPerShare = (year == 1 ? this.averageSharePrice: previousData.yearEndStockPrice) * dividendYield;
-    const annualDividendIncome = sharesOwned * annualDividendPerShare;
-    const dividendCompoundFrequency = this.dividendCompoundFrequency;
-    const frequencyIncomeDividend = annualDividendIncome / dividendCompoundFrequency;
-    const newSharesPerPeriod = frequencyIncomeDividend / (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice);
-    const afterDRIP = (this.drip && (dividendYield > 0)) ? (annualDividendIncome + (year == 1 ? 0 : previousData.afterDRIP)) : 0;
+    const dividendYield = previousData.dividendYield * (isInitialYear ? 1 : (1 + this.dividendCAGR));
+    const annualDividendPerShare = (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice) * dividendYield;
+    const annualDividendIncome = previousSharesOwned * annualDividendPerShare;
+
+    const frequencyIncomeDividend = annualDividendIncome / this.dividendCompoundFrequency;
+    const newSharesPerPeriod = frequencyIncomeDividend / (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice);
+
+    const afterDRIP = (this.drip && dividendYield > 0) ? (annualDividendIncome + (isInitialYear ? 0 : previousData.afterDRIP)) : 0;
 
     const monthlyContribution = this.annualContribution / 12;
-    const monthlyNewShares = monthlyContribution / (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice);
+    const monthlyNewShares = monthlyContribution / (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice);
     const newSharesFromContributions = 12 * monthlyNewShares;
-    const balanceFromContributiones = newSharesFromContributions * (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice);
-    
 
-    const yearEndSharesOwned = sharesOwned + (this.drip ? newSharesPerPeriod * dividendCompoundFrequency : 0) + newSharesFromContributions;
-    const yearEndStockPrice = (year == 1 ? this.averageSharePrice : previousData.yearEndStockPrice) * (1 + this.sharePriceCAGR);
-    
-    const yearEndNewBalance = (yearEndSharesOwned * yearEndStockPrice) * (this.annualTaxRate > 0 ? (1 - this.annualTaxRate) : 1);
+    const yearEndSharesOwned = previousSharesOwned + (this.drip ? (newSharesPerPeriod * this.dividendCompoundFrequency) : 0) + newSharesFromContributions;
+
+    const yearEndNewBalance = yearEndSharesOwned * (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice) * (this.annualTaxRate > 0 ? (1 - this.annualTaxRate) : 1);
+
+    const yearEndStockPrice = (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice) * (1 + this.sharePriceCAGR);
+
     const yearEndInvested = previousData.yearEndInvested + this.annualContribution;
     const yearEndReturn = yearEndNewBalance - yearEndInvested;
 
+
     return {
       year,
-      sharesOwned,
+      sharesOwned: previousSharesOwned,
       dividendYield,
       annualDividendPerShare,
       annualDividendIncome,
-      dividendCompoundFrequency,
+      dividendCompoundFrequency: this.dividendCompoundFrequency,
       frequencyIncomeDividend,
       newSharesPerPeriod,
       monthlyContribution,

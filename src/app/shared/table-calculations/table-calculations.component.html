@@ -14,15 +14,15 @@
                                     <th rowspan="2">Portfolio Value</th>
                                 </tr>
                                 <tr>
-                                    <th colspan="2" >Yearly</th>
-                                    <!-- <th>Monthly</th> -->
+                                    <th>Annually</th>
+                                    <th>{{compoundFrequencyDescription}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr *ngFor="let data of filteredData">
                                     <td>After {{data.year}} year</td>
-                                    <td colspan="2">{{ data.annualDividendIncome | currency }}</td>
-                                    <!-- <td>$28</td> -->
+                                    <td >{{ data.annualDividendIncome | currency }}</td>
+                                    <td >{{ data.frequencyIncomeDividend | currency }}</td>
                                     <td>{{data.afterDRIP | currency}}</td>
                                     <td>{{data.yearEndInvested | currency}}</td>
                                     <td>{{data.yearEndNewBalance | currency}}</td>
