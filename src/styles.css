@@ -112,3 +112,8 @@ a:hover {
 .mat-mdc-dialog-surface, .mdc-dialog__surface{
     overflow: hidden !important;
 }
+
+.accordion-button:not(.collapsed){
+    background-color: white;
+    color: black !important;
+}

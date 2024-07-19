@@ -21,15 +21,17 @@ export class HomeComponent implements AfterViewInit {
       text: 'Annually',
       value: 1
     },
-    {
-      text: 'Monthly',
-      value: 12
-    },
-    {
-      text: 'Quarterly',
-      value: 4
-    }
+    // {
+    //   text: 'Monthly',
+    //   value: 12
+    // },
+    // {
+    //   text: 'Quarterly',
+    //   value: 4
+    // }
   ]
+
+  lastCARG!: ValuesCAGR;
 
   constructor(private fb: FormBuilder,
     private dialog: MatDialog
@@ -72,11 +74,7 @@ export class HomeComponent implements AfterViewInit {
 
   openCalculationCAGR(type:number){
 
-    const values: ValuesCAGR = {
-      firstYear: 0,
-      firstValue: 0,
-      lastYear: 0,
-      lastValue: 0,
+    const values = this.lastCARG?.type == type ? this.lastCARG : {
       type: type
     }
 
@@ -87,11 +85,14 @@ export class HomeComponent implements AfterViewInit {
       disableClose: true,
       maxWidth: '80vw'
     }).afterClosed().subscribe({
-      next:(res)=>{
+      next:(res: {succeeded: boolean, calculation: ValuesCAGR})=>{
         if(!res?.succeeded){
           return;
         }
 
+        this.lastCARG = res?.calculation;
+        const parameter: string = res?.calculation.type == 1 ? 'dividendCAGR' : 'sharePriceCAGR';
+        this.valuesForm.get(parameter)?.setValue(res?.calculation.calculatedCAGRPercentage);
         
       }
     })

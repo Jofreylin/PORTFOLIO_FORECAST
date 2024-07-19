@@ -28,18 +28,21 @@
     </div>
     <div class="col-md-3 mb-3 ">
       <label class="form-label">Number of Years</label>
-      <input type="text" mask="separator.0" thousandSeparator="," class="form-control" placeholder="14"
+      <input type="text" mask="separator.0" thousandSeparator=","  [allowNegativeNumbers]="true" class="form-control" placeholder="14"
         formControlName="numberOfYears">
     </div>
     <div class="col-md-6 mb-3 ">
       <label class="form-label">CAGR</label>
-      <div class="d-flex">
-        <input type="text" mask="separator.5" thousandSeparator="," class="form-control me-3" placeholder="0.00"
+      <div class="d-flex align-items-center">
+        <input type="text" mask="separator.5" thousandSeparator="," [allowNegativeNumbers]="true"class="form-control me-3" placeholder="0.00"
       formControlName="calculatedCAGR">
-
-      <input type="text" suffix="%" mask="separator.3" thousandSeparator="," class="form-control" placeholder="0.00%"
+      <div class="me-3" [appKatex]="'\\approx'"></div>
+      <input type="text" suffix="%" mask="separator.3" thousandSeparator="," [allowNegativeNumbers]="true" class="form-control" placeholder="0.00%"
       formControlName="calculatedCAGRPercentage">
       </div>
+    </div>
+    <div class="col-md-12">
+      <span class="text-danger" *ngIf="this.calculationForm.get('calculatedCAGR')?.value < 0">The CAGR can not be a negative number.</span>
     </div>
   </form>
 

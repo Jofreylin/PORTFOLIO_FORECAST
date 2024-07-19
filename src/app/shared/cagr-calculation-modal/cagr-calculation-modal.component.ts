@@ -32,13 +32,16 @@ export class CagrCalculationModalComponent {
         finalYear: [],
         numberOfYears: [{value:'', disabled: true}],
         calculatedCAGR: [{value:'', disabled: true}],
-        calculatedCAGRPercentage: [{value:'', disabled: true}]
+        calculatedCAGRPercentage: [{value:'', disabled: true}],
+        type: []
       })
+
+      this.calculationForm.patchValue(data?.values);
   
   }
 
   calculate(){
-    const values = this.calculationForm.getRawValue();
+    const values: ValuesCAGR = this.calculationForm.getRawValue();
 
     const numberOfYears: number = values?.finalYear - values?.initialYear;
     const dividedValues: number = values?.finalValue/values?.initialValue;
@@ -56,10 +59,15 @@ export class CagrCalculationModalComponent {
     const calculatedCAGRPercentage:number = (calculatedCAGR*100);
 
     this.calculationForm.get('calculatedCAGR')?.setValue(calculatedCAGR.toFixed(4));
-    this.calculationForm.get('calculatedCAGRPercentage')?.setValue(calculatedCAGRPercentage.toFixed(5));
+    this.calculationForm.get('calculatedCAGRPercentage')?.setValue(calculatedCAGRPercentage.toFixed(2));
   }
 
   close(succeeded: boolean = false){
+
+    if(this.calculationForm.get('calculatedCAGR')?.value < 0){
+      return;
+    }
+
     this.dialogRef.close({succeeded, calculation: this.calculationForm.getRawValue()})
   }
 }
