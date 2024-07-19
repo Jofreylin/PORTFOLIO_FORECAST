@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { TableCalculationsComponent } from '../../shared/table-calculations/table-calculations.component';
-import { ForecastPost } from '../../utils/models/forecast';
+import { ForecastPost, ValuesCAGR } from '../../utils/models/forecast';
 import { MatDialog } from '@angular/material/dialog';
 import { CagrCalculationModalComponent } from '../../shared/cagr-calculation-modal/cagr-calculation-modal.component';
 
@@ -71,18 +71,28 @@ export class HomeComponent implements AfterViewInit {
   }
 
   openCalculationCAGR(type:number){
+
+    const values: ValuesCAGR = {
+      firstYear: 0,
+      firstValue: 0,
+      lastYear: 0,
+      lastValue: 0,
+      type: type
+    }
+
     this.dialog.open(CagrCalculationModalComponent,{
       data:{
+        values
       },
       disableClose: true,
-      width: '80%'
+      maxWidth: '80vw'
     }).afterClosed().subscribe({
       next:(res)=>{
         if(!res?.succeeded){
           return;
         }
 
-
+        
       }
     })
   }
