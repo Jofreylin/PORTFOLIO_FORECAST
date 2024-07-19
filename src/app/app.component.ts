@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
       $('body').tooltip({
           selector: '[data-toggle="tooltip"]'
       }).click(function () {
-        $('.tooltip.show').removeClass("show");
+        $('.tooltip.show').removeClass(".tooltip.show");
       });
      })
   }

@@ -12,5 +12,6 @@ export interface ForecastPost {
 }
 
 export interface ValuesCAGR {
-  firstYear: number, firstValue: number, lastYear: number, lastValue: number, type:number
+  initialValue: number, finalValue: number, initialYear: number, finalYear: number, calculatedCAGR:number, calculatedCAGRPercentage: number, type:number
 }
+

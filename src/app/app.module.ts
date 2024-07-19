@@ -14,7 +14,7 @@ import { SharedModule } from './shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonLayoutComponent } from './layouts/common-layout/common-layout.component';
 import { CommonModule } from '@angular/common';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -34,6 +34,7 @@ import { CommonModule } from '@angular/common';
     NgxMaskDirective, 
     NgxMaskPipe,
     NgxSpinnerModule,
+    MatDialogModule,
     SharedModule
   ],
   providers: [
