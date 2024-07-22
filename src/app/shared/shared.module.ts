@@ -14,6 +14,8 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { AreaChartComponent } from './area-chart/area-chart.component';
 import * as echarts from 'echarts';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { MatStepperModule} from '@angular/material/stepper';
+import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     NgxMaskDirective, 
     NgxMaskPipe,
     NgxEchartsModule.forRoot({ echarts }),
+    MatStepperModule
   ],
   exports: [
     FooterComponent,
@@ -45,7 +48,11 @@ import { NgxEchartsModule } from 'ngx-echarts';
     AreaChartComponent
   ],
   providers: [
-    provideNgxMask()
+    provideNgxMask(),
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: {displayDefaultIndicatorType: false},
+    }
   ]
 })
 export class SharedModule { }

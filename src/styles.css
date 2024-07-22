@@ -8,8 +8,11 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: white;
-    font-family: 'Nunito', sans-serif;
     min-height: 100vh;
+}
+
+*{
+    font-family: 'Nunito', sans-serif ;
 }
 
 .card {
@@ -19,6 +22,10 @@ html, body{
     background-color: white;
     border-radius: 20px;
     opacity: 1;
+}
+
+.light-border{
+    border: 2px solid #f5f4f4 !important
 }
 
 .custom-shadow{
@@ -117,3 +124,12 @@ a:hover {
     background-color: white;
     color: black !important;
 }
+
+.mat-horizontal-stepper-wrapper, .mat-vertical-stepper-wrapper {
+    background-color: white;
+}
+
+.mat-step-icon-selected{
+    background-color: green !important;
+}
+

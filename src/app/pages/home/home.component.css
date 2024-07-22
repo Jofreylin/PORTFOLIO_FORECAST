@@ -11,5 +11,5 @@ input[type=checkbox] {
     border: none;
     background: none;
     z-index: 2;
-    color: green !important;
+    color: #157347 !important;
 }

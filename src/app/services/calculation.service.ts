@@ -37,7 +37,9 @@ export class CalculationService {
 
     const yearEndSharesOwned = previousSharesOwned + (this.drip ? (newSharesPerPeriod * this.dividendDistributionFrequency) : 0) + newSharesFromContributions;
 
-    const yearEndNewBalance = yearEndSharesOwned * (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice) * (this.annualTaxRate > 0 ? (1 - this.annualTaxRate) : 1);
+    const yearEndNewBalanceBeforeTaxes = yearEndSharesOwned * (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice);
+
+    const yearEndNewBalance = yearEndNewBalanceBeforeTaxes * (this.annualTaxRate > 0 ? (1 - this.annualTaxRate) : 1);
 
     const yearEndStockPrice = (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice) * (1 + this.sharePriceCAGR);
 
@@ -60,6 +62,7 @@ export class CalculationService {
       afterDRIP,
       yearEndSharesOwned,
       yearEndStockPrice,
+      yearEndNewBalanceBeforeTaxes,
       yearEndNewBalance,
       yearEndInvested,
       yearEndReturn

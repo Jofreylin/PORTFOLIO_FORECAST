@@ -1,4 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { EChartsOption } from 'echarts';
 
 @Component({
   selector: 'app-area-chart',
@@ -11,7 +12,7 @@ export class AreaChartComponent {
   @Input() contributionsData: number[] = [];
   @Input() labels: string[] = [];
 
-  public chartOptions: any;
+  public chartOptions!: EChartsOption | null;
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['investmentData'] || changes['contributionsData'] || changes['labels']) {
@@ -35,8 +36,12 @@ export class AreaChartComponent {
         data: ['Investment Growth', 'Annual Contributions']
       },
       toolbox: {
+        show: true,
         feature: {
-          saveAsImage: {}
+          dataZoom: {
+            yAxisIndex: 'none'
+          }
+          //saveAsImage: {}
         }
       },
       grid: {

@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { CalculationService } from '../../services/calculation.service';
 import { ForecastPost } from '../../utils/models/forecast';
+import {StepperOrientation} from '@angular/material/stepper';
+import { map, Observable } from 'rxjs';
+import {BreakpointObserver} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-table-calculations',
@@ -8,6 +11,8 @@ import { ForecastPost } from '../../utils/models/forecast';
   styleUrl: './table-calculations.component.css'
 })
 export class TableCalculationsComponent {
+  
+  stepperOrientation!: Observable<StepperOrientation>;
   
   forecastData: any[] = [];
   filteredData: any[] = [];
@@ -45,7 +50,13 @@ export class TableCalculationsComponent {
   chartContributionsData: number[] = [];
   chartLabels: string[] = [];
 
-  constructor(private investmentService: CalculationService) { }
+  constructor(private investmentService: CalculationService,
+    breakpointObserver: BreakpointObserver,
+  ) { 
+    this.stepperOrientation = breakpointObserver
+      .observe('(min-width: 800px)')
+      .pipe(map(({matches}) => (matches ? 'horizontal' : 'vertical')));
+  }
 
   ngOnInit(): void {
 

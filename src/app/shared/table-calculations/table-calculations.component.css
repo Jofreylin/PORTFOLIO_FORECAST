@@ -7,6 +7,16 @@
     background-color: rgba(98, 159, 98, 0.53) !important;
 }
 
+.first-column{
+    border-end-start-radius: 15px;
+    border-start-start-radius: 15px;
+}
+
+.last-column{
+    border-end-end-radius: 15px;
+    border-start-end-radius: 15px;
+}
+
 thead th {
     position: sticky;
     top: 0;
