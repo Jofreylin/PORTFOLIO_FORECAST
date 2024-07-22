@@ -16,19 +16,19 @@ export class HomeComponent implements AfterViewInit {
 
   @ViewChild('calculationComponent') calculationComponent!: TableCalculationsComponent;
 
-  compoundFrequencies: {text:string, value:number}[] = [
+  distributionFrequencies: {text:string, value:number}[] = [
     {
       text: 'Annually',
       value: 1
     },
-    // {
-    //   text: 'Monthly',
-    //   value: 12
-    // },
-    // {
-    //   text: 'Quarterly',
-    //   value: 4
-    // }
+    {
+      text: 'Monthly',
+      value: 12
+    },
+    {
+      text: 'Quarterly',
+      value: 4
+    }
   ]
 
   lastCARG!: ValuesCAGR;
@@ -46,7 +46,7 @@ export class HomeComponent implements AfterViewInit {
       annualTaxRate:[null],
       dividendCAGR:[null],
       sharePriceCAGR:[null],
-      dividendCompoundFrequency:[null],
+      dividendDistributionFrequency:[null],
       drip:[true]
     })
 

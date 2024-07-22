@@ -7,7 +7,7 @@ export interface ForecastPost {
   annualTaxRate: number,
   dividendCAGR: number,
   sharePriceCAGR: number,
-  dividendCompoundFrequency: number,
+  dividendDistributionFrequency: number,
   drip: boolean
 }
 

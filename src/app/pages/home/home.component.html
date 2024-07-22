@@ -1,7 +1,7 @@
 <div class="container mb-4">
     <div class="row m-0 justify-content-center">
         <div class="col-12">
-            <div class="card custom-shadow ">
+            <div class="card  ">
                 <div class="card-body">
                     <form class="row align-items-center " [formGroup]="valuesForm">
                         <div class="col-md-3 mb-3 ">
@@ -30,15 +30,15 @@
                                 thousandSeparator="," class="form-control" placeholder="2.14%" formControlName="expectedDividendYield">
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label">Dividend Compound Frequency</label>
-                            <select class="form-select" formControlName="dividendCompoundFrequency">
+                            <label class="form-label">Dividend Distribution Frequency</label>
+                            <select class="form-select" formControlName="dividendDistributionFrequency">
                                 <option [value]="null" selected disabled>Select one</option>
-                                <option [value]="item.value" *ngFor="let item of compoundFrequencies">{{item.text}}</option>
+                                <option [value]="item.value" *ngFor="let item of distributionFrequencies">{{item.text}}</option>
                             </select>
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Dividend Compound Annual Growth Rate"
-                            data-bs-placement="top" title="Dividend Compound Annual Growth Rate">Dividend CAGR (%) </label>
+                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Dividend Distribution Annual Growth Rate"
+                            data-bs-placement="top" title="Dividend distribution Annual Growth Rate">Dividend CAGR (%) </label>
                             
                             <div class="input-group">
                                 <input type="text" suffix="%"  mask="separator.5"
@@ -49,8 +49,8 @@
                             </div>
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Share Price Compound Annual Growth Rate"
-                            data-bs-placement="top" title="Share Price Compound Annual Growth Rate">Share Price CAGR (%)</label>
+                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Share Price Distribution Annual Growth Rate"
+                            data-bs-placement="top" title="Share Price Distribution Annual Growth Rate">Share Price CAGR (%)</label>
                             <div class="input-group">
                                 <input type="text" suffix="%"  mask="separator.5"
                                 thousandSeparator="," class="form-control" placeholder="12%" formControlName="sharePriceCAGR">

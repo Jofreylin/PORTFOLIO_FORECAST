@@ -15,7 +15,7 @@
                                 </tr>
                                 <tr>
                                     <th>Annually</th>
-                                    <th>{{compoundFrequencyDescription}}</th>
+                                    <th>{{distributionFrequencyDescription}}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -41,6 +41,11 @@
                 </div>
             </div>
         </div>
+        <div class="col-12 mb-4">
+            <app-area-chart [investmentData]="chartInvestmentData" 
+            [contributionsData]="chartContributionsData" 
+            [labels]="chartLabels"></app-area-chart>
+        </div>
         <div class="col-12 mb-4 ">
             <div class="card ">
                 <div class="card-body  d-flex flex-wrap justify-content-around">
@@ -53,9 +58,9 @@
                     </div>
                     <div class="form-check me-4">
                         <input class="form-check-input" type="checkbox" value=""
-                            [(ngModel)]="showingColumns.compoundFrequency">
+                            [(ngModel)]="showingColumns.distributionFrequency">
                         <label class="form-check-label">
-                            Dividend Compound Frequency
+                            Dividend Distribution Frequency
                         </label>
                     </div>
                     <div class="form-check me-4">
@@ -103,7 +108,7 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="card  custom-shadow ">
+            <div class="card  ">
                 <div class="card-body ">
                     <div class="table-responsive" style="width: 100%; height: 70vh;">
                         <table class="table table-borderless table-hover table-sm">
@@ -114,7 +119,7 @@
                                     <th>Dividend Yield</th>
                                     <th *ngIf="showingColumns.annualDividenPerShare">Annual Dividend Per Share</th>
                                     <th>Annual Dividend Income</th>
-                                    <th *ngIf="showingColumns.compoundFrequency" class="text-center">Compound Frequency
+                                    <th *ngIf="showingColumns.distributionFrequency" class="text-center">Distribution Frequency
                                     </th>
                                     <th *ngIf="showingColumns.frequencyIncomeDividend">Frequency Income Dividend</th>
                                     <th *ngIf="showingColumns.newSharesPerPeriod">New Shares per Period</th>
@@ -138,8 +143,8 @@
                                     <td *ngIf="showingColumns.annualDividenPerShare">{{ data.annualDividendPerShare |
                                         currency }}</td>
                                     <td>{{ data.annualDividendIncome | currency }}</td>
-                                    <td *ngIf="showingColumns.compoundFrequency" class="text-center">{{
-                                        data.compoundFrequencyDescription || 'NULL' }}</td>
+                                    <td *ngIf="showingColumns.distributionFrequency" class="text-center">{{
+                                        data.distributionFrequencyDescription || 'NULL' }}</td>
                                     <td *ngIf="showingColumns.frequencyIncomeDividend">{{ data.frequencyIncomeDividend |
                                         currency }}</td>
                                     <td *ngIf="showingColumns.newSharesPerPeriod">{{ data.newSharesPerPeriod |

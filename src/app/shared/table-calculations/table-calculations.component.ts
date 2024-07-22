@@ -14,7 +14,7 @@ export class TableCalculationsComponent {
 
   showingColumns = {
     annualDividenPerShare: false,
-    compoundFrequency: false,
+    distributionFrequency: false,
     frequencyIncomeDividend: false,
     newSharesPerPeriod: false,
     monthlyContribution: false,
@@ -23,7 +23,7 @@ export class TableCalculationsComponent {
     afterDrip: true
   };
 
-  compoundFrequencies: {text:string, value:number}[] = [
+  distributionFrequencies: {text:string, value:number}[] = [
     {
       text: 'Annually',
       value: 1
@@ -39,7 +39,11 @@ export class TableCalculationsComponent {
   ]
 
   valueAddedToPortfolio: number = 0;
-  compoundFrequencyDescription: string = ''
+  distributionFrequencyDescription: string = '';
+
+  chartInvestmentData: number[] = [];
+  chartContributionsData: number[] = [];
+  chartLabels: string[] = [];
 
   constructor(private investmentService: CalculationService) { }
 
@@ -57,7 +61,7 @@ export class TableCalculationsComponent {
     this.forecastData = forecastData.map(value=>{
       return {
         ...value,
-        compoundFrequencyDescription: this.compoundFrequencies.find(x=>x.value == value.dividendCompoundFrequency)?.text
+        distributionFrequencyDescription: this.distributionFrequencies.find(x=>x.value == value.dividendDistributionFrequency)?.text
       }
     })
 
@@ -66,6 +70,10 @@ export class TableCalculationsComponent {
       return year === 1 || year % 5 === 0 || year === this.forecastData.length;
     })
 
+    this.chartInvestmentData = forecastData.map(value=>Number(value.yearEndNewBalance.toFixed(2)));
+    this.chartContributionsData = forecastData.map(value=>value.yearEndInvested);
+    this.chartLabels = forecastData.map(value=>`Year ${value.year}`);
+
     const lastIndex = this.filteredData.length - 1;
 
     if(lastIndex < 0){
@@ -73,7 +81,7 @@ export class TableCalculationsComponent {
     }
 
     this.valueAddedToPortfolio = this.filteredData[lastIndex]?.yearEndNewBalance - this.filteredData[lastIndex]?.yearEndInvested;
-    this.compoundFrequencyDescription = this.filteredData[lastIndex]?.compoundFrequencyDescription;
+    this.distributionFrequencyDescription = this.filteredData[lastIndex]?.distributionFrequencyDescription;
   }
 
 }
