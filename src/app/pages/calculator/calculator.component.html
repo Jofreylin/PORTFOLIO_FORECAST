@@ -1,1 +1,84 @@
-<p>calculator works!</p>
+<div class="container mb-4">
+    <div class="row m-0 justify-content-center">
+        <div class="col-12">
+            <div class="card  light-border">
+                <div class="card-body">
+                    <form class="row align-items-center " [formGroup]="valuesForm">
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Average Share Price</label>
+                            <input type="text" prefix="$"  mask="separator.2"
+                                thousandSeparator=","  class="form-control" placeholder="$100.00" formControlName="averageSharePrice">
+                        </div>
+                        <div class="col-md-3 mb-3 "> 
+                            <label class="form-label">Inital Investment Amount</label>
+                            <input type="text" prefix="$"  mask="separator.2"
+                                thousandSeparator=","  class="form-control" placeholder="$20.00" formControlName="investmentAmount">
+                        </div>
+                        <div class="col-md-3 mb-3 "> 
+                            <label class="form-label">Monthly Contribution</label>
+                            <input type="text" prefix="$"  mask="separator.2"
+                                thousandSeparator=","  class="form-control" placeholder="$200.00" formControlName="monthlyContribution">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Holding Years</label>
+                            <input type="text"  mask="separator.0" thousandSeparator=","
+                                class="form-control" placeholder="25" formControlName="years">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Dividend Yield Expected (%)</label>
+                            <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control" placeholder="2.14%" formControlName="expectedDividendYield">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Dividend Distribution Frequency</label>
+                            <select class="form-select" formControlName="dividendDistributionFrequency">
+                                <option [value]="null" selected disabled>Select one</option>
+                                <option [value]="item.value" *ngFor="let item of distributionFrequencies">{{item.text}}</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Dividend Distribution Annual Growth Rate"
+                            data-bs-placement="top" title="Dividend distribution Annual Growth Rate">Dividend CAGR (%) </label>
+                            
+                            <div class="input-group">
+                                <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control carg-input" placeholder="7%" formControlName="dividendCAGR">
+
+                                <a class="btn  btn-sm ms-2 cagr-btn" ata-bs-toggle="tooltip" data-toggle="tooltip" data-title="See How to Calculate it"
+                                data-bs-placement="top" title="See How to Calculate it" (click)="openCalculationCAGR(1)"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Share Price Distribution Annual Growth Rate"
+                            data-bs-placement="top" title="Share Price Distribution Annual Growth Rate">Share Price CAGR (%)</label>
+                            <div class="input-group">
+                                <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control" placeholder="12%" formControlName="sharePriceCAGR">
+
+                                <a class="btn  btn-sm ms-2 cagr-btn" ata-bs-toggle="tooltip" data-toggle="tooltip" data-title="See How to Calculate it"
+                                data-bs-placement="top" title="See How to Calculate it" (click)="openCalculationCAGR(2)"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Annual Tax Rate (%)</label>
+                            <input type="text" suffix="%"  mask="separator.5"
+                                thousandSeparator="," class="form-control" placeholder="0%" formControlName="annualTaxRate">
+                        </div>
+                        <div class="col-md-3 mb-3 ">
+                            <label class="form-label">Dividend Reinvestment Plan (DRIP)</label>
+                            <div class="form-check form-switch ms-3">
+                                <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                     formControlName="drip">
+                            </div>
+                        </div>
+                        <div class="col mb-3 text-end d-flex align-items-end justify-content-end">
+                            <button class="btn btn-success me-4 mt-4" (click)="generateForecast()">Generate Forecast</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-table-calculations #calculationComponent></app-table-calculations>

@@ -11,8 +11,11 @@ import { KatexDirective } from './directives/katex.directive';
 import { HowToDividendCagrComponent } from './how-to-dividend-cagr/how-to-dividend-cagr.component';
 import { HowToSharePriceCagrComponent } from './how-to-share-price-cagr/how-to-share-price-cagr.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
-
-
+import { AreaChartComponent } from './area-chart/area-chart.component';
+import * as echarts from 'echarts';
+import { NgxEchartsModule } from 'ngx-echarts';
+import { MatStepperModule} from '@angular/material/stepper';
+import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     CagrCalculationModalComponent,
     KatexDirective,
     HowToDividendCagrComponent,
-    HowToSharePriceCagrComponent
+    HowToSharePriceCagrComponent,
+    AreaChartComponent
   ],
   imports: [
     CommonModule,
@@ -32,16 +36,23 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     MatDialogModule,
     NgxMaskDirective, 
     NgxMaskPipe,
+    NgxEchartsModule.forRoot({ echarts }),
+    MatStepperModule
   ],
   exports: [
     FooterComponent,
     NavbarComponent,
     TableCalculationsComponent,
     CagrCalculationModalComponent,
-    KatexDirective
+    KatexDirective,
+    AreaChartComponent
   ],
   providers: [
-    provideNgxMask()
+    provideNgxMask(),
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: {displayDefaultIndicatorType: false},
+    }
   ]
 })
 export class SharedModule { }

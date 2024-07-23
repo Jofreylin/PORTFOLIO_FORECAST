@@ -13,7 +13,7 @@ export class CalculationService {
   private annualTaxRate!: number;
   private dividendCAGR!: number;
   private sharePriceCAGR!: number;
-  private dividendCompoundFrequency!: number;
+  private dividendDistributionFrequency!: number;
   private drip!: boolean;
 
   // Funciones para calcular métricas año por año
@@ -26,7 +26,7 @@ export class CalculationService {
     const annualDividendPerShare = (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice) * dividendYield;
     const annualDividendIncome = previousSharesOwned * annualDividendPerShare;
 
-    const frequencyIncomeDividend = annualDividendIncome / this.dividendCompoundFrequency;
+    const frequencyIncomeDividend = annualDividendIncome / this.dividendDistributionFrequency;
     const newSharesPerPeriod = frequencyIncomeDividend / (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice);
 
     const afterDRIP = (this.drip && dividendYield > 0) ? (annualDividendIncome + (isInitialYear ? 0 : previousData.afterDRIP)) : 0;
@@ -35,9 +35,11 @@ export class CalculationService {
     const monthlyNewShares = monthlyContribution / (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice);
     const newSharesFromContributions = 12 * monthlyNewShares;
 
-    const yearEndSharesOwned = previousSharesOwned + (this.drip ? (newSharesPerPeriod * this.dividendCompoundFrequency) : 0) + newSharesFromContributions;
+    const yearEndSharesOwned = previousSharesOwned + (this.drip ? (newSharesPerPeriod * this.dividendDistributionFrequency) : 0) + newSharesFromContributions;
 
-    const yearEndNewBalance = yearEndSharesOwned * (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice) * (this.annualTaxRate > 0 ? (1 - this.annualTaxRate) : 1);
+    const yearEndNewBalanceBeforeTaxes = yearEndSharesOwned * (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice);
+
+    const yearEndNewBalance = yearEndNewBalanceBeforeTaxes * (this.annualTaxRate > 0 ? (1 - this.annualTaxRate) : 1);
 
     const yearEndStockPrice = (isInitialYear ? this.averageSharePrice : previousData.yearEndStockPrice) * (1 + this.sharePriceCAGR);
 
@@ -51,7 +53,7 @@ export class CalculationService {
       dividendYield,
       annualDividendPerShare,
       annualDividendIncome,
-      dividendCompoundFrequency: this.dividendCompoundFrequency,
+      dividendDistributionFrequency: this.dividendDistributionFrequency,
       frequencyIncomeDividend,
       newSharesPerPeriod,
       monthlyContribution,
@@ -60,6 +62,7 @@ export class CalculationService {
       afterDRIP,
       yearEndSharesOwned,
       yearEndStockPrice,
+      yearEndNewBalanceBeforeTaxes,
       yearEndNewBalance,
       yearEndInvested,
       yearEndReturn
@@ -85,7 +88,7 @@ export class CalculationService {
     this.annualTaxRate = config.annualTaxRate / 100;
     this.dividendCAGR = config.dividendCAGR / 100;
     this.sharePriceCAGR = config.sharePriceCAGR / 100;
-    this.dividendCompoundFrequency = +config.dividendCompoundFrequency;
+    this.dividendDistributionFrequency = +config.dividendDistributionFrequency;
     this.drip = config.drip;
 
     let data = {
