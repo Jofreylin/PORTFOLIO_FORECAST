@@ -7,6 +7,10 @@
     background-color: rgba(98, 159, 98, 0.53) !important;
 }
 
+.total-value-row td {
+    background-color: #15734793 !important;
+}
+
 .first-column{
     border-end-start-radius: 15px;
     border-start-start-radius: 15px;
@@ -64,4 +68,8 @@ input[type=checkbox] {
 .investment-table td {
     text-align: center;
     vertical-align: middle;
+}
+
+.details-table{
+    font-size: 15px;
 }

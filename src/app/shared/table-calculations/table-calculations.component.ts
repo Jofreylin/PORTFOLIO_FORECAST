@@ -25,6 +25,8 @@ export class TableCalculationsComponent {
     monthlyContribution: false,
     monthlyNewShares: false,
     newSharesFromContributions: true,
+    yearEndNewBalanceBeforeTaxes: true,
+    yearEndNewBalance: true,
     afterDrip: true
   };
 

@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;0,1000;1,600&display=swap');
 
-
-
-html, body{
+html,
+body {
     /* background-color: rgb(249, 250, 254); */
     height: 100%;
     margin: 0;
@@ -11,24 +10,30 @@ html, body{
     min-height: 100vh;
 }
 
-*{
-    font-family: 'Nunito', sans-serif ;
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.card,
+.card-header,
+.card-body,
+.card-footer {
+    border-color: transparent !important;
+    background-color: white !important;
+    border-radius: 20px;
 }
 
 .card {
-    border-color: transparent !important;
     position: relative;
     width: 100%;
-    background-color: white;
-    border-radius: 20px;
     opacity: 1;
 }
 
-.light-border{
+.light-border {
     border: 2px solid #f5f4f4 !important
 }
 
-.custom-shadow{
+.custom-shadow {
     /* border: 2px solid rgb(214, 214, 214) !important; */
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
@@ -56,6 +61,7 @@ html, body{
 
 label {
     font-size: 12px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -64,7 +70,9 @@ label {
     border-radius: 18px !important;
 }
 
-input, select, textarea{
+input,
+select,
+textarea {
     border-radius: 18px !important;
 }
 
@@ -92,12 +100,12 @@ a:hover {
     color: #000000;
     text-transform: uppercase !important;
     font-size: bold !important;
-    border-radius: 18px !important;    
+    border-radius: 18px !important;
 }
 
 .tooltip {
     background-color: #ffffff !important;
-    border-radius: 18px !important;    
+    border-radius: 18px !important;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
@@ -105,31 +113,38 @@ a:hover {
 
 .tooltip::after {
     color: white !important;
-    border:  #000000 transparent transparent !important;
+    border: #000000 transparent transparent !important;
 }
 
-.katex{
+.katex {
     font-weight: bold;
 }
 
-.katex-container{
+.katex-container {
     margin-bottom: 10px;
 }
 
-.mat-mdc-dialog-surface, .mdc-dialog__surface{
+.mat-mdc-dialog-surface,
+.mdc-dialog__surface {
     overflow: hidden !important;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     background-color: white;
     color: black !important;
 }
 
-.mat-horizontal-stepper-wrapper, .mat-vertical-stepper-wrapper {
+.mat-horizontal-stepper-wrapper,
+.mat-vertical-stepper-wrapper {
     background-color: white;
 }
 
-.mat-step-icon-selected{
-    background-color: green !important;
+.mat-step-icon-selected {
+    background-color: #157347 !important;
 }
 
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}

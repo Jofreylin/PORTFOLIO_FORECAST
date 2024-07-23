@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonLayoutComponent } from './layouts/common-layout/common-layout.component';
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HowToComponent } from './pages/how-to/how-to.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppComponent,
     CommonLayoutComponent,
     HomeComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    HowToComponent
   ],
   imports: [
     CommonModule,

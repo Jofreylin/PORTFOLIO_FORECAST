@@ -20,19 +20,19 @@
                             </thead>
                             <tbody>
                                 <tr *ngFor="let data of filteredData">
-                                    <td>After {{data.year}} year</td>
+                                    <td class="first-column">After {{data.year}} year</td>
                                     <td>{{ data.annualDividendIncome | currency }}</td>
                                     <td>{{ data.frequencyIncomeDividend | currency }}</td>
                                     <td>{{data.afterDRIP | currency}}</td>
                                     <td>{{data.yearEndInvested | currency}}</td>
-                                    <td>{{data.yearEndNewBalance | currency}}</td>
+                                    <td class="last-column">{{data.yearEndNewBalance | currency}}</td>
                                 </tr>
                             </tbody>
                             <tfoot>
-                                <tr>
-                                    <td colspan="1" class="fw-bold pt-5">Total value added to Portfolio</td>
+                                <tr class="">
+                                    <td colspan="1" class="fw-bold pt-4">Total value added to Portfolio</td>
                                     <td colspan="4" ></td>
-                                    <td colspan="1" class="fw-bold pt-5">{{valueAddedToPortfolio | currency}}</td>
+                                    <td colspan="1" class="fw-bold pt-4">{{valueAddedToPortfolio | currency}}</td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -99,6 +99,18 @@
                             After DRIP
                         </label>
                     </div>
+                    <div class="form-check me-4">
+                        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="showingColumns.yearEndNewBalanceBeforeTaxes">
+                        <label class="form-check-label">
+                            Year-End New Balance
+                        </label>
+                    </div>
+                    <div class="form-check me-4">
+                        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="showingColumns.yearEndNewBalance">
+                        <label class="form-check-label">
+                            Year-End New Balance After Taxes
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,7 +118,7 @@
             <div class="card  light-border">
                 <div class="card-body ">
                     <div class="table-responsive" style="width: 100%; max-height: 70vh;">
-                        <table class="table table-borderless table-hover table-sm">
+                        <table class="table table-borderless table-hover details-table">
                             <thead>
                                 <tr>
                                     <th class="text-center head-first">Year</th>
@@ -129,8 +141,8 @@
                                     <th *ngIf="showingColumns.afterDrip">After DRIP</th>
                                     <th>Year-End Shares Owned</th>
                                     <th>Year-End Stock Price</th>
-                                    <th>Year-End New Balance</th>
-                                    <th>Year-End New Balance After Taxes</th>
+                                    <th *ngIf="showingColumns.yearEndNewBalanceBeforeTaxes">Year-End New Balance</th>
+                                    <th *ngIf="showingColumns.yearEndNewBalance">Year-End New Balance After Taxes</th>
                                     <th>Year-End Invested</th>
                                     <th class="head-last">Year-End Return</th>
                                 </tr>
@@ -163,8 +175,8 @@
                                     </td>
                                     <td>{{ data.yearEndSharesOwned | number:'1.5-5' }}</td>
                                     <td>{{ data.yearEndStockPrice | currency }}</td>
-                                    <td>{{data.yearEndNewBalanceBeforeTaxes | currency}}</td>
-                                    <td>{{ data.yearEndNewBalance | currency }}</td>
+                                    <td *ngIf="showingColumns.yearEndNewBalanceBeforeTaxes">{{data.yearEndNewBalanceBeforeTaxes | currency}}</td>
+                                    <td *ngIf="showingColumns.yearEndNewBalance">{{ data.yearEndNewBalance | currency }}</td>
                                     <td>{{ data.yearEndInvested | currency }}</td>
                                     <td class="last-column">{{ data.yearEndReturn | currency }}</td>
                                 </tr>

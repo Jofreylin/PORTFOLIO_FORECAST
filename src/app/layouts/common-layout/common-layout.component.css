@@ -18,9 +18,10 @@
 }
 
 .nav-item a{
-    color: white !important;
+    color: #157347 !important;
     border-radius: 15px;
-    background: #76b095;
+    /* background: #76b095; */
+    border: 2px solid #f5f4f4 !important;
     font-weight: bold;
     padding-left: 35px !important;
     padding-right: 35px !important;
@@ -29,9 +30,27 @@
 }
 
 .nav-item .active {
-    background: #157347;
+    /* background: #157347; */
+    color: white !important;
+    background-color: #157347 ;
 }
 
 .nav-item a:hover:not(.active) {
-    background-color: rgba(3, 68, 3, 0.649) ;
+    color: white !important;
+    background-color: #157347 ;
+}
+
+.navbar-brand{
+    color: #157347;
+    font-weight: 800;
+}
+
+.navbar-brand span{
+    color: black;
+}
+
+.navbar-toggler{
+    border-radius: 20px;
+    color: #157347 ;
+    border: 0px;
 }
