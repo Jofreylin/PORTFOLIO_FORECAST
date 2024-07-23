@@ -16,6 +16,8 @@ import { CommonLayoutComponent } from './layouts/common-layout/common-layout.com
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HowToComponent } from './pages/how-to/how-to.component';
+import { DividendCagrPageComponent } from './pages/how-to/dividend-cagr-page/dividend-cagr-page.component';
+import { ShareCagrPageComponent } from './pages/how-to/share-cagr-page/share-cagr-page.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { HowToComponent } from './pages/how-to/how-to.component';
     CommonLayoutComponent,
     HomeComponent,
     CalculatorComponent,
-    HowToComponent
+    HowToComponent,
+    DividendCagrPageComponent,
+    ShareCagrPageComponent
   ],
   imports: [
     CommonModule,
