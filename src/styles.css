@@ -3,7 +3,6 @@
 html,
 body {
     /* background-color: rgb(249, 250, 254); */
-    height: 100%;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -12,6 +11,10 @@ body {
 
 * {
     font-family: 'Nunito', sans-serif;
+}
+
+.btn, a {
+    font-size: 15px;
 }
 
 .card,
