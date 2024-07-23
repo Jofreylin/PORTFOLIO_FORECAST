@@ -4,6 +4,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { CommonLayoutComponent } from './layouts/common-layout/common-layout.component';
 import { HowToComponent } from './pages/how-to/how-to.component';
+import { DividendCagrPageComponent } from './pages/how-to/dividend-cagr-page/dividend-cagr-page.component';
+import { ShareCagrPageComponent } from './pages/how-to/share-cagr-page/share-cagr-page.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
       {
         path: 'how-to',
         component: HowToComponent
+      },
+      {
+        path: 'how-to/dividend-cagr',
+        component: DividendCagrPageComponent
+      },
+      {
+        path: 'how-to/share-cagr',
+        component: ShareCagrPageComponent
       }
     ]
   }

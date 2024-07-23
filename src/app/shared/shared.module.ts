@@ -45,7 +45,9 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
     TableCalculationsComponent,
     CagrCalculationModalComponent,
     KatexDirective,
-    AreaChartComponent
+    AreaChartComponent,
+    HowToDividendCagrComponent,
+    HowToSharePriceCagrComponent
   ],
   providers: [
     provideNgxMask(),

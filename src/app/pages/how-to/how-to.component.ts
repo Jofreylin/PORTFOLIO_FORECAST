@@ -7,18 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HowToComponent {
 
-  routes: {title:string, description: string}[] = [
+  routes: {title:string, description: string, route:string}[] = [
     {
       title: 'Dividend CAGR',
-      description: 'Si eso mimo'
+      description: 'Dividend Compound Annual Growth Rate',
+      route: '/how-to/dividend-cagr'
     },
     {
-      title: 'Dividend CAGR',
-      description: 'Si eso mimo'
-    },
-    {
-      title: 'Dividend CAGR',
-      description: 'Si eso mimo'
+      title: 'Share Price CAGR',
+      description: 'Share Price Compound Annual Growth Rate',
+      route: '/how-to/share-cagr'
     }
   ];
 

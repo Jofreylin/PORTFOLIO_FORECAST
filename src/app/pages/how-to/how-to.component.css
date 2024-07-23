@@ -1,7 +1,17 @@
-.card-body{
-    cursor: pointer;
+.card-body, .card{
     background-color: #157347 !important;
     color: white;
     
 }
 
+.card-body h5{
+    font-weight: bold !important;
+}
+
+.card-body:hover{
+    background-color: #0b9555 !important;
+}
+
+a{
+    font-weight: bold;
+}
