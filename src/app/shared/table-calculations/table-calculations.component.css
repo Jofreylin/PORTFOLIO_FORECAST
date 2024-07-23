@@ -1,0 +1,75 @@
+.division-row {
+    font-weight: bold;
+    border-radius: 10px !important;
+}
+
+.division-row td {
+    background-color: rgba(98, 159, 98, 0.53) !important;
+}
+
+.total-value-row td {
+    background-color: #15734793 !important;
+}
+
+.first-column{
+    border-end-start-radius: 15px;
+    border-start-start-radius: 15px;
+}
+
+.last-column{
+    border-end-end-radius: 15px;
+    border-start-end-radius: 15px;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 10px;
+}
+
+th {
+    vertical-align: middle;
+    /* background-color: rgb(241, 241, 241); */
+}
+
+
+
+/* .head-first{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.head-last{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+} */
+
+input[type=checkbox] {
+    filter: hue-rotate(254deg);
+}
+
+
+.investment-table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.investment-table th,
+.investment-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.details-table{
+    font-size: 15px;
+}

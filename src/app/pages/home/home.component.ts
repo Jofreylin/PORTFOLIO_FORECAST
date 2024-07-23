@@ -1,25 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { CalculationService } from '../../services/calculation.service';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  years: number[] = [];
-  forecastData: any[] = [];
-
-  constructor(private investmentService: CalculationService) { }
-
-  ngOnInit(): void {
-
-
-    for(let i = 1; i <= 40; i++){
-      this.years.push(i)
-    }
-
-    this.forecastData = this.investmentService.calculateForecast(this.years);
-  }
 }
