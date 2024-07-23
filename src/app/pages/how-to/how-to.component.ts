@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class HowToComponent {
 
+  routes: {title:string, description: string}[] = [
+    {
+      title: 'Dividend CAGR',
+      description: 'Si eso mimo'
+    },
+    {
+      title: 'Dividend CAGR',
+      description: 'Si eso mimo'
+    },
+    {
+      title: 'Dividend CAGR',
+      description: 'Si eso mimo'
+    }
+  ];
+
 }
