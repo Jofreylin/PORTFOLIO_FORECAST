@@ -113,7 +113,12 @@ a:hover {
     overflow: hidden !important;
 }
 
+mat-dialog-content{
+    background-color: white !important;
+}
+
 .accordion-button:not(.collapsed){
     background-color: white;
     color: black !important;
 }
+
