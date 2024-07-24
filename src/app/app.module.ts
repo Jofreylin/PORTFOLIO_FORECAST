@@ -18,6 +18,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { HowToComponent } from './pages/how-to/how-to.component';
 import { DividendCagrPageComponent } from './pages/how-to/dividend-cagr-page/dividend-cagr-page.component';
 import { ShareCagrPageComponent } from './pages/how-to/share-cagr-page/share-cagr-page.component';
+import { DisclaimerComponent } from './pages/disclaimer/disclaimer.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ShareCagrPageComponent } from './pages/how-to/share-cagr-page/share-cag
     CalculatorComponent,
     HowToComponent,
     DividendCagrPageComponent,
-    ShareCagrPageComponent
+    ShareCagrPageComponent,
+    DisclaimerComponent
   ],
   imports: [
     CommonModule,
