@@ -47,6 +47,7 @@ export class TableCalculationsComponent {
 
   valueAddedToPortfolio: number = 0;
   distributionFrequencyDescription: string = '';
+  forecastLastRow: any;
 
   chartInvestmentData: number[] = [];
   chartContributionsData: number[] = [];
@@ -92,7 +93,7 @@ export class TableCalculationsComponent {
     if(lastIndex < 0){
       return;
     }
-
+    this.forecastLastRow = this.filteredData[lastIndex];
     this.valueAddedToPortfolio = this.filteredData[lastIndex]?.yearEndNewBalance - this.filteredData[lastIndex]?.yearEndInvested;
     this.distributionFrequencyDescription = this.filteredData[lastIndex]?.distributionFrequencyDescription;
   }

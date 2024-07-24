@@ -6,7 +6,7 @@ import { EChartsOption } from 'echarts';
   templateUrl: './area-chart.component.html',
   styleUrl: './area-chart.component.css'
 })
-export class AreaChartComponent {
+export class AreaChartComponent implements OnChanges {
 
   @Input() investmentData: number[] = [];
   @Input() contributionsData: number[] = [];

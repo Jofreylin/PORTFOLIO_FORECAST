@@ -6,10 +6,10 @@ declare var $: any;
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'PORTFOLIO_FORECAST';
 
-  ngOnInit():void {
+  ngOnInit(): void {
 
     if (typeof $ === 'undefined') {
       return;
@@ -17,10 +17,10 @@ export class AppComponent implements OnInit{
 
     $(function () {
       $('body').tooltip({
-          selector: '[data-toggle="tooltip"]'
+        selector: '[data-toggle="tooltip"]'
       }).click(function () {
         $('.tooltip.show').removeClass(".tooltip.show");
       });
-     })
+    })
   }
 }

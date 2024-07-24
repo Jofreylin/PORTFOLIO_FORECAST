@@ -73,3 +73,7 @@ input[type=checkbox] {
 .details-table{
     font-size: 15px;
 }
+
+h6{
+    font-weight: bold;
+}
