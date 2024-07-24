@@ -1,7 +1,7 @@
-<div class="container mb-4">
+<div class="container mb-5">
     <div class="row m-0 justify-content-center">
         <div class="col-12 mb-3 ps-4">
-            <h2>Dividend and Stock Returns Calculator</h2>
+            <h2>Dividend and Stock Returns Forecaster</h2>
             <h6>See how your investments grow over time using compound interest.</h6>
         </div>
         <div class="col-12">
@@ -41,8 +41,8 @@
                             </select>
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Dividend Distribution Annual Growth Rate"
-                            data-bs-placement="top" title="Dividend distribution Annual Growth Rate">Dividend CAGR (%) </label>
+                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Dividend Compound Annual Growth Rate"
+                            data-bs-placement="top" title="Dividend Compound Annual Growth Rate">Dividend CAGR (%) </label>
                             
                             <div class="input-group">
                                 <input type="text" suffix="%"  mask="separator.5"
@@ -53,8 +53,8 @@
                             </div>
                         </div>
                         <div class="col-md-3 mb-3 ">
-                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Share Price Distribution Annual Growth Rate"
-                            data-bs-placement="top" title="Share Price Distribution Annual Growth Rate">Share Price CAGR (%)</label>
+                            <label class="form-label" data-bs-toggle="tooltip" data-toggle="tooltip" data-title="Share Price Compound Annual Growth Rate"
+                            data-bs-placement="top" title="Share Price Compound Annual Growth Rate">Share Price CAGR (%)</label>
                             <div class="input-group">
                                 <input type="text" suffix="%"  mask="separator.5"
                                 thousandSeparator="," class="form-control" placeholder="12%" formControlName="sharePriceCAGR">
@@ -72,11 +72,11 @@
                             <label class="form-label">Dividend Reinvestment Plan (DRIP)</label>
                             <div class="form-check form-switch ms-3">
                                 <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                     formControlName="drip">
+                                    formControlName="drip">
                             </div>
                         </div>
                         <div class="col mb-3 text-end d-flex align-items-end justify-content-end">
-                            <button class="btn btn-success me-4 mt-4" (click)="generateForecast()">Generate Forecast</button>
+                            <button class="btn btn-success me-4 mt-4" (click)="generateForecast()">Generate</button>
                         </div>
                     </form>
                 </div>

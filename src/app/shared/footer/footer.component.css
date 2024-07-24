@@ -5,3 +5,8 @@ footer{
 h5, h6{
     margin: 0;
 }
+
+.disclaimer-section a{
+    color: #157347 ;
+    font-weight: bold;
+}

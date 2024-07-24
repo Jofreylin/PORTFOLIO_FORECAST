@@ -6,6 +6,7 @@ import { CommonLayoutComponent } from './layouts/common-layout/common-layout.com
 import { HowToComponent } from './pages/how-to/how-to.component';
 import { DividendCagrPageComponent } from './pages/how-to/dividend-cagr-page/dividend-cagr-page.component';
 import { ShareCagrPageComponent } from './pages/how-to/share-cagr-page/share-cagr-page.component';
+import { DisclaimerComponent } from './pages/disclaimer/disclaimer.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
       {
         path: 'calculator',
         component: CalculatorComponent
+      },
+      {
+        path: "disclaimer",
+        component: DisclaimerComponent
       },
       {
         path: 'how-to',
