@@ -1,0 +1,9 @@
+.conta-hero{
+    height: 50vh !important;
+}
+
+@media screen and (max-width: 600px){
+    .conta-hero{
+        height: 70vh !important;
+    }
+}
