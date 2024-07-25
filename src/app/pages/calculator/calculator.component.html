@@ -7,7 +7,7 @@
         <div class="col-12">
             <div class="card  light-border">
                 <div class="card-body">
-                    <form class="row align-items-center " [formGroup]="valuesForm">
+                    <form class="row align-items-center " (ngSubmit)="generateForecast()" [formGroup]="valuesForm">
                         <div class="col-md-3 mb-3 ">
                             <label class="form-label">Average Share Price</label>
                             <input type="text" prefix="$"  mask="separator.2"
@@ -26,7 +26,7 @@
                         <div class="col-md-3 mb-3 ">
                             <label class="form-label">Holding Years</label>
                             <input type="text"  mask="separator.0" thousandSeparator=","
-                                class="form-control" placeholder="25" formControlName="years">
+                                class="form-control" placeholder="25" formControlName="years" appHighlightInvalid>
                         </div>
                         <div class="col-md-3 mb-3 ">
                             <label class="form-label">Dividend Yield Expected (%)</label>
@@ -75,8 +75,9 @@
                                     formControlName="drip">
                             </div>
                         </div>
-                        <div class="col mb-3 text-end d-flex align-items-end justify-content-end">
-                            <button class="btn btn-success me-4 mt-4" (click)="generateForecast()">Generate</button>
+                        <div class="col mb-3 text-end d-flex align-items-end justify-content-end d-print-none">
+                            <button class="btn btn-success me-4 mt-4"  type="submit">Generate</button>
+                            <a class="btn btn-light me-4 mt-4" routerLink="/how-to">Need Help?</a>
                         </div>
                     </form>
                 </div>

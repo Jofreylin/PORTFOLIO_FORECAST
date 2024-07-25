@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row m-0 justify-content-center align-items" *ngIf="forecastData.length > 0">
-        <div class="col-12 mb-5">
+        <div class="col-12 mb-5 d-print-none">
             <div class="card light-border">
                 <div class="card-body text-center">
                     <h6 class="my-2">After {{forecastLastRow.year}} year(s)</h6>
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="col-12 mb-5">
-            <div class="card light-border">
+            <div class="card light-border d-print-none">
                 <div class="card-body">
                     <app-area-chart [investmentData]="chartInvestmentData" [contributionsData]="chartContributionsData"
                     [labels]="chartLabels"></app-area-chart>
@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 mb-5 ">
+        <div class="col-12 mb-5 d-print-none">
             <div class="card ">
                 <div class="card-body  d-flex flex-wrap justify-content-between">
                     <div class="form-check me-4">
@@ -139,10 +139,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 mb-5">
+        <div class="col-12 mb-5 ">
             <div class="card  light-border">
                 <div class="card-body ">
-                    <div class="table-responsive" style="width: 100%; max-height: 70vh;">
+                    <div class="table-responsive" style="width: 100%; ">
                         <table class="table table-borderless table-hover details-table">
                             <thead>
                                 <tr>

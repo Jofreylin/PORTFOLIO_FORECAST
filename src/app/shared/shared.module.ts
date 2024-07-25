@@ -16,6 +16,7 @@ import * as echarts from 'echarts';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { MatStepperModule} from '@angular/material/stepper';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
+import { HighlightInvalidDirective } from './directives/highlight-invalid.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
     KatexDirective,
     HowToDividendCagrComponent,
     HowToSharePriceCagrComponent,
-    AreaChartComponent
+    AreaChartComponent,
+    HighlightInvalidDirective
   ],
   imports: [
     CommonModule,
@@ -47,7 +49,8 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
     KatexDirective,
     AreaChartComponent,
     HowToDividendCagrComponent,
-    HowToSharePriceCagrComponent
+    HowToSharePriceCagrComponent,
+    HighlightInvalidDirective
   ],
   providers: [
     provideNgxMask(),

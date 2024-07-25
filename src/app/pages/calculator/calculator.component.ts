@@ -41,7 +41,7 @@ export class CalculatorComponent implements AfterViewInit {
       averageSharePrice:[null],
       investmentAmount:[null],
       monthlyContribution:[null],
-      years: [null],
+      years: [null, Validators.required],
       expectedDividendYield:[null],
       annualTaxRate:[null],
       dividendCAGR:[null],
@@ -64,6 +64,12 @@ export class CalculatorComponent implements AfterViewInit {
   }
 
   generateForecast(){
+
+    if(this.valuesForm.invalid){
+      this.valuesForm.markAllAsTouched();
+      return;
+    }
+
     const values: ForecastPost = this.valuesForm.getRawValue();
 
     this.saveForm(values);
