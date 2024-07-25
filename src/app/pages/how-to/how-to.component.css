@@ -1,7 +1,9 @@
 .card-body, .card{
     background-color: #157347 !important;
-    color: white;
-    
+}
+
+.card-body h5, .card-body h6{
+    color: white  !important;
 }
 
 .card-body h5{

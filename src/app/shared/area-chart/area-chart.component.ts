@@ -1,27 +1,43 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { EChartsOption } from 'echarts';
+import * as echarts from 'echarts';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-area-chart',
   templateUrl: './area-chart.component.html',
-  styleUrl: './area-chart.component.css'
+  styleUrls: ['./area-chart.component.css']
 })
-export class AreaChartComponent implements OnChanges {
+export class AreaChartComponent implements OnChanges, OnInit {
 
   @Input() investmentData: number[] = [];
   @Input() contributionsData: number[] = [];
   @Input() labels: string[] = [];
-
+  
   public chartOptions!: EChartsOption | null;
+  private chartInstance: any;
+  @ViewChild('chart', { static: true }) chartElement!: ElementRef;
+
+  private wasDarkMode: boolean = false;
+
+  constructor(private themeService: ThemeService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['investmentData'] || changes['contributionsData'] || changes['labels']) {
-      this.setChartOptions();
+      this.setChartOptions(this.wasDarkMode);
+      this.updateChart();
     }
   }
 
-  setChartOptions(): void {
+  ngOnInit(): void {
+    this.themeService.isDarkMode$.subscribe(isDarkMode => {
+      this.wasDarkMode = isDarkMode;
+      this.setChartOptions(isDarkMode);
+      this.initChart(isDarkMode);
+    });
+  }
 
+  setChartOptions(isDarkMode: boolean = false): void {
     this.chartOptions = {
       tooltip: {
         trigger: 'axis',
@@ -33,7 +49,10 @@ export class AreaChartComponent implements OnChanges {
         }
       },
       legend: {
-        data: ['Investment Growth', 'Annual Contributions']
+        data: ['Investment Growth', 'Annual Contributions'],
+        textStyle: {
+          color: isDarkMode ? '#ffffff' : '#000000'
+        }
       },
       toolbox: {
         show: true,
@@ -41,7 +60,6 @@ export class AreaChartComponent implements OnChanges {
           dataZoom: {
             yAxisIndex: 'none'
           }
-          //saveAsImage: {}
         }
       },
       grid: {
@@ -54,12 +72,18 @@ export class AreaChartComponent implements OnChanges {
         {
           type: 'category',
           boundaryGap: false,
-          data: this.labels
+          data: this.labels,
+          axisLabel: {
+            color: isDarkMode ? '#ffffff' : '#000000'
+          }
         }
       ],
       yAxis: [
         {
-          type: 'value'
+          type: 'value',
+          axisLabel: {
+            color: isDarkMode ? '#ffffff' : '#000000'
+          }
         }
       ],
       series: [
@@ -70,13 +94,13 @@ export class AreaChartComponent implements OnChanges {
           stack: 'Total',
           data: this.investmentData,
           areaStyle: {
-            color: 'rgba(144, 238, 144, 0.5)' // Light green area
+            color: 'rgba(144, 238, 144, 0.5)'
           },
           itemStyle: {
-            color: 'rgba(34, 139, 34, 1)' // Dark green line
+            color: 'rgba(34, 139, 34, 1)'
           },
           lineStyle: {
-            color: 'rgba(34, 139, 34, 1)' // Dark green line
+            color: 'rgba(34, 139, 34, 1)'
           }
         },
         {
@@ -85,16 +109,27 @@ export class AreaChartComponent implements OnChanges {
           smooth: true,
           data: this.contributionsData,
           areaStyle: {
-            color: 'rgba(173, 216, 230, 1)' // Light blue area
+            color: 'rgba(173, 216, 230, 1)'
           },
           itemStyle: {
-            color: 'rgba(70, 130, 180, 1)' // Dark blue line
+            color: 'rgba(70, 130, 180, 1)'
           },
           lineStyle: {
-            color: 'rgba(70, 130, 180, 1)' // Dark blue line
+            color: 'rgba(70, 130, 180, 1)'
           }
         }
       ]
     };
+  }
+
+  initChart(isDarkMode: boolean = false): void {
+    this.chartInstance = echarts.init(this.chartElement.nativeElement, isDarkMode ? 'chart-dark' : null);
+    this.updateChart();
+  }
+
+  updateChart(): void {
+    if (this.chartInstance) {
+      this.chartInstance.setOption(this.chartOptions);
+    }
   }
 }
