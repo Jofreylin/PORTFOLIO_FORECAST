@@ -12,7 +12,7 @@
     background-color: var(--navbar-background-color);
     border-end-end-radius: 40px;
     border-end-start-radius: 40px;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .nav-item {
@@ -52,7 +52,7 @@
 
 .navbar-toggler{
     border-radius: 20px;
-    color: var(--navbar-hover-text-color) !important;
+    color: var(--navbar-text-color) !important;
     border: 0px;
 }
 
