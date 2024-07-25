@@ -174,8 +174,8 @@ h3 {
 }
 
 .invalid-input{
-    border: 3px solid #fe4b78;
-    background-color: #fe104c39;
+    border: 2px solid #ff101039;
+    background-color: #ff00004b;
 }
 
 @keyframes shake {
