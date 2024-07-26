@@ -8,6 +8,7 @@ import { DividendCagrPageComponent } from './pages/how-to/dividend-cagr-page/div
 import { ShareCagrPageComponent } from './pages/how-to/share-cagr-page/share-cagr-page.component';
 import { DisclaimerComponent } from './pages/disclaimer/disclaimer.component';
 import { ForecasterExplanationComponent } from './pages/how-to/forecaster-explanation/forecaster-explanation.component';
+import { CompoundInterestComponent } from './pages/how-to/compound-interest/compound-interest.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: 'how-to/forecaster-exp',
         component: ForecasterExplanationComponent
+      },
+      {
+        path: 'how-to/compound-interest',
+        component: CompoundInterestComponent
       }
     ]
   }

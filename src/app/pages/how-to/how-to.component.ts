@@ -14,6 +14,11 @@ export class HowToComponent {
       route: '/how-to/forecaster-exp'
     },
     {
+      title: 'Compound Interest',
+      description: 'What is compound interest and how it works',
+      route: '/how-to/compound-interest'
+    },
+    {
       title: 'Dividend CAGR',
       description: 'How to calculate Dividend Compound Annual Growth Rate',
       route: '/how-to/dividend-cagr'
