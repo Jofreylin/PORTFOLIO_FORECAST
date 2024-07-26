@@ -4,6 +4,7 @@ import { TableCalculationsComponent } from '../../shared/table-calculations/tabl
 import { ForecastPost, ValuesCAGR } from '../../utils/models/forecast';
 import { MatDialog } from '@angular/material/dialog';
 import { CagrCalculationModalComponent } from '../../shared/cagr-calculation-modal/cagr-calculation-modal.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-calculator',
@@ -34,8 +35,27 @@ export class CalculatorComponent implements AfterViewInit {
   lastCARG!: ValuesCAGR;
 
   constructor(private fb: FormBuilder,
-    private dialog: MatDialog
+    private dialog: MatDialog, private titleService: Title, private metaService: Meta
   ) { 
+
+    this.titleService.setTitle('Dividend and Stock Returns Forecaster - Grow Your Investments');
+    
+    this.metaService.addTags([
+      { name: 'description', content: 'Use our Dividend and Stock Returns Forecaster to see how your investments can grow over time using compound interest. Calculate potential returns with various inputs for average share price, initial investment amount, monthly contribution, holding years, and more.' },
+      { name: 'keywords', content: 'dividend, stock returns, forecaster, investment, compound interest, share price, initial investment, monthly contribution, CAGR, DRIP' },
+      { name: 'author', content: 'Jofreylin Perez Valdez' },
+      { property: 'og:title', content: 'Dividend and Stock Returns Forecaster - Grow Your Investments' },
+      { property: 'og:description', content: 'See how your investments can grow over time using compound interest with our Dividend and Stock Returns Forecaster. Input your data to calculate potential returns.' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://forecaster.byjofrey.com/calculator' },
+      { property: 'og:image', content: 'https://forecaster.byjofrey.com/assets/images/principal.png' },
+      { property: 'og:site_name', content: 'By Jofrey' },
+      // { name: 'twitter:card', content: 'summary_large_image' },
+      // { name: 'twitter:title', content: 'Dividend and Stock Returns Forecaster - Grow Your Investments' },
+      // { name: 'twitter:description', content: 'Calculate your potential investment returns using our Dividend and Stock Returns Forecaster with compound interest.' },
+      // { name: 'twitter:image', content: 'https://www.yourwebsite.com/path/to/forecaster-image.png' },
+      // { name: 'twitter:site', content: '@yourtwitterhandle' }
+    ]);
 
     this.valuesForm = this.fb.group({
       averageSharePrice:[null],
