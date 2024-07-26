@@ -8,135 +8,191 @@
                 and how to use the forecaster effectively:</p>
             <div class="mt-5">
                 <h5>Step-by-Step Guide</h5>
-                <ul class="list-unstyled mb-4">
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>1. Average Share Price</strong></label>
-                            <input type="text" prefix="$" mask="separator.2" thousandSeparator="," class="form-control"
-                                placeholder="$0.00">
-                        </div>
-                        <p>The typical price of a single share of the stock, ETF, or the average price of multiple
-                            stocks and ETFs in your portfolio.</p>
-                        <p><strong>How to Use:</strong> Enter the average price per share. This value can be found on
-                            your trading platform or by calculating the average price of the stocks and ETFs in your
-                            portfolio.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>2. Initial Investment Amount</strong></label>
-                            <input type="text" prefix="$" mask="separator.2" thousandSeparator="," class="form-control"
-                                placeholder="$0.00">
-                        </div>
-                        <p>The amount of money you plan to invest initially when you start.</p>
-                        <p><strong>How to Use:</strong> Enter the total amount you plan to invest at the beginning. This
-                            should be the amount you are ready to commit as your initial investment.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>3. Monthly Contribution</strong></label>
-                            <input type="text" prefix="$" mask="separator.2" thousandSeparator="," class="form-control"
-                                placeholder="$0.00">
-                        </div>
-                        <p>The amount of money you plan to invest every month after your initial investment.</p>
-                        <p><strong>How to Use:</strong> Enter the amount you will add to your investment each month.
-                            Regular contributions can significantly impact your investment growth.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>4. Holding Years</strong></label>
-                            <input type="number" class="form-control" placeholder="0">
-                        </div>
-                        <p>The number of years you plan to hold your investment in the stock, ETF, or the average
-                            holding period for your portfolio of multiple stocks and ETFs.</p>
-                        <p><strong>How to Use:</strong> Enter the number of years you plan to keep your investment.
-                            Longer holding periods can lead to higher returns due to compounding.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>5. Dividend Yield Expected (%)</strong></label>
-                            <input type="text" suffix="%" mask="separator.2" class="form-control" placeholder="0.00%">
-                        </div>
-                        <p>The annual dividend income expressed as a percentage of the share price for the stock, ETF,
-                            or the average dividend yield of multiple stocks and ETFs in your portfolio.</p>
-                        <p><strong>How to Use:</strong> Enter the expected dividend yield percentage. This information
-                            can be found on financial websites or your trading platform.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>6. Dividend Distribution Frequency</strong></label>
-                            <select class="form-control">
-                                <option value="monthly">Monthly</option>
-                                <option value="quarterly">Quarterly</option>
-                                <option value="annually">Annually</option>
-                            </select>
-                        </div>
-                        <p>How often dividends are paid out by the stock, ETF, or the average distribution frequency of
-                            multiple stocks and ETFs in your portfolio (e.g., monthly, quarterly, annually).</p>
-                        <p><strong>How to Use:</strong> Select the frequency of dividend payments. This can usually be
-                            found in the stock or ETF details.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>7. Dividend CAGR (%)</strong></label>
-                            <input type="text" suffix="%" mask="separator.2" class="form-control" placeholder="0.00%">
-                        </div>
-                        <p>Compound Annual Growth Rate of the dividend, which shows how much the dividend is expected to
-                            grow each year for the stock, ETF, or the average dividend growth rate of multiple stocks
-                            and ETFs in your portfolio.</p>
-                        <p><strong>How to Use:</strong> Enter the expected growth rate of the dividend. This can be
-                            found in historical performance data of the stock or ETF.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>10. Share Price CAGR (%)</strong></label>
-                            <input type="text" suffix="%" mask="separator.2" class="form-control" placeholder="0.00%">
-                        </div>
-                        <p>Compound Annual Growth Rate of the share price, which shows how much the share price of the
-                            stock, ETF, or the average growth rate of multiple stocks and ETFs in your portfolio is
-                            expected to grow each year.</p>
-                        <p><strong>How to Use:</strong> Enter the expected annual growth rate of the share price. This
-                            can be based on historical data or future projections.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>8. Annual Tax Rate (%)</strong></label>
-                            <input type="text" suffix="%" mask="separator.2" class="form-control" placeholder="0.00%">
-                        </div>
-                        <p>The percentage of your investment returns that will be paid as taxes each year.</p>
-                        <p><strong>How to Use:</strong> Enter your annual tax rate. This will vary based on your tax
-                            jurisdiction and personal tax situation.</p>
-                    </li>
-
-                    <li class="mb-5">
-                        <div class="mb-3 col-md-4">
-                            <label class="form-label"><strong>9. Dividend Reinvestment Plan (DRIP)</strong></label>
-                            <div class="form-check form-switch ms-3">
-                                <input class="form-check-input" type="checkbox" id="dripSwitch">
-                                <label class="form-check-label" for="dripSwitch"></label>
+                <ul class="list-unstyled mb-4 mt-3 row mx-0 px-0">
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label class="form-label"><strong>1. Average Share Price</strong></label>
+                                    <input type="text" prefix="$" mask="separator.2" thousandSeparator="," class="form-control"
+                                        placeholder="$0.00">
+                                </div>
+                                <p>The typical price of a single share of the stock, ETF, or the average price of multiple
+                                    stocks and ETFs in your portfolio.</p>
+                                <p><strong>How to Use:</strong> Enter the average price per share. This value can be found on
+                                    your trading platform or by calculating the average price of the stocks and ETFs in your
+                                    portfolio.</p>
                             </div>
                         </div>
-                        <p>A plan that automatically reinvests the dividends to purchase more shares of the stock, ETF,
-                            or reinvest in multiple stocks and ETFs in your portfolio instead of paying out cash.</p>
-                        <p><strong>How to Use:</strong> Toggle the switch to enable or disable the DRIP. Enabling it
-                            means your dividends will be reinvested, potentially increasing your returns over time.</p>
                     </li>
 
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>2. Initial Investment Amount</strong></label>
+                                    <input type="text" prefix="$" mask="separator.2" thousandSeparator="," class="form-control"
+                                        placeholder="$0.00">
+                                </div>
+                                <p>The amount of money you plan to invest initially when you start.</p>
+                                <p><strong>How to Use:</strong> Enter the total amount you plan to invest at the beginning. This
+                                    should be the amount you are ready to commit as your initial investment.</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
 
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>3. Monthly Contribution</strong></label>
+                                    <input type="text" prefix="$" mask="separator.2" thousandSeparator="," class="form-control"
+                                        placeholder="$0.00">
+                                </div>
+                                <p>The amount of money you plan to invest every month after your initial investment.</p>
+                                <p><strong>How to Use:</strong> Enter the amount you will add to your investment each month.
+                                    Regular contributions can significantly impact your investment growth.</p>
+                            </div>
+                        </div>
 
+                    </li>
 
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>4. Holding Years</strong></label>
+                                    <input type="number" class="form-control" placeholder="0">
+                                </div>
+                                <p>The number of years you plan to hold your investment in the stock, ETF, or the average
+                                    holding period for your portfolio of multiple stocks and ETFs.</p>
+                                <p><strong>How to Use:</strong> Enter the number of years you plan to keep your investment.
+                                    Longer holding periods can lead to higher returns due to compounding.</p>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>5. Dividend Yield Expected (%)</strong></label>
+                                    <input type="text" suffix="%" mask="separator.2" class="form-control" placeholder="0.00%">
+                                </div>
+                                <p>The annual dividend income expressed as a percentage of the share price for the stock, ETF,
+                                    or the average dividend yield of multiple stocks and ETFs in your portfolio.</p>
+                                <p><strong>How to Use:</strong> Enter the expected dividend yield percentage. This information
+                                    can be found on financial websites or your trading platform.</p>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>6. Dividend Distribution Frequency</strong></label>
+                                    <select class="form-control">
+                                        <option value="monthly">Monthly</option>
+                                        <option value="quarterly">Quarterly</option>
+                                        <option value="annually">Annually</option>
+                                    </select>
+                                </div>
+                                <p>How often dividends are paid out by the stock, ETF, or the average distribution frequency of
+                                    multiple stocks and ETFs in your portfolio (e.g., monthly, quarterly, annually).</p>
+                                <p><strong>How to Use:</strong> Select the frequency of dividend payments. This can usually be
+                                    found in the stock or ETF details.</p>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>7. Dividend CAGR (%)</strong></label>
+                                    <input type="text" suffix="%" mask="separator.2" class="form-control" placeholder="0.00%">
+                                </div>
+                                <p>Compound Annual Growth Rate of the dividend, which shows how much the dividend is expected to
+                                    grow each year for the stock, ETF, or the average dividend growth rate of multiple stocks
+                                    and ETFs in your portfolio.</p>
+                                <p><strong>How to Use:</strong> Enter the expected growth rate of the dividend. This can be
+                                    found in historical performance data of the stock or ETF.</p>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>10. Share Price CAGR (%)</strong></label>
+                                    <input type="text" suffix="%" mask="separator.2" class="form-control" placeholder="0.00%">
+                                </div>
+                                <p>Compound Annual Growth Rate of the share price, which shows how much the share price of the
+                                    stock, ETF, or the average growth rate of multiple stocks and ETFs in your portfolio is
+                                    expected to grow each year.</p>
+                                <p><strong>How to Use:</strong> Enter the expected annual growth rate of the share price. This
+                                    can be based on historical data or future projections.</p>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>8. Annual Tax Rate (%)</strong></label>
+                                    <input type="text" suffix="%" mask="separator.2" class="form-control" placeholder="0.00%">
+                                </div>
+                                <p>The percentage of your investment returns that will be paid as taxes each year.</p>
+                                <p><strong>How to Use:</strong> Enter your annual tax rate. This will vary based on your tax
+                                    jurisdiction and personal tax situation.</p>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>9. Dividend Reinvestment Plan (DRIP)</strong></label>
+                                    <div class="form-check form-switch ms-3">
+                                        <input class="form-check-input" type="checkbox" id="dripSwitch">
+                                        <label class="form-check-label" for="dripSwitch"></label>
+                                    </div>
+                                </div>
+                                <p>A plan that automatically reinvests the dividends to purchase more shares of the stock, ETF,
+                                    or reinvest in multiple stocks and ETFs in your portfolio instead of paying out cash.</p>
+                                <p><strong>How to Use:</strong> Toggle the switch to enable or disable the DRIP. Enabling it
+                                    means your dividends will be reinvested, potentially increasing your returns over time.</p>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="mb-5 col-md-4 ">
+                        <div class="card light-border">
+                            <div class="card-body">
+                                <div class="mb-3 ">
+                                    <label class="form-label"><strong>10. Generate Forecast</strong></label>
+                                </div>
+                                <p>Once all inputs are filled, click the Generate button to see the forecast of your investment growth
+                                    over time.</p>
+                            </div>
+                        </div>
+                        
+                    </li>
 
                 </ul>
-                <h5>Generate Forecast</h5>
-                <p>Once all inputs are filled, click the Generate button to see the forecast of your investment growth
-                    over time.</p>
             </div>
             <div class="mt-5 d-flex align-items-center">
                 <a class="btn btn-success me-4" routerLink="/calculator">

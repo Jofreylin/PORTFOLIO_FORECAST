@@ -2,3 +2,8 @@ input[type=checkbox] {
     transform: scale(1.9);
     filter: hue-rotate(254deg);
 }
+
+.card{
+    height: 370px;
+    max-height: 400px;
+}
