@@ -17,7 +17,7 @@
     --tooltip-text-color: #000000;
     --tooltip-shadow-color: rgba(0, 0, 0, 0.21);
     --invalid-input-border-color: #ff101039;
-    --invalid-input-background-color: #ff00004b;
+    --invalid-input-background-color: #ff000011;
     --input-background-color: #fff;
     --input-text-color: #000;
     --input-border-color: #ced4da;
@@ -41,7 +41,7 @@
 body.dark-mode {
     --background-color: #121212;
     --text-color: #ffffff;
-    --primary-color: #007bff;
+    --primary-color: #157347;
     --secondary-color: #495057;
     --link-color: #ccc;
     --link-hover-color: #fff;
@@ -55,13 +55,13 @@ body.dark-mode {
     --tooltip-text-color: #ccc;
     --tooltip-shadow-color: rgba(0, 0, 0, 0.5);
     --invalid-input-border-color: #ff101039;
-    --invalid-input-background-color: #ff00004b;
-    --input-background-color: #333;
+    --invalid-input-background-color: #ff000011;
+    --input-background-color: #3737374d; 
     --input-text-color: #ccc;
     --input-border-color: #666;
     --navbar-background-color: #1c1c1c;
     --navbar-text-color: #ccc;
-    --navbar-hover-background-color: #495057;
+    --navbar-hover-background-color: #157347;
     --navbar-hover-text-color: #fff;
     --division-row-background-color: rgba(50, 80, 50, 0.53); 
     --total-value-row-background-color: rgba(30, 80, 30, 0.7);
@@ -71,7 +71,7 @@ body.dark-mode {
     --placeholder-color: #b5b5b5;
     --mat-dialog-background-color: #1e1e1e;
     --mat-dialog-text-color: #fff;
-    --disabled-input-background-color: #898989;
+    --disabled-input-background-color: #333;
     --disabled-input-text-color: #b5b5b5;
     --disabled-input-border-color: #444;
 }
@@ -114,10 +114,7 @@ a {
     border-radius: 20px;
 }
 
-.btn-light {
-    background-color: var(--card-background-color);
-    color: var(--text-color);
-}
+
 
 .card,
 .card-header,
@@ -230,18 +227,21 @@ input[disabled], textarea[disabled], select[disabled], .form-control[disabled], 
     overflow: hidden !important;
 }
 
-
-
 /* Specific styles for mat-dialog */
-mat-dialog-content {
-    background-color: var(--mat-dialog-background-color) !important;
-    color: var(--mat-dialog-text-color);
+.mdc-dialog__surface {
+    background-color: var(--card-background-color) !important;
 }
 
-mat-dialog-title, mat-dialog-actions {
-    background-color: var(--mat-dialog-background-color) !important;
+.mat-mdc-dialog-title {
     color: var(--text-color) !important;
-    border: 0px !important;
+}
+
+mat-dialog-content {
+    color: var(--text-color) !important;
+}
+
+mat-dialog-actions {
+    color: var(--text-color) !important;
 }
 
 .accordion-button:not(.collapsed) {

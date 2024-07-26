@@ -86,7 +86,8 @@ export class CalculatorComponent implements AfterViewInit {
 
     this.dialog.open(CagrCalculationModalComponent,{
       data:{
-        values
+        values,
+        showExplanation: true
       },
       disableClose: true,
       maxWidth: '80vw'

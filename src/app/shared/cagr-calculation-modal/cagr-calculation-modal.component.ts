@@ -22,7 +22,7 @@ export class CagrCalculationModalComponent {
 
   constructor(private dialogRef: MatDialogRef<CagrCalculationModalComponent>,
     private fb:  FormBuilder,
-    @Inject(MAT_DIALOG_DATA) public data: { values: ValuesCAGR }) {
+    @Inject(MAT_DIALOG_DATA) public data: { values: ValuesCAGR, showExplanation: boolean }) {
       this.title = `Calculate ${data?.values?.type == 1 ? 'Dividend' : data?.values?.type == 2 ? 'Share Price' : ''} CAGR (Compound Annual Growth Rate)`;
 
       this.calculationForm = this.fb.group({
@@ -64,7 +64,7 @@ export class CagrCalculationModalComponent {
 
   close(succeeded: boolean = false){
 
-    if(this.calculationForm.get('calculatedCAGR')?.value < 0){
+    if(succeeded && this.calculationForm.get('calculatedCAGR')?.value < 0){
       return;
     }
 

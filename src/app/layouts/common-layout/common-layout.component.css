@@ -12,7 +12,7 @@
     background-color: var(--navbar-background-color);
     border-end-end-radius: 40px;
     border-end-start-radius: 40px;
-    margin-bottom: 3rem !important;
+    margin-bottom: 3rem ;
 }
 
 .nav-item {
@@ -42,7 +42,7 @@
 }
 
 .navbar-brand {
-    color: var(--navbar-text-color);
+    color: var(--primary-color);
     font-weight: 800;
 }
 
@@ -69,6 +69,6 @@ main {
 
 @media screen and (max-width: 600px){
     .navbar{
-        margin-bottom: 0;
+        margin-bottom: 1rem;
     }
 }
