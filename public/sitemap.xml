@@ -6,14 +6,43 @@
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://forecaster.byjofrey.com/home</loc>
+    <lastmod>2024-07-26</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://forecaster.byjofrey.com/calculator</loc>
     <lastmod>2024-07-26</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://forecaster.byjofrey.com/disclaimer</loc>
+    <lastmod>2024-07-26</lastmod>
+    <priority>0.50</priority>
   </url>
   <url>
     <loc>https://forecaster.byjofrey.com/how-to</loc>
     <lastmod>2024-07-26</lastmod>
     <priority>0.70</priority>
   </url>
-  <!-- Add more URLs as needed -->
+  <url>
+    <loc>https://forecaster.byjofrey.com/how-to/dividend-cagr</loc>
+    <lastmod>2024-07-26</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://forecaster.byjofrey.com/how-to/share-cagr</loc>
+    <lastmod>2024-07-26</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://forecaster.byjofrey.com/how-to/forecaster-exp</loc>
+    <lastmod>2024-07-26</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://forecaster.byjofrey.com/how-to/compound-interest</loc>
+    <lastmod>2024-07-26</lastmod>
+    <priority>0.60</priority>
+  </url>
 </urlset>

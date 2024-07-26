@@ -2,3 +2,11 @@ input[type=checkbox] {
     transform: scale(1.9);
     filter: hue-rotate(254deg);
 }
+
+.card{
+    height: 350px;
+}
+
+label{
+    font-size: 14px;
+}
