@@ -12,6 +12,11 @@ export class KatexDirective implements OnChanges {
 
   ngOnChanges() {
     if (this.appKatex) {
+
+      if(typeof document === 'undefined'){
+        return;
+      }
+
       katex.render(this.appKatex, this.el.nativeElement, {
         throwOnError: false
       });

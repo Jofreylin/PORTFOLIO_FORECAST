@@ -1,4 +1,4 @@
-#chart {
-    max-width: 650px;
+.chart {
     margin: 35px auto;
+    width: 100% !important;
 }

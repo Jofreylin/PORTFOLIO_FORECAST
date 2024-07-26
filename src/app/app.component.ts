@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { ThemeService } from './services/theme.service';
 declare var $: any;
 
 @Component({
@@ -6,21 +7,20 @@ declare var $: any;
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
-  title = 'PORTFOLIO_FORECAST';
+export class AppComponent implements OnInit, AfterViewInit {
+  
+  isDarkMode = false;
 
-  ngOnInit(): void {
+  constructor(private themeService: ThemeService) {}
 
-    if (typeof $ === 'undefined') {
-      return;
-    }
+  ngOnInit() {
+    
+  }
 
-    $(function () {
-      $('body').tooltip({
-        selector: '[data-toggle="tooltip"]'
-      }).click(function () {
-        $('.tooltip.show').removeClass(".tooltip.show");
-      });
-    })
+  ngAfterViewInit(): void {
+    this.themeService.isDarkMode$.subscribe(isDark => {
+      this.isDarkMode = isDark;
+    });
+    this.themeService.applyInitialTheme();
   }
 }

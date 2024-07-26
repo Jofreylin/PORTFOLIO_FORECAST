@@ -19,6 +19,8 @@ import { HowToComponent } from './pages/how-to/how-to.component';
 import { DividendCagrPageComponent } from './pages/how-to/dividend-cagr-page/dividend-cagr-page.component';
 import { ShareCagrPageComponent } from './pages/how-to/share-cagr-page/share-cagr-page.component';
 import { DisclaimerComponent } from './pages/disclaimer/disclaimer.component';
+import { ForecasterExplanationComponent } from './pages/how-to/forecaster-explanation/forecaster-explanation.component';
+import { CompoundInterestComponent } from './pages/how-to/compound-interest/compound-interest.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { DisclaimerComponent } from './pages/disclaimer/disclaimer.component';
     HowToComponent,
     DividendCagrPageComponent,
     ShareCagrPageComponent,
-    DisclaimerComponent
+    DisclaimerComponent,
+    ForecasterExplanationComponent,
+    CompoundInterestComponent
   ],
   imports: [
     CommonModule,
