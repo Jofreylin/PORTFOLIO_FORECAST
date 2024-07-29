@@ -1,0 +1,41 @@
+{
+    "Comment": "General template",
+    "OriginalXlfFile": [
+        {
+            "SkipStep": false
+        },
+        {
+            "Path": "C:/Users/jperezv/Desktop/Repositories/PORTFOLIO_FORECAST/public/locale/messages.xlf"
+        }
+    ],
+    "PreviousTranslationsFiles": [
+        {
+            "SkipStep": false
+        },
+        {
+            "Files": [
+                {
+                    "Path": "C:/Users/jperezv/Desktop/Repositories/PORTFOLIO_FORECAST/public/locale/messages.es.xlf"
+                }
+            ]
+        }
+    ],
+    "RemainigTranslationsFile": [
+        {
+            "SkipStep": false
+        },
+        {
+            "Path": "C:/Users/jperezv/Desktop/Repositories/PORTFOLIO_FORECAST/public/locale/ReminTrans.csv"
+        }
+    ],
+    "FinalXlfFile": [
+        {
+            "SkipStep": false
+        },
+        {
+            "Path": "C:/Users/jperezv/Desktop/Repositories/PORTFOLIO_FORECAST/public/locale/mesages.es-ES.xlf"
+        }
+    ],
+    "ExclusionsFromManual": [
+    ]
+}

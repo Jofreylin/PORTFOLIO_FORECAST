@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="7890367100871534070" datatype="html">
@@ -8,42 +8,42 @@
           <context context-type="sourcefile">src/app/layouts/common-layout/common-layout.component.html</context>
           <context context-type="linenumber">16,17</context>
         </context-group>
-      </trans-unit>
+      <target>Pronosticador</target></trans-unit>
       <trans-unit id="2066679880088196758" datatype="html">
         <source>How to</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layouts/common-layout/common-layout.component.html</context>
           <context context-type="linenumber">19,20</context>
         </context-group>
-      </trans-unit>
+      <target>Cómo</target></trans-unit>
       <trans-unit id="1694073859578581253" datatype="html">
         <source>Dividend and Stock Returns Forecaster</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-      </trans-unit>
+      <target>Pronosticador de dividendos y rentabilidad de acciones</target></trans-unit>
       <trans-unit id="1307135798027184865" datatype="html">
         <source>See how your investments grow over time using compound interest.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
-      </trans-unit>
+      <target>Vea cómo sus inversiones crecen con el tiempo utilizando el interés compuesto.</target></trans-unit>
       <trans-unit id="3795076997189286678" datatype="html">
         <source>Average Share Price</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">12,13</context>
         </context-group>
-      </trans-unit>
+      <target>Precio medio de las acciones</target></trans-unit>
       <trans-unit id="194811327086836678" datatype="html">
         <source>Initial Investment Amount</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">16,17</context>
         </context-group>
-      </trans-unit>
+      <target>Monto de inversión inicial</target></trans-unit>
       <trans-unit id="2508778802268478228" datatype="html">
         <source>Monthly Contribution</source>
         <context-group purpose="location">
@@ -58,21 +58,21 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">136,137</context>
         </context-group>
-      </trans-unit>
+      <target>Contribución mensual</target></trans-unit>
       <trans-unit id="375300754966225223" datatype="html">
         <source>Holding Years <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">24,25</context>
         </context-group>
-      </trans-unit>
+      <target>Años de tenencia</target></trans-unit>
       <trans-unit id="1990622852576067708" datatype="html">
         <source>Dividend Yield Expected (%)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">28,29</context>
         </context-group>
-      </trans-unit>
+      <target>Rendimiento de dividendos esperado (%)</target></trans-unit>
       <trans-unit id="3955376350650825765" datatype="html">
         <source>Dividend Distribution Frequency</source>
         <context-group purpose="location">
@@ -83,56 +83,56 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">79,80</context>
         </context-group>
-      </trans-unit>
+      <target>Frecuencia de distribución de dividendos</target></trans-unit>
       <trans-unit id="3413683949529276097" datatype="html">
         <source>Select one</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">34,35</context>
         </context-group>
-      </trans-unit>
+      <target>Seleccione uno</target></trans-unit>
       <trans-unit id="6091546479479638551" datatype="html">
         <source>Dividend CAGR (%)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">39,40</context>
         </context-group>
-      </trans-unit>
+      <target>CAGR de dividendos (%)</target></trans-unit>
       <trans-unit id="3927051608674136943" datatype="html">
         <source>Share Price CAGR (%)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">46,47</context>
         </context-group>
-      </trans-unit>
+      <target>Tasa de crecimiento anual compuesta (CAGR) del precio de las acciones (%)</target></trans-unit>
       <trans-unit id="214660894415795525" datatype="html">
         <source>Annual Tax Rate (%)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">53,54</context>
         </context-group>
-      </trans-unit>
+      <target>Tasa impositiva anual (%)</target></trans-unit>
       <trans-unit id="7249626104289062101" datatype="html">
         <source>Dividend Reinvestment Plan (DRIP)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">57,58</context>
         </context-group>
-      </trans-unit>
+      <target>Plan de Reinversión de Dividendos (DRIP)</target></trans-unit>
       <trans-unit id="5193539160604294602" datatype="html">
         <source>Generate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">63,64</context>
         </context-group>
-      </trans-unit>
+      <target>Generar</target></trans-unit>
       <trans-unit id="6154417421205739475" datatype="html">
         <source>Need Help?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.html</context>
           <context context-type="linenumber">64,65</context>
         </context-group>
-      </trans-unit>
+      <target>¿Necesitas ayuda?</target></trans-unit>
       <trans-unit id="3350216026636846610" datatype="html">
         <source>Annually</source>
         <context-group purpose="location">
@@ -147,7 +147,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">42,43</context>
         </context-group>
-      </trans-unit>
+      <target>Anualmente</target></trans-unit>
       <trans-unit id="6762743264882388498" datatype="html">
         <source>Monthly</source>
         <context-group purpose="location">
@@ -158,7 +158,7 @@
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">95,96</context>
         </context-group>
-      </trans-unit>
+      <target>Mensual</target></trans-unit>
       <trans-unit id="6942253714523157846" datatype="html">
         <source>Quarterly</source>
         <context-group purpose="location">
@@ -169,7 +169,7 @@
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">96,97</context>
         </context-group>
-      </trans-unit>
+      <target>Trimestral</target></trans-unit>
       <trans-unit id="5346720578628705978" datatype="html">
         <source>Dividend and Stock Returns Forecaster - Grow Your Investments</source>
         <context-group purpose="location">
@@ -180,35 +180,35 @@
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
           <context context-type="linenumber">47</context>
         </context-group>
-      </trans-unit>
+      <target>Pronosticador de dividendos y rentabilidad de las acciones: haga crecer sus inversiones</target></trans-unit>
       <trans-unit id="7302166962530857134" datatype="html">
         <source>Use our Dividend and Stock Returns Forecaster to see how your investments can grow over time using compound interest. Calculate potential returns with various inputs for average share price, initial investment amount, monthly contribution, holding years, and more.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
           <context context-type="linenumber">44</context>
         </context-group>
-      </trans-unit>
+      <target>Utilice nuestro pronosticador de dividendos y rentabilidad de las acciones para ver cómo pueden crecer sus inversiones con el tiempo utilizando el interés compuesto. Calcule las rentabilidades potenciales con diversos datos como el precio medio de las acciones, el importe de la inversión inicial, la contribución mensual, los años de tenencia y más.</target></trans-unit>
       <trans-unit id="4907727529030286359" datatype="html">
         <source>dividend, stock returns, forecaster, investment, compound interest, share price, initial investment, monthly contribution, CAGR, DRIP</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
           <context context-type="linenumber">45</context>
         </context-group>
-      </trans-unit>
+      <target>dividendo, rentabilidad de las acciones, pronosticador, inversión, interés compuesto, precio de la acción, inversión inicial, contribución mensual, CAGR, DRIP</target></trans-unit>
       <trans-unit id="2092932773061568591" datatype="html">
         <source>Jofreylin Perez Valdez</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
           <context context-type="linenumber">46</context>
         </context-group>
-      </trans-unit>
+      <target>Jofreylin Pérez Valdez</target></trans-unit>
       <trans-unit id="8519900296088409115" datatype="html">
         <source>See how your investments can grow over time using compound interest with our Dividend and Stock Returns Forecaster. Input your data to calculate potential returns.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
           <context context-type="linenumber">48</context>
         </context-group>
-      </trans-unit>
+      <target>Vea cómo sus inversiones pueden crecer con el tiempo utilizando el interés compuesto con nuestro pronosticador de dividendos y retornos de acciones. Ingrese sus datos para calcular los retornos potenciales.</target></trans-unit>
       <trans-unit id="3309141365072639679" datatype="html">
         <source>Web Storage is not supported in this environment.</source>
         <context-group purpose="location">
@@ -219,245 +219,245 @@
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
           <context context-type="linenumber">156</context>
         </context-group>
-      </trans-unit>
+      <target>El almacenamiento web no es compatible con este entorno.</target></trans-unit>
       <trans-unit id="2598703394778941061" datatype="html">
         <source>Disclaimer</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-      </trans-unit>
+      <target>Descargo de responsabilidad</target></trans-unit>
       <trans-unit id="6009227261013837359" datatype="html">
         <source>Please read this disclaimer carefully before using the web application.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
-      </trans-unit>
+      <target>Lea atentamente este descargo de responsabilidad antes de utilizar la aplicación web.</target></trans-unit>
       <trans-unit id="6596491313556398640" datatype="html">
         <source>By accessing or using this web application, you agree to be bound by the terms and conditions described below.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
           <context context-type="linenumber">6,7</context>
         </context-group>
-      </trans-unit>
+      <target>Al acceder o utilizar esta aplicación web, usted acepta estar sujeto a los términos y condiciones que se describen a continuación.</target></trans-unit>
       <trans-unit id="4993696286172152203" datatype="html">
         <source> The information provided by this web application is for general informational purposes only. All information on the application is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the application. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
           <context context-type="linenumber">10,13</context>
         </context-group>
-      </trans-unit>
+      <target>La información proporcionada por esta aplicación web es solo para fines informativos generales. Toda la información de la aplicación se proporciona de buena fe; sin embargo, no realizamos ninguna declaración ni garantía de ningún tipo, expresa o implícita, con respecto a la precisión, idoneidad, validez, confiabilidad, disponibilidad o integridad de cualquier información de la aplicación.</target></trans-unit>
       <trans-unit id="1076059189434513641" datatype="html">
         <source> This application provides tools for estimating the potential returns from dividend and stock investments. These tools are based on historical data and are designed to help you estimate potential returns. However, past performance is not indicative of future results. The results generated by this application are estimates and should not be relied upon as a basis for making investment decisions. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
           <context context-type="linenumber">16,19</context>
         </context-group>
-      </trans-unit>
+      <target>Esta aplicación proporciona herramientas para estimar los rendimientos potenciales de las inversiones en dividendos y acciones. Estas herramientas se basan en datos históricos y están diseñadas para ayudarle a estimar los rendimientos potenciales. Sin embargo, el rendimiento pasado no es indicativo de los resultados futuros. Los resultados generados por esta aplicación son estimaciones y no deben utilizarse como base para tomar decisiones de inversión.</target></trans-unit>
       <trans-unit id="4471035569370342680" datatype="html">
         <source> The information provided by this application does not constitute financial advice or investment recommendations. Users should seek the advice of a qualified financial advisor before making any investment decisions. The use of this application and the reliance on the information contained herein is solely at your own risk. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
           <context context-type="linenumber">23,25</context>
         </context-group>
-      </trans-unit>
+      <target>La información proporcionada por esta aplicación no constituye asesoramiento financiero ni recomendaciones de inversión. Los usuarios deben buscar el asesoramiento de un asesor financiero calificado antes de tomar cualquier decisión de inversión. El uso de esta aplicación y la confianza depositada en la información contenida en ella se realiza exclusivamente bajo su propio riesgo.</target></trans-unit>
       <trans-unit id="4977671119323709249" datatype="html">
         <source> We will not be liable for any losses and/or damages in connection with the use of our web application. By using our web application, you hereby consent to our disclaimer and agree to its terms. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
           <context context-type="linenumber">29,30</context>
         </context-group>
-      </trans-unit>
+      <target>No seremos responsables de ninguna pérdida o daño relacionado con el uso de nuestra aplicación web. Al utilizar nuestra aplicación web, usted acepta nuestro descargo de responsabilidad y sus términos.</target></trans-unit>
       <trans-unit id="5772381599291172088" datatype="html">
-        <source>Project your Investments&apos; Growth</source>
+        <source>Project your Investments' Growth</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-      </trans-unit>
+      <target>Proyecte el Crecimiento de sus Inversiones</target></trans-unit>
       <trans-unit id="3138282097540774016" datatype="html">
         <source>Determine how your money can grow over time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">5,7</context>
         </context-group>
-      </trans-unit>
+      <target>Determina cómo tu dinero puede crecer con el tiempo.</target></trans-unit>
       <trans-unit id="8661919011486055516" datatype="html">
         <source>Click Here</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
-      </trans-unit>
+      <target>Haga clic aquí</target></trans-unit>
       <trans-unit id="7824910864662409811" datatype="html">
         <source>Understanding Compound Interest</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">2,4</context>
         </context-group>
-      </trans-unit>
+      <target>Entendiendo el interés compuesto</target></trans-unit>
       <trans-unit id="8114937332520018856" datatype="html">
         <source>What is Compound Interest?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-      </trans-unit>
+      <target>¿Qué es el interés compuesto?</target></trans-unit>
       <trans-unit id="8523498316166279703" datatype="html">
         <source>Compound interest is the interest on a loan or deposit that is calculated based on both the initial principal and the accumulated interest from previous periods. It is a powerful concept in finance and investments because it allows your money to grow exponentially over time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">5,7</context>
         </context-group>
-      </trans-unit>
+      <target>El interés compuesto es el interés de un préstamo o depósito que se calcula en base tanto al capital inicial como al interés acumulado de períodos anteriores. Es un concepto poderoso en finanzas e inversiones porque permite que su dinero crezca exponencialmente con el tiempo.</target></trans-unit>
       <trans-unit id="7273306557067987256" datatype="html">
         <source>How does Compound Interest work?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">7,8</context>
         </context-group>
-      </trans-unit>
+      <target>¿Cómo funciona el interés compuesto?</target></trans-unit>
       <trans-unit id="7615990183920101617" datatype="html">
         <source>Compound interest works by reinvesting the interest earned, rather than paying it out. This means that in each period, the interest earned is added to the principal, so the principal amount grows, and more interest is earned in the next period. The formula for compound interest is:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">8,10</context>
         </context-group>
-      </trans-unit>
+      <target>El interés compuesto funciona reinvirtiendo el interés ganado, en lugar de pagarlo. Esto significa que en cada período, el interés ganado se suma al capital, por lo que el monto del capital aumenta y se gana más interés en el siguiente período. La fórmula para el interés compuesto es:</target></trans-unit>
       <trans-unit id="6551568991086808270" datatype="html">
         <source>Compound Interest Formula:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
-      </trans-unit>
+      <target>Fórmula de interés compuesto:</target></trans-unit>
       <trans-unit id="9035474834412315513" datatype="html">
         <source>Understanding the Formula:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
-      </trans-unit>
+      <target>Entendiendo la fórmula:</target></trans-unit>
       <trans-unit id="6589339527973405734" datatype="html">
         <source>The formula might seem complicated, but it can be broken down into simpler parts:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">21,22</context>
         </context-group>
-      </trans-unit>
+      <target>La fórmula puede parecer complicada, pero se puede dividir en partes más simples:</target></trans-unit>
       <trans-unit id="6932964676901976114" datatype="html">
         <source>Principal (P):</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
-      </trans-unit>
+      <target>Director (P):</target></trans-unit>
       <trans-unit id="5477116764412495895" datatype="html">
         <source>Interest Rate (r):</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
-      </trans-unit>
+      <target>Tasa de interés (r):</target></trans-unit>
       <trans-unit id="2400120334124577953" datatype="html">
         <source>Number of Times Compounded (n):</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
-      </trans-unit>
+      <target>Número de veces compuesto (n):</target></trans-unit>
       <trans-unit id="3930555462827789812" datatype="html">
         <source>Time (t):</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
-      </trans-unit>
+      <target>Tiempo (t):</target></trans-unit>
       <trans-unit id="8520221516346771417" datatype="html">
         <source>Accumulated Amount (A):</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
-      </trans-unit>
+      <target>Importe acumulado (A):</target></trans-unit>
       <trans-unit id="8385662839739761052" datatype="html">
         <source>To use the formula, you first convert the annual interest rate from a percentage to a decimal by dividing by 100. Then, you divide this rate by the number of compounding periods per year. Next, you add 1 to this value, raise the result to the power of the total number of compounding periods (n multiplied by t), and finally multiply by the principal amount (P).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">29,31</context>
         </context-group>
-      </trans-unit>
+      <target>Para usar la fórmula, primero convierte la tasa de interés anual de un porcentaje a un decimal dividiéndola por 100. Luego, divide esta tasa por el número de períodos de capitalización por año. Luego, suma 1 a este valor, eleva el resultado a la potencia del número total de períodos de capitalización (n multiplicado por t) y finalmente multiplica por el monto principal (P).</target></trans-unit>
       <trans-unit id="4674328119972990726" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Converting percentage to decimal:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">31,32</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="3840624239578053106" datatype="html">
         <source>Interest rates are often given as a percentage. To use the formula, you need to convert the percentage to a decimal. To do this, divide the percentage by 100. For example, if the annual interest rate is 5%, convert it to decimal form by dividing 5 by 100, which equals 0.05.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">32,34</context>
         </context-group>
-      </trans-unit>
+      <target>Las tasas de interés se expresan a menudo en forma de porcentaje. Para utilizar la fórmula, es necesario convertir el porcentaje a decimal. Para ello, divida el porcentaje por 100. Por ejemplo, si la tasa de interés anual es del 5 %, conviértala a forma decimal dividiendo 5 por 100, lo que da como resultado 0,05.</target></trans-unit>
       <trans-unit id="5067635927553627188" datatype="html">
         <source>Examples of Compound Interest</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">34,35</context>
         </context-group>
-      </trans-unit>
+      <target>Ejemplos de interés compuesto</target></trans-unit>
       <trans-unit id="2270200796967464406" datatype="html">
         <source>Let’s look at a few examples to better understand how compound interest works.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">35,37</context>
         </context-group>
-      </trans-unit>
+      <target>Veamos algunos ejemplos para entender mejor cómo funciona el interés compuesto.</target></trans-unit>
       <trans-unit id="3792010576984397250" datatype="html">
         <source>Example 1: Annual Compounding</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">37,38</context>
         </context-group>
-      </trans-unit>
+      <target>Ejemplo 1: capitalización anual</target></trans-unit>
       <trans-unit id="3386392615763991197" datatype="html">
         <source>Suppose you invest $1,000 at an annual interest rate of 5%, compounded annually for 10 years. Using the formula:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">38,39</context>
         </context-group>
-      </trans-unit>
+      <target>Supongamos que invierte 1000 dólares a una tasa de interés anual del 5%, compuesta anualmente durante 10 años. Utilizando la fórmula:</target></trans-unit>
       <trans-unit id="8089538901303145560" datatype="html">
         <source>After 10 years, your investment would grow to approximately $1,628.89.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">40,42</context>
         </context-group>
-      </trans-unit>
+      <target>Después de 10 años, su inversión crecería a aproximadamente $1,628.89.</target></trans-unit>
       <trans-unit id="3807382392909206020" datatype="html">
         <source>Example 2: Quarterly Compounding</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">42,43</context>
         </context-group>
-      </trans-unit>
+      <target>Ejemplo 2: capitalización trimestral</target></trans-unit>
       <trans-unit id="2809866256501681327" datatype="html">
         <source>Suppose you invest $1,000 at an annual interest rate of 5%, compounded quarterly for 10 years. Using the formula:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">43,44</context>
         </context-group>
-      </trans-unit>
+      <target>Supongamos que invierte 1000 dólares a una tasa de interés anual del 5%, compuesta trimestralmente durante 10 años. Utilizando la fórmula:</target></trans-unit>
       <trans-unit id="5693797902379811695" datatype="html">
         <source>After 10 years, your investment would grow to approximately $1,643.62.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.html</context>
           <context context-type="linenumber">45,47</context>
         </context-group>
-      </trans-unit>
+      <target>Después de 10 años, su inversión crecería a aproximadamente $1,643.62.</target></trans-unit>
       <trans-unit id="1553593611619010912" datatype="html">
         <source>Click here to use our forecaster</source>
         <context-group purpose="location">
@@ -468,14 +468,14 @@
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">188</context>
         </context-group>
-      </trans-unit>
+      <target>Haga clic aquí para utilizar nuestro pronosticador</target></trans-unit>
       <trans-unit id="1934224145102845561" datatype="html">
         <source>How to calculate Dividend Compound Annual Growth Rate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/dividend-cagr-page/dividend-cagr-page.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-      </trans-unit>
+      <target>Cómo calcular la tasa de crecimiento anual compuesta de dividendos</target></trans-unit>
       <trans-unit id="1637016657178419179" datatype="html">
         <source>Click here to use our CAGR calculator</source>
         <context-group purpose="location">
@@ -486,280 +486,280 @@
           <context context-type="sourcefile">src/app/pages/how-to/share-cagr-page/share-cagr-page.component.html</context>
           <context context-type="linenumber">8,9</context>
         </context-group>
-      </trans-unit>
+      <target>Haga clic aquí para utilizar nuestra calculadora CAGR</target></trans-unit>
       <trans-unit id="778219993014075516" datatype="html">
         <source>How to Use Our Investment Forecaster</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-      </trans-unit>
+      <target>Cómo utilizar nuestro pronosticador de inversiones</target></trans-unit>
       <trans-unit id="4389008621117317373" datatype="html">
         <source>An investment forecaster is a tool that provides an estimated projection of how your invested money could grow over time using the power of compound interest.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
-      </trans-unit>
+      <target>Un pronosticador de inversiones es una herramienta que proporciona una proyección estimada de cómo su dinero invertido podría crecer con el tiempo utilizando el poder del interés compuesto.</target></trans-unit>
       <trans-unit id="486801592094599929" datatype="html">
         <source>To use it, we have created an easy, user-friendly interface. Follow this guide to understand each input and how to use the forecaster effectively:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">7,8</context>
         </context-group>
-      </trans-unit>
+      <target>Para utilizarlo, hemos creado una interfaz sencilla y fácil de usar. Siga esta guía para comprender cada entrada y cómo utilizar el pronosticador de manera eficaz:</target></trans-unit>
       <trans-unit id="905076156769621089" datatype="html">
         <source>Step-by-Step Guide</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
-      </trans-unit>
+      <target>Guía paso por paso</target></trans-unit>
       <trans-unit id="1275240790286307112" datatype="html">
         <source>1. Average Share Price</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">16</context>
         </context-group>
-      </trans-unit>
+      <target>1. Precio medio de las acciones</target></trans-unit>
       <trans-unit id="3337933644100805517" datatype="html">
         <source>The typical price of a single share of the stock, ETF, or the average price of multiple stocks and ETFs in your portfolio.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">20,21</context>
         </context-group>
-      </trans-unit>
+      <target>El precio típico de una sola acción, ETF, o el precio promedio de múltiples acciones y ETF en su cartera.</target></trans-unit>
       <trans-unit id="8709482575195675879" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Enter the average price per share. This value can be found on your trading platform or by calculating the average price of the stocks and ETFs in your portfolio.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">22,23</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="3330517966057476589" datatype="html">
         <source>2. Initial Investment Amount</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">33</context>
         </context-group>
-      </trans-unit>
+      <target>2. Monto de inversión inicial</target></trans-unit>
       <trans-unit id="7095163625343721896" datatype="html">
         <source>The amount of money you plan to invest initially when you start.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">37,38</context>
         </context-group>
-      </trans-unit>
+      <target>La cantidad de dinero que planeas invertir inicialmente cuando comienzas.</target></trans-unit>
       <trans-unit id="2866036518168918006" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Enter the total amount you plan to invest at the beginning. This should be the amount you are ready to commit as your initial investment.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">38,39</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="3922826746475647025" datatype="html">
         <source>3. Monthly Contribution</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">48</context>
         </context-group>
-      </trans-unit>
+      <target>3. Contribución mensual</target></trans-unit>
       <trans-unit id="942249460241663270" datatype="html">
         <source>The amount of money you plan to invest every month after your initial investment.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">52,53</context>
         </context-group>
-      </trans-unit>
+      <target>La cantidad de dinero que planea invertir cada mes después de su inversión inicial.</target></trans-unit>
       <trans-unit id="967358287709213796" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Enter the amount you will add to your investment each month. Regular contributions can significantly impact your investment growth.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">53,54</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="5910038248829486475" datatype="html">
         <source>4. Holding Years</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">63</context>
         </context-group>
-      </trans-unit>
+      <target>4. Años de tenencia</target></trans-unit>
       <trans-unit id="8136568104407565478" datatype="html">
         <source>The number of years you plan to hold your investment in the stock, ETF, or the average holding period for your portfolio of multiple stocks and ETFs.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">66,67</context>
         </context-group>
-      </trans-unit>
+      <target>La cantidad de años que planea mantener su inversión en acciones, ETF, o el período de tenencia promedio de su cartera de múltiples acciones y ETF.</target></trans-unit>
       <trans-unit id="5769470019351575157" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Enter the number of years you plan to keep your investment. Longer holding periods can lead to higher returns due to compounding.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">68,69</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="7505431340821510464" datatype="html">
         <source>5. Dividend Yield Expected (%)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">78</context>
         </context-group>
-      </trans-unit>
+      <target>5. Rendimiento esperado del dividendo (%)</target></trans-unit>
       <trans-unit id="4924592624970301983" datatype="html">
         <source>The annual dividend income expressed as a percentage of the share price for the stock, ETF, or the average dividend yield of multiple stocks and ETFs in your portfolio.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">81,82</context>
         </context-group>
-      </trans-unit>
+      <target>El ingreso anual por dividendos expresado como un porcentaje del precio de las acciones, ETF o el rendimiento promedio de dividendos de múltiples acciones y ETF en su cartera.</target></trans-unit>
       <trans-unit id="7123213155675690487" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Enter the expected dividend yield percentage. This information can be found on financial websites or your trading platform.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">83,84</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="8793803508194083709" datatype="html">
         <source>6. Dividend Distribution Frequency</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">93</context>
         </context-group>
-      </trans-unit>
+      <target>6. Frecuencia de distribución de dividendos</target></trans-unit>
       <trans-unit id="2682358063789868578" datatype="html">
         <source>How often dividends are paid out by the stock, ETF, or the average distribution frequency of multiple stocks and ETFs in your portfolio (e.g., monthly, quarterly, annually).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">100,101</context>
         </context-group>
-      </trans-unit>
+      <target>Con qué frecuencia se pagan dividendos por acción, ETF, o la frecuencia de distribución promedio de múltiples acciones y ETF en su cartera (por ejemplo, mensual, trimestral, anual).</target></trans-unit>
       <trans-unit id="2486047822609247091" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Select the frequency of dividend payments. This can usually be found in the stock or ETF details.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">102,103</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="6323476100875397747" datatype="html">
         <source>7. Dividend CAGR (%)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">112</context>
         </context-group>
-      </trans-unit>
+      <target>7. CAGR de dividendos (%)</target></trans-unit>
       <trans-unit id="2012380649612457990" datatype="html">
         <source>Compound Annual Growth Rate of the dividend, which shows how much the dividend is expected to grow each year for the stock, ETF, or the average dividend growth rate of multiple stocks and ETFs in your portfolio.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">115,117</context>
         </context-group>
-      </trans-unit>
+      <target>Tasa de crecimiento anual compuesta del dividendo, que muestra cuánto se espera que crezca el dividendo cada año para la acción, el ETF o la tasa de crecimiento promedio del dividendo de múltiples acciones y ETF en su cartera.</target></trans-unit>
       <trans-unit id="8251015908726865040" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Enter the expected growth rate of the dividend. This can be found in historical performance data of the stock or ETF.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">118,119</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="3338342750126559516" datatype="html">
         <source>8. Share Price CAGR (%)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">128</context>
         </context-group>
-      </trans-unit>
+      <target>8. Tasa de crecimiento anual compuesta (CAGR) del precio de las acciones (%)</target></trans-unit>
       <trans-unit id="4774492771312032017" datatype="html">
         <source>Compound Annual Growth Rate of the share price, which shows how much the share price of the stock, ETF, or the average growth rate of multiple stocks and ETFs in your portfolio is expected to grow each year.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">131,133</context>
         </context-group>
-      </trans-unit>
+      <target>Tasa de crecimiento anual compuesta del precio de la acción, que muestra cuánto se espera que crezca cada año el precio de la acción, el ETF o la tasa de crecimiento promedio de múltiples acciones y ETF en su cartera.</target></trans-unit>
       <trans-unit id="4085821444220239653" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Enter the expected annual growth rate of the share price. This can be based on historical data or future projections.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">134,135</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="4800667695071983567" datatype="html">
         <source>9. Annual Tax Rate (%)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">144</context>
         </context-group>
-      </trans-unit>
+      <target>9. Tasa impositiva anual (%)</target></trans-unit>
       <trans-unit id="7623428240135189990" datatype="html">
         <source>The percentage of your investment returns that will be paid as taxes each year.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">147,148</context>
         </context-group>
-      </trans-unit>
+      <target>El porcentaje de su rendimiento de inversión que se pagará como impuestos cada año.</target></trans-unit>
       <trans-unit id="2296713350454728407" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Enter your annual tax rate. This will vary based on your tax jurisdiction and personal tax situation.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">148,149</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="1814401793371498137" datatype="html">
         <source>10. Dividend Reinvestment Plan (DRIP)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">158</context>
         </context-group>
-      </trans-unit>
+      <target>10. Plan de Reinversión de Dividendos (DRIP)</target></trans-unit>
       <trans-unit id="6042395417763887370" datatype="html">
         <source>A plan that automatically reinvests the dividends to purchase more shares of the stock, ETF, or reinvest in multiple stocks and ETFs in your portfolio instead of paying out cash.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">164,165</context>
         </context-group>
-      </trans-unit>
+      <target>Un plan que reinvierte automáticamente los dividendos para comprar más acciones, ETF o reinvertir en múltiples acciones y ETF en su cartera en lugar de pagar en efectivo.</target></trans-unit>
       <trans-unit id="281151868037474709" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>How to Use:<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> Toggle the switch to enable or disable the DRIP. Enabling it means your dividends will be reinvested, potentially increasing your returns over time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">166,167</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="7941495911637630945" datatype="html">
         <source>10. Generate Forecast</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">176</context>
         </context-group>
-      </trans-unit>
+      <target>10. Generar pronóstico</target></trans-unit>
       <trans-unit id="553751503358425616" datatype="html">
         <source>Once all inputs are filled, click the Generate button to see the forecast of your investment growth over time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.html</context>
           <context context-type="linenumber">178,179</context>
         </context-group>
-      </trans-unit>
+      <target>Una vez que todos los datos estén completos, haga clic en el botón Generar para ver el pronóstico del crecimiento de su inversión a lo largo del tiempo.</target></trans-unit>
       <trans-unit id="229884595039974203" datatype="html">
         <source>Explanations and formulas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-      </trans-unit>
+      <target>Explicaciones y fórmulas</target></trans-unit>
       <trans-unit id="4750079235167791788" datatype="html">
         <source>To determine the growth of your investments, we use multiple formulas and algorithms. Each one of them is detailed below.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.html</context>
           <context context-type="linenumber">5,6</context>
         </context-group>
-      </trans-unit>
+      <target>Para determinar el crecimiento de sus inversiones, utilizamos múltiples fórmulas y algoritmos. Cada uno de ellos se detalla a continuación.</target></trans-unit>
       <trans-unit id="6769561359061790736" datatype="html">
         <source>Click on the option that interests you the most, to learn more.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.html</context>
           <context context-type="linenumber">6,7</context>
         </context-group>
-      </trans-unit>
+      <target>Haz clic en la opción que más te interese, para conocer más.</target></trans-unit>
       <trans-unit id="187187500641108332" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{item.title}}"/></source>
         <context-group purpose="location">
@@ -774,49 +774,49 @@
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">2,3</context>
         </context-group>
-      </trans-unit>
+      <target/></trans-unit>
       <trans-unit id="3818596688589068807" datatype="html">
         <source>See how</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.html</context>
           <context context-type="linenumber">22,23</context>
         </context-group>
-      </trans-unit>
+      <target>Ver cómo</target></trans-unit>
       <trans-unit id="3415536293985720454" datatype="html">
         <source>How to calculate Share Price Compound Annual Growth Rate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/share-cagr-page/share-cagr-page.component.html</context>
           <context context-type="linenumber">4,5</context>
         </context-group>
-      </trans-unit>
+      <target>Cómo calcular la tasa de crecimiento anual compuesta del precio de las acciones</target></trans-unit>
       <trans-unit id="3426518955257258427" datatype="html">
         <source>Initial Value</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
-      </trans-unit>
+      <target>Valor inicial</target></trans-unit>
       <trans-unit id="115782112617253828" datatype="html">
         <source>Final Value</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">15,16</context>
         </context-group>
-      </trans-unit>
+      <target>Valor final</target></trans-unit>
       <trans-unit id="4302986368920891494" datatype="html">
         <source>Initial Year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">20,21</context>
         </context-group>
-      </trans-unit>
+      <target>Año inicial</target></trans-unit>
       <trans-unit id="1367267090110023735" datatype="html">
         <source>Final Year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">25,26</context>
         </context-group>
-      </trans-unit>
+      <target>Año final</target></trans-unit>
       <trans-unit id="2994581856917106295" datatype="html">
         <source>Number of Years</source>
         <context-group purpose="location">
@@ -827,49 +827,49 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">35,36</context>
         </context-group>
-      </trans-unit>
+      <target>Número de años</target></trans-unit>
       <trans-unit id="605577737681927397" datatype="html">
         <source>CAGR</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">35,36</context>
         </context-group>
-      </trans-unit>
+      <target>Tasa de crecimiento anual compuesta (CAGR)</target></trans-unit>
       <trans-unit id="7154029866583883999" datatype="html">
         <source>The CAGR can not be a negative number.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">45,46</context>
         </context-group>
-      </trans-unit>
+      <target>La CAGR no puede ser un número negativo.</target></trans-unit>
       <trans-unit id="7454056806466214239" datatype="html">
         <source>Formulas</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">53,54</context>
         </context-group>
-      </trans-unit>
+      <target>Fórmulas</target></trans-unit>
       <trans-unit id="7819314041543176992" datatype="html">
         <source>Close</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">64,65</context>
         </context-group>
-      </trans-unit>
+      <target>Cerca</target></trans-unit>
       <trans-unit id="3768927257183755959" datatype="html">
         <source>Save</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
           <context context-type="linenumber">65,66</context>
         </context-group>
-      </trans-unit>
+      <target>Ahorrar</target></trans-unit>
       <trans-unit id="1251309544529458513" datatype="html">
         <source>To calculate the Compound Annual Growth Rate (CAGR) of dividends, you can use the following formula:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/how-to-dividend-cagr/how-to-dividend-cagr.component.html</context>
           <context context-type="linenumber">1,2</context>
         </context-group>
-      </trans-unit>
+      <target>Para calcular la tasa de crecimiento anual compuesta (CAGR) de los dividendos, puede utilizar la siguiente fórmula:</target></trans-unit>
       <trans-unit id="5417526293563824601" datatype="html">
         <source>where:</source>
         <context-group purpose="location">
@@ -880,7 +880,7 @@
           <context context-type="sourcefile">src/app/shared/how-to-share-price-cagr/how-to-share-price-cagr.component.html</context>
           <context context-type="linenumber">3,4</context>
         </context-group>
-      </trans-unit>
+      <target>dónde:</target></trans-unit>
       <trans-unit id="1478315091371310932" datatype="html">
         <source>Divide the final value by the initial value. Take the result and raise it to the power of one divided by the number of years. Subtract one from this result to get the CAGR.</source>
         <context-group purpose="location">
@@ -891,7 +891,7 @@
           <context context-type="sourcefile">src/app/shared/how-to-share-price-cagr/how-to-share-price-cagr.component.html</context>
           <context context-type="linenumber">9,11</context>
         </context-group>
-      </trans-unit>
+      <target>Divida el valor final por el valor inicial. Toma el resultado y elévalo a la potencia de uno dividido por el número de años. Resta uno de este resultado para obtener la CAGR.</target></trans-unit>
       <trans-unit id="5788328554193284950" datatype="html">
         <source>Example Calculation</source>
         <context-group purpose="location">
@@ -902,14 +902,14 @@
           <context context-type="sourcefile">src/app/shared/how-to-share-price-cagr/how-to-share-price-cagr.component.html</context>
           <context context-type="linenumber">11,12</context>
         </context-group>
-      </trans-unit>
+      <target>Ejemplo de cálculo</target></trans-unit>
       <trans-unit id="2839998798387365029" datatype="html">
         <source>Suppose you want to calculate the Dividend CAGR for a stock whose dividend was $2 per share five years ago and is $3 today.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/how-to-dividend-cagr/how-to-dividend-cagr.component.html</context>
           <context context-type="linenumber">12,13</context>
         </context-group>
-      </trans-unit>
+      <target>Supongamos que desea calcular la CAGR del dividendo para una acción cuyo dividendo era de $2 por acción hace cinco años y es de $3 hoy.</target></trans-unit>
       <trans-unit id="7933995088398670949" datatype="html">
         <source>Using the formula:</source>
         <context-group purpose="location">
@@ -920,35 +920,35 @@
           <context context-type="sourcefile">src/app/shared/how-to-share-price-cagr/how-to-share-price-cagr.component.html</context>
           <context context-type="linenumber">18,19</context>
         </context-group>
-      </trans-unit>
+      <target>Usando la fórmula:</target></trans-unit>
       <trans-unit id="3932594434480251683" datatype="html">
         <source>So, the dividend grew at a compound annual growth rate of approximately 8.45% over the five-year period.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/how-to-dividend-cagr/how-to-dividend-cagr.component.html</context>
           <context context-type="linenumber">23,25</context>
         </context-group>
-      </trans-unit>
+      <target>Así, el dividendo creció a una tasa de crecimiento anual compuesta de aproximadamente el 8,45% durante el período de cinco años.</target></trans-unit>
       <trans-unit id="492511048513993453" datatype="html">
         <source>To calculate the Compound Annual Growth Rate (CAGR) of a stock share price, you can use the following formula:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/how-to-share-price-cagr/how-to-share-price-cagr.component.html</context>
           <context context-type="linenumber">1,2</context>
         </context-group>
-      </trans-unit>
+      <target>Para calcular la tasa de crecimiento anual compuesta (CAGR) del precio de una acción, puede utilizar la siguiente fórmula:</target></trans-unit>
       <trans-unit id="1433437854505172982" datatype="html">
         <source>Suppose you want to calculate the CAGR of a stock share price that was $100 five years ago and is $180 today.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/how-to-share-price-cagr/how-to-share-price-cagr.component.html</context>
           <context context-type="linenumber">12,13</context>
         </context-group>
-      </trans-unit>
+      <target>Supongamos que desea calcular la CAGR del precio de una acción que era de $100 hace cinco años y es de $180 hoy.</target></trans-unit>
       <trans-unit id="1087789607809094297" datatype="html">
-        <source>So, the stock&apos;s share price grew at a compound annual growth rate of approximately 12.47% over the five-year period.</source>
+        <source>So, the stock's share price grew at a compound annual growth rate of approximately 12.47% over the five-year period.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/how-to-share-price-cagr/how-to-share-price-cagr.component.html</context>
           <context context-type="linenumber">23,25</context>
         </context-group>
-      </trans-unit>
+      <target>Así, el precio de las acciones creció a una tasa de crecimiento anual compuesta de aproximadamente 12,47% durante el período de cinco años.</target></trans-unit>
       <trans-unit id="382510536657761133" datatype="html">
         <source>After <x id="INTERPOLATION" equiv-text="{{forecastLastRow.year}}"/> year(s)</source>
         <context-group purpose="location">
@@ -959,7 +959,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">48,49</context>
         </context-group>
-      </trans-unit>
+      <target>Después</target></trans-unit>
       <trans-unit id="6700773934583646920" datatype="html">
         <source>Total Investment</source>
         <context-group purpose="location">
@@ -970,7 +970,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">38,39</context>
         </context-group>
-      </trans-unit>
+      <target>Inversión total</target></trans-unit>
       <trans-unit id="6288383042516881215" datatype="html">
         <source>Portfolio Value</source>
         <context-group purpose="location">
@@ -981,28 +981,28 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">39,40</context>
         </context-group>
-      </trans-unit>
+      <target>Valor de la cartera</target></trans-unit>
       <trans-unit id="7090258614032289179" datatype="html">
         <source>Dividend Income</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">36,37</context>
         </context-group>
-      </trans-unit>
+      <target>Los ingresos por dividendos</target></trans-unit>
       <trans-unit id="3422772273790315797" datatype="html">
         <source>Reinvested Dividends</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">37,38</context>
         </context-group>
-      </trans-unit>
+      <target>Dividendos reinvertidos</target></trans-unit>
       <trans-unit id="4972411787057786464" datatype="html">
         <source>Total value added to Portfolio</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">58,59</context>
         </context-group>
-      </trans-unit>
+      <target>Valor total añadido a la cartera</target></trans-unit>
       <trans-unit id="357143991538946473" datatype="html">
         <source>Annual Dividend Per Share</source>
         <context-group purpose="location">
@@ -1013,7 +1013,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">131,132</context>
         </context-group>
-      </trans-unit>
+      <target>Dividendo anual por acción</target></trans-unit>
       <trans-unit id="7861303856975166103" datatype="html">
         <source>Frequency Income Dividend</source>
         <context-group purpose="location">
@@ -1024,7 +1024,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">134,135</context>
         </context-group>
-      </trans-unit>
+      <target>Frecuencia Ingresos Dividendos</target></trans-unit>
       <trans-unit id="2082067057663628691" datatype="html">
         <source>New Shares per Period</source>
         <context-group purpose="location">
@@ -1035,7 +1035,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">135,136</context>
         </context-group>
-      </trans-unit>
+      <target>Nuevas acciones por período</target></trans-unit>
       <trans-unit id="927837386254790438" datatype="html">
         <source>Monthly New Shares</source>
         <context-group purpose="location">
@@ -1046,7 +1046,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">137,138</context>
         </context-group>
-      </trans-unit>
+      <target>Nuevas acciones mensuales</target></trans-unit>
       <trans-unit id="2635157841435284205" datatype="html">
         <source>New Shares from Contributions</source>
         <context-group purpose="location">
@@ -1057,7 +1057,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">138,139</context>
         </context-group>
-      </trans-unit>
+      <target>Nuevas acciones provenientes de aportaciones</target></trans-unit>
       <trans-unit id="2286572368426739572" datatype="html">
         <source>After DRIP</source>
         <context-group purpose="location">
@@ -1068,7 +1068,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">139,140</context>
         </context-group>
-      </trans-unit>
+      <target>Después del DRIP</target></trans-unit>
       <trans-unit id="8169666566966386793" datatype="html">
         <source>Year-End New Balance</source>
         <context-group purpose="location">
@@ -1079,7 +1079,7 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">142,143</context>
         </context-group>
-      </trans-unit>
+      <target>New Balance de fin de año</target></trans-unit>
       <trans-unit id="6351841381442371958" datatype="html">
         <source>Year-End New Balance After Taxes</source>
         <context-group purpose="location">
@@ -1090,70 +1090,70 @@
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">143,144</context>
         </context-group>
-      </trans-unit>
+      <target>Balance de fin de año después de impuestos</target></trans-unit>
       <trans-unit id="1464072562214937907" datatype="html">
         <source>Year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">128,129</context>
         </context-group>
-      </trans-unit>
+      <target>Año</target></trans-unit>
       <trans-unit id="7427750006018117018" datatype="html">
         <source>Shares Owned</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">129,130</context>
         </context-group>
-      </trans-unit>
+      <target>Acciones en propiedad</target></trans-unit>
       <trans-unit id="1999364180941264642" datatype="html">
         <source>Dividend Yield</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">130,131</context>
         </context-group>
-      </trans-unit>
+      <target>Rentabilidad por dividendo</target></trans-unit>
       <trans-unit id="217348579406206601" datatype="html">
         <source>Annual Dividend Income</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">132,133</context>
         </context-group>
-      </trans-unit>
+      <target>Ingresos por dividendos anuales</target></trans-unit>
       <trans-unit id="3886066715832787444" datatype="html">
         <source>Distribution Frequency</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">133,134</context>
         </context-group>
-      </trans-unit>
+      <target>Frecuencia de distribución</target></trans-unit>
       <trans-unit id="6105420180199167228" datatype="html">
         <source>Year-End Shares Owned</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">140,141</context>
         </context-group>
-      </trans-unit>
+      <target>Acciones poseídas al final del año</target></trans-unit>
       <trans-unit id="162496824638464215" datatype="html">
         <source>Year-End Stock Price</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">141,142</context>
         </context-group>
-      </trans-unit>
+      <target>Precio de las acciones al final del año</target></trans-unit>
       <trans-unit id="8136061883460965696" datatype="html">
         <source>Year-End Invested</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">144,145</context>
         </context-group>
-      </trans-unit>
+      <target>Inversión de fin de año</target></trans-unit>
       <trans-unit id="3157882966915943662" datatype="html">
         <source>Year-End Return</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/table-calculations/table-calculations.component.html</context>
           <context context-type="linenumber">145,146</context>
         </context-group>
-      </trans-unit>
+      <target>Declaración de fin de año</target></trans-unit>
     </body>
   </file>
 </xliff>
