@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeService } from '../../services/theme.service';
-import { Router, NavigationEnd } from '@angular/router';
-import { environment } from '../../../environments/environment';
+import { LanguageSwitcherService } from '../../services/language-switcher.service';
 
 @Component({
   selector: 'app-common-layout',
@@ -12,18 +11,7 @@ export class CommonLayoutComponent implements OnInit {
 
   isDarkMode = false;
 
-  currentLang: string = 'en';
-  oppositeLang: string = 'es';
-  currentUrl: string = '';
-
-  constructor(private themeService: ThemeService, private router: Router) {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.currentUrl = event.urlAfterRedirects;
-        this.updateLang();
-      }
-    });
-  }
+  constructor(private themeService: ThemeService, private languageSwitcher: LanguageSwitcherService) {}
 
   ngOnInit() {
     this.themeService.isDarkMode$.subscribe(isDark => {
@@ -35,19 +23,11 @@ export class CommonLayoutComponent implements OnInit {
     this.themeService.toggleTheme();
   }
 
-  updateLang() {
-    if (this.currentUrl.startsWith(`/${environment.languages.spanish}`)) {
-      this.currentLang = environment.languages.spanish;
-      this.oppositeLang = environment.languages.english;
-    } else if (this.currentUrl.startsWith(`/${environment.languages.english}`)) {
-      this.currentLang = environment.languages.english;
-      this.oppositeLang = environment.languages.spanish;
-    }
+  changeToEnglish() {
+    this.languageSwitcher.switchLanguage('en');
   }
 
-  changeLanguage() {
-    const newUrl = this.currentUrl.replace(`/${this.currentLang}`, `/${this.oppositeLang}`);
-    this.router.navigateByUrl(newUrl);
+  changeToSpanish() {
+    this.languageSwitcher.switchLanguage('es');
   }
-  
 }

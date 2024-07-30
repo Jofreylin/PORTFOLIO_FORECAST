@@ -7,9 +7,8 @@
       "i18n": {
         "sourceLocale": "en",
         "locales": {
-          "es-PR": {
-            "translation": "public/locale/messages.es-ES.xlf",
-            "baseHref": "/es/"
+          "es": {
+            "translation": "public/locale/messages.es-ES.xlf"
           }
         }
       },
@@ -32,7 +31,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            
             "outputPath": "dist/portfolio-forecast",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -93,8 +91,7 @@
               "sourceMap": true
             },
             "development-es": {
-              "localize": ["es-PR"],
-              "outputPath": "dist/browser/es/",
+              "localize": ["es"],
               "i18nMissingTranslation": "error",
               "optimization": false,
               "extractLicenses": false,

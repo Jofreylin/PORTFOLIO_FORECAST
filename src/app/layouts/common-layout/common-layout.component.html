@@ -26,6 +26,16 @@
                             <i class="p-0 my-0" [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
                         </a>
                     </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link mx-2" (click)="changeToSpanish()" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            Español
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link mx-2" (click)="changeToEnglish()" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            English
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
