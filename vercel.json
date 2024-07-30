@@ -7,6 +7,10 @@
         {
             "source": "/en/:path*",
             "destination": "/en/index.html"
+        },
+        {
+            "source": "/",
+            "destination": "/en/index.html"
         }
     ],
     "redirects": [
@@ -16,11 +20,10 @@
                 {
                     "type": "header",
                     "key": "accept-language",
-                    "value": "(?<lang>^((?!es|en).)*$)"
+                    "value": "(^|,)\\s*es(;|,|$)"
                 }
             ],
-            "destination": "/es",
-            "permanent": true
+            "destination": "/es/"
         },
         {
             "source": "/",
@@ -28,23 +31,14 @@
                 {
                     "type": "header",
                     "key": "accept-language",
-                    "value": "(?<lang>es)"
+                    "value": "(^|,)\\s*en(;|,|$)"
                 }
             ],
-            "destination": "/es",
-            "permanent": true
+            "destination": "/en/"
         },
         {
             "source": "/",
-            "has": [
-                {
-                    "type": "header",
-                    "key": "accept-language",
-                    "value": "(?<lang>en)"
-                }
-            ],
-            "destination": "/en",
-            "permanent": true
+            "destination": "/en/"
         }
     ]
 }
