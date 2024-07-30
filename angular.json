@@ -8,8 +8,8 @@
         "sourceLocale": "en",
         "locales": {
           "es": {
-            "translation": "public/locale/message-o.es.xlf",
-            "baseHref": "es/"
+            "translation": "public/locale/messages.es-ES.xlf"
+            
           }
         }
       },

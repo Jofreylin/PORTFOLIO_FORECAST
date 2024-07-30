@@ -1,5 +1,20 @@
 Forecaster	Forecaster
 How to	How to
+Dividend and Stock Returns Forecaster	Dividend and Stock Returns Forecaster
+See how your investments grow over time using compound interest.	See how your investments grow over time using compound interest.
+Average Share Price	Average Share Price
+Initial Investment Amount	Initial Investment Amount
+Monthly Contribution	Monthly Contribution
+Holding Years <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>	Holding Years <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-danger&quot;&gt;"/>*<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+Dividend Yield Expected (%)	Dividend Yield Expected (%)
+Dividend Distribution Frequency	Dividend Distribution Frequency
+Select one	Select one
+Dividend CAGR (%)	Dividend CAGR (%)
+Share Price CAGR (%)	Share Price CAGR (%)
+Annual Tax Rate (%)	Annual Tax Rate (%)
+Dividend Reinvestment Plan (DRIP)	Dividend Reinvestment Plan (DRIP)
+Generate	Generate
+Need Help?	Need Help?
 Annually	Annually
 Monthly	Monthly
 Quarterly	Quarterly
@@ -87,7 +102,14 @@ To determine the growth of your investments, we use multiple formulas and algori
 Click on the option that interests you the most, to learn more.	Click on the option that interests you the most, to learn more.
 <x id="INTERPOLATION" equiv-text="{{item.title}}"/>	<x id="INTERPOLATION" equiv-text="{{item.title}}"/>
 See how	See how
+How to use our forecaster to estimate your investments growth	How to use our forecaster to estimate your investments growth
+Compound Interest	Compound Interest
+What is compound interest and how it works	What is compound interest and how it works
+Dividend CAGR	Dividend CAGR
+Share Price CAGR	Share Price CAGR
 How to calculate Share Price Compound Annual Growth Rate	How to calculate Share Price Compound Annual Growth Rate
+Investment Growth	Investment Growth
+Annual Contributions	Annual Contributions
 Initial Value	Initial Value
 Final Value	Final Value
 Initial Year	Initial Year
@@ -98,6 +120,9 @@ The CAGR can not be a negative number.	The CAGR can not be a negative number.
 Formulas	Formulas
 Close	Close
 Save	Save
+Calculate CAGR (Compound Annual Growth Rate)	Calculate CAGR (Compound Annual Growth Rate)
+Calculate <x id="PH" equiv-text="data?.values?.type == 1 ? &apos;Dividend&apos; : data?.values?.type == 2 ? &apos;Share Price&apos; : &apos;&apos;"/> CAGR (Compound Annual Growth Rate)	Calculate <x id="PH" equiv-text="data?.values?.type == 1 ? &apos;Dividend&apos; : data?.values?.type == 2 ? &apos;Share Price&apos; : &apos;&apos;"/> CAGR (Compound Annual Growth Rate)
+<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-circle-exclamation me-1&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Disclaimer	<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-circle-exclamation me-1&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Disclaimer
 To calculate the Compound Annual Growth Rate (CAGR) of dividends, you can use the following formula:	To calculate the Compound Annual Growth Rate (CAGR) of dividends, you can use the following formula:
 where:	where:
 Divide the final value by the initial value. Take the result and raise it to the power of one divided by the number of years. Subtract one from this result to get the CAGR.	Divide the final value by the initial value. Take the result and raise it to the power of one divided by the number of years. Subtract one from this result to get the CAGR.
@@ -131,3 +156,4 @@ Year-End Shares Owned	Year-End Shares Owned
 Year-End Stock Price	Year-End Stock Price
 Year-End Invested	Year-End Invested
 Year-End Return	Year-End Return
+Year <x id="PH" equiv-text="value.year"/>	Year <x id="PH" equiv-text="value.year"/>

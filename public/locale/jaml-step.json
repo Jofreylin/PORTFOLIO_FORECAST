@@ -5,7 +5,7 @@
             "SkipStep": false
         },
         {
-            "Path": "C:/Users/jperezv/Desktop/Repositories/PORTFOLIO_FORECAST/public/locale/messages.xlf"
+            "Path": "C:/Repositories/Portfolio Forecast/PORTFOLIO_FORECAST/public/locale/messages.xlf"
         }
     ],
     "PreviousTranslationsFiles": [
@@ -14,9 +14,7 @@
         },
         {
             "Files": [
-                {
-                    "Path": "C:/Users/jperezv/Desktop/Repositories/PORTFOLIO_FORECAST/public/locale/messages.es.xlf"
-                }
+              
             ]
         }
     ],
@@ -25,7 +23,7 @@
             "SkipStep": false
         },
         {
-            "Path": "C:/Users/jperezv/Desktop/Repositories/PORTFOLIO_FORECAST/public/locale/ReminTrans.csv"
+            "Path": "C:/Repositories/Portfolio Forecast/PORTFOLIO_FORECAST/public/locale/ReminTrans.csv"
         }
     ],
     "FinalXlfFile": [
@@ -33,7 +31,7 @@
             "SkipStep": false
         },
         {
-            "Path": "C:/Users/jperezv/Desktop/Repositories/PORTFOLIO_FORECAST/public/locale/mesages.es-ES.xlf"
+            "Path": "C:/Repositories/Portfolio Forecast/PORTFOLIO_FORECAST/public/locale/messages.es-ES2.xlf"
         }
     ],
     "ExclusionsFromManual": [

@@ -49,7 +49,7 @@ export class AreaChartComponent implements OnChanges, OnInit {
         }
       },
       legend: {
-        data: ['Investment Growth', 'Annual Contributions'],
+        data: [$localize`Investment Growth`, $localize`Annual Contributions`],
         textStyle: {
           color: isDarkMode ? '#ffffff' : '#000000'
         }
@@ -88,7 +88,7 @@ export class AreaChartComponent implements OnChanges, OnInit {
       ],
       series: [
         {
-          name: 'Investment Growth',
+          name: $localize`Investment Growth`,
           type: 'line',
           smooth: true,
           stack: 'Total',
@@ -104,7 +104,7 @@ export class AreaChartComponent implements OnChanges, OnInit {
           }
         },
         {
-          name: 'Annual Contributions',
+          name: $localize`Annual Contributions`,
           type: 'line',
           smooth: true,
           data: this.contributionsData,

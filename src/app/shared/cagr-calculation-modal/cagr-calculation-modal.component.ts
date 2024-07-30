@@ -16,14 +16,14 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class CagrCalculationModalComponent {
 
-  title: string = `Calculate CAGR (Compound Annual Growth Rate)`
+  title: string = $localize`Calculate CAGR (Compound Annual Growth Rate)`
 
   calculationForm!: FormGroup;
 
   constructor(private dialogRef: MatDialogRef<CagrCalculationModalComponent>,
     private fb:  FormBuilder,
     @Inject(MAT_DIALOG_DATA) public data: { values: ValuesCAGR, showExplanation: boolean }) {
-      this.title = `Calculate ${data?.values?.type == 1 ? 'Dividend' : data?.values?.type == 2 ? 'Share Price' : ''} CAGR (Compound Annual Growth Rate)`;
+      this.title =  $localize`Calculate ${data?.values?.type == 1 ? 'Dividend' : data?.values?.type == 2 ? 'Share Price' : ''} CAGR (Compound Annual Growth Rate)`;
 
       this.calculationForm = this.fb.group({
         initialValue: [],

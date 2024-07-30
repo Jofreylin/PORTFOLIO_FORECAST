@@ -32,15 +32,15 @@ export class TableCalculationsComponent {
 
   distributionFrequencies: {text:string, value:number}[] = [
     {
-      text: 'Annually',
+      text: $localize`Annually`,
       value: 1
     },
     {
-      text: 'Monthly',
+      text: $localize`Monthly`,
       value: 12
     },
     {
-      text: 'Quarterly',
+      text: $localize`Quarterly`,
       value: 4
     }
   ]
@@ -86,7 +86,7 @@ export class TableCalculationsComponent {
 
     this.chartInvestmentData = forecastData.map(value=>Number(value.yearEndNewBalance.toFixed(2)));
     this.chartContributionsData = forecastData.map(value=>value.yearEndInvested);
-    this.chartLabels = forecastData.map(value=>`Year ${value.year}`);
+    this.chartLabels = forecastData.map(value=>$localize`Year ${value.year}`);
 
     const lastIndex = this.filteredData.length - 1;
 
