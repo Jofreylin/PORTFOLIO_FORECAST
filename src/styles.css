@@ -114,7 +114,13 @@ a {
     border-radius: 20px;
 }
 
+.btn-success span{
+    color: white !important;
+}
 
+.btn-light span{
+    color: black !important;
+}
 
 .card,
 .card-header,

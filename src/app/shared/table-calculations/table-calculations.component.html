@@ -150,7 +150,7 @@
                                     <td class="text-center first-column">{{ data.year }}</td>
                                     <td>{{ data.sharesOwned | number:'1.5-5' }}</td>
                                     <td>{{ data.dividendYield | percent:'1.3-3' }}</td>
-                                    <td *ngIf="showingColumns.annualDividenPerShare">{{ data.annualDividendPerShare | currency }}</td>
+                                    <td *ngIf="showingColumns.annualDividenPerShare">{{ data.annualDividendPerShare | currency:'' }}</td>
                                     <td>{{ data.annualDividendIncome | currency }}</td>
                                     <td *ngIf="showingColumns.distributionFrequency" class="text-center">{{ data.distributionFrequencyDescription || 'NULL' }}</td>
                                     <td *ngIf="showingColumns.frequencyIncomeDividend">{{ data.frequencyIncomeDividend | currency }}</td>
