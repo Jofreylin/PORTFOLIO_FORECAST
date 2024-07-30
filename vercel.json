@@ -1,4 +1,14 @@
 {
+    "rewrites": [
+        {
+            "source": "/es/:path*",
+            "destination": "/es/index.html"
+        },
+        {
+            "source": "/en/:path*",
+            "destination": "/en/index.html"
+        }
+    ],
     "redirects": [
         {
             "source": "/",
@@ -6,7 +16,7 @@
                 {
                     "type": "header",
                     "key": "accept-language",
-                    "value": "(?<lang>^((?!es-PR|en).)*$)"
+                    "value": "(?<lang>^((?!es|en).)*$)"
                 }
             ],
             "destination": "/es",
@@ -18,7 +28,7 @@
                 {
                     "type": "header",
                     "key": "accept-language",
-                    "value": "(?<lang>es-PR)"
+                    "value": "(?<lang>es)"
                 }
             ],
             "destination": "/es",
@@ -35,16 +45,6 @@
             ],
             "destination": "/en",
             "permanent": true
-        }
-    ],
-    "rewrites": [
-        {
-            "source": "/es/:path*",
-            "destination": "/es-PR/index.html"
-        },
-        {
-            "source": "/en/:path*",
-            "destination": "/en/index.html"
         }
     ]
 }

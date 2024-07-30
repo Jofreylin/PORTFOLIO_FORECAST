@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID  } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +21,11 @@ import { ShareCagrPageComponent } from './pages/how-to/share-cagr-page/share-cag
 import { DisclaimerComponent } from './pages/disclaimer/disclaimer.component';
 import { ForecasterExplanationComponent } from './pages/how-to/forecaster-explanation/forecaster-explanation.component';
 import { CompoundInterestComponent } from './pages/how-to/compound-interest/compound-interest.component';
+import { registerLocaleData } from '@angular/common';
+import localeEn from '@angular/common/locales/en';
 
+// Registrar los datos de localización para en-US
+registerLocaleData(localeEn, 'en-US');
 
 @NgModule({
   declarations: [
@@ -53,7 +57,8 @@ import { CompoundInterestComponent } from './pages/how-to/compound-interest/comp
     provideClientHydration(),
     provideHttpClient(withFetch()),
     provideAnimationsAsync(),
-    provideNgxMask()
+    provideNgxMask(),
+    { provide: LOCALE_ID, useValue: 'en-US' }
   ],
   bootstrap: [AppComponent]
 })

@@ -7,7 +7,7 @@
       "i18n": {
         "sourceLocale": "en",
         "locales": {
-          "es-PR": {
+          "es": {
             "translation": "public/locale/messages.es-ES.xlf"
           }
         }
@@ -92,7 +92,7 @@
               "sourceMap": true
             },
             "development-es": {
-              "localize": ["es-PR"],
+              "localize": ["es"],
               "i18nMissingTranslation": "error",
               "optimization": false,
               "extractLicenses": false,
