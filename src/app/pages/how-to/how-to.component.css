@@ -1,4 +1,4 @@
-.card-body, .card{
+.card-body, .card, .card-footer{
     background-color: #157347 !important;
 }
 
@@ -10,7 +10,7 @@
     font-weight: bold !important;
 }
 
-.card-body:hover{
+.card:hover > .card-body{
     background-color: #0b9555 !important;
 }
 

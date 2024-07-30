@@ -1,37 +1,37 @@
 <div class="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light "
-    style=" padding: 25px;">
-    <a class="navbar-brand mb-3" routerLink="/home">forecaster<span>.byjofrey</span></a>
-    <button class="navbar-toggler mb-3 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-    </button>
-    <div class="container-fluid ">
-        <div class=" collapse  navbar-collapse " id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-                <!-- <li class="nav-item mb-2">
-                    <a class="nav-link mx-2 " routerLink="/home" routerLinkActive="active">Home</a>
-                </li> -->
-                <li class="nav-item mb-2">
-                    <a class="nav-link mx-2" routerLink="/calculator" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Forecaster</a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="nav-link mx-2" routerLink="/how-to" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">How to</a>
-                </li>
-                <!-- <li class="nav-item mb-2">
-                    <a class="nav-link mx-2" routerLink="/disclaimer" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Disclaimer</a>
-                </li> -->
-                <li class="nav-item mb-2">
-                    <a class="nav-link mx-2" (click)="toggleTheme()" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                        <i class="p-0 my-0" [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
-                    </a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 25px;">
+        <a class="navbar-brand mb-3" routerLink="/home">
+            forecaster<span>.byjofrey</span>
+        </a>
+        <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item mb-2">
+                        <a class="nav-link mx-2" routerLink="/home" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" i18n>Home</a>
+                    </li> -->
+                    <li class="nav-item mb-2">
+                        <a class="nav-link mx-2" routerLink="/calculator" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" i18n>Forecaster</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link mx-2" routerLink="/how-to" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" i18n>How to</a>
+                    </li>
+                    <!-- <li class="nav-item mb-2">
+                        <a class="nav-link mx-2" routerLink="/disclaimer" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" i18n>Disclaimer</a>
+                    </li> -->
+                    <li class="nav-item mb-2">
+                        <a class="nav-link mx-2" (click)="toggleTheme()" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            <i class="p-0 my-0" [ngClass]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    
-</nav>
-<main>
-    <router-outlet></router-outlet>
-</main>
-<app-footer></app-footer>
+    </nav>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+    <app-footer></app-footer>
 </div>

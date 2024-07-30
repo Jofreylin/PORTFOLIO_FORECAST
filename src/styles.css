@@ -114,7 +114,13 @@ a {
     border-radius: 20px;
 }
 
+.btn-success span{
+    color: white !important;
+}
 
+.btn-light span{
+    color: black !important;
+}
 
 .card,
 .card-header,
@@ -122,7 +128,7 @@ a {
 .card-footer {
     border-color: var(--card-border-color) !important;
     background-color: var(--card-background-color) !important;
-    border-radius: 20px;
+    border-radius: 20px !important;
 }
 
 .table > :not(caption) > * > * {

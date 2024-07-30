@@ -1,0 +1,39 @@
+{
+    "Comment": "General template",
+    "OriginalXlfFile": [
+        {
+            "SkipStep": false
+        },
+        {
+            "Path": "C:/Repositories/Portfolio Forecast/PORTFOLIO_FORECAST/public/locale/messages.xlf"
+        }
+    ],
+    "PreviousTranslationsFiles": [
+        {
+            "SkipStep": false
+        },
+        {
+            "Files": [
+              
+            ]
+        }
+    ],
+    "RemainigTranslationsFile": [
+        {
+            "SkipStep": false
+        },
+        {
+            "Path": "C:/Repositories/Portfolio Forecast/PORTFOLIO_FORECAST/public/locale/ReminTrans.csv"
+        }
+    ],
+    "FinalXlfFile": [
+        {
+            "SkipStep": false
+        },
+        {
+            "Path": "C:/Repositories/Portfolio Forecast/PORTFOLIO_FORECAST/public/locale/messages.es-ES2.xlf"
+        }
+    ],
+    "ExclusionsFromManual": [
+    ]
+}

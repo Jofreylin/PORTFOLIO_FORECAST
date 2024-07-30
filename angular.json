@@ -4,6 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "PORTFOLIO_FORECAST": {
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "es-PR": {
+            "translation": "public/locale/messages.es-ES.xlf",
+            "baseHref": "/es/"
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,11 +32,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            
             "outputPath": "dist/portfolio-forecast",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -80,6 +91,14 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "development-es": {
+              "localize": ["es-PR"],
+              "outputPath": "dist/browser/es/",
+              "i18nMissingTranslation": "error",
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -92,6 +111,9 @@
             },
             "development": {
               "buildTarget": "PORTFOLIO_FORECAST:build:development"
+            },
+            "development-es": {
+              "buildTarget": "PORTFOLIO_FORECAST:build:development-es"
             }
           },
           "defaultConfiguration": "development"
@@ -104,7 +126,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
