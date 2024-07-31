@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;0,1000;1,600&display=swap');
+
+:root {
+    --background-color: white;
+    --text-color: black;
+    --primary-color: #157347;
+    --secondary-color: #333;
+    --link-color: rgb(53, 107, 53);
+    --link-hover-color: green;
+    --card-background-color: white;
+    --card-border-color: transparent;
+    --light-border-color: #f5f4f4;
+    --shadow-color: rgba(0, 0, 0, 0.21);
+    --header-background-color: rgb(248, 248, 248);
+    --footer-background-color: rgb(251, 251, 251);
+    --tooltip-background-color: #ffffff;
+    --tooltip-text-color: #000000;
+    --tooltip-shadow-color: rgba(0, 0, 0, 0.21);
+    --invalid-input-border-color: #ff101039;
+    --invalid-input-background-color: #ff000011;
+    --input-background-color: #fff;
+    --input-text-color: #000;
+    --input-border-color: #ced4da;
+    --navbar-background-color: #fff;
+    --navbar-text-color: #157347;
+    --navbar-hover-background-color: #157347;
+    --navbar-hover-text-color: #fff;
+    --division-row-background-color: rgba(98, 159, 98, 0.53);
+    --total-value-row-background-color: #15734793;
+    --table-background-color: white;
+    --table-border-color: #dee2e6;
+    --table-hover-background-color: rgba(0, 0, 0, 0.075);
+    --placeholder-color: #6c757d;
+    --mat-dialog-background-color: #fff;
+    --mat-dialog-text-color: #000;
+    --disabled-input-background-color: #e9ecef;
+    --disabled-input-text-color: #6c757d;
+    --disabled-input-border-color: #ced4da;
+}
+
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #157347;
+    --secondary-color: #495057;
+    --link-color: #ccc;
+    --link-hover-color: #fff;
+    --card-background-color: #1e1e1e;
+    --card-border-color: transparent;
+    --light-border-color: #333;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --header-background-color: #1c1c1c;
+    --footer-background-color: #1e1e1e;
+    --tooltip-background-color: #333;
+    --tooltip-text-color: #ccc;
+    --tooltip-shadow-color: rgba(0, 0, 0, 0.5);
+    --invalid-input-border-color: #ff101039;
+    --invalid-input-background-color: #ff000011;
+    --input-background-color: #3737374d; 
+    --input-text-color: #ccc;
+    --input-border-color: #666;
+    --navbar-background-color: #1c1c1c;
+    --navbar-text-color: #ccc;
+    --navbar-hover-background-color: #157347;
+    --navbar-hover-text-color: #fff;
+    --division-row-background-color: rgba(50, 80, 50, 0.53); 
+    --total-value-row-background-color: rgba(30, 80, 30, 0.7);
+    --table-background-color: #1e1e1e;
+    --table-border-color: #333;
+    --table-hover-background-color: rgba(255, 255, 255, 0.075);
+    --placeholder-color: #b5b5b5;
+    --mat-dialog-background-color: #1e1e1e;
+    --mat-dialog-text-color: #fff;
+    --disabled-input-background-color: #333;
+    --disabled-input-text-color: #b5b5b5;
+    --disabled-input-border-color: #444;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+p, span, li, dt, dd {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+.btn,
+a {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.btn-success span{
+    color: white !important;
+}
+
+.btn-light span{
+    color: black !important;
+}
+
+.card,
+.card-header,
+.card-body,
+.card-footer {
+    border-color: var(--card-border-color) !important;
+    background-color: var(--card-background-color) !important;
+    border-radius: 20px !important;
+}
+
+.table > :not(caption) > * > * {
+    background-color: var(--table-background-color) !important;
+    border-color: var(--table-border-color) !important;
+    color: var(--text-color) !important;
+}
+
+.table-borderless td, .table-borderless th {
+    border: 0;
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--table-hover-background-color);
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+}
+
+.light-border {
+    border: 2px solid var(--light-border-color) !important;
+}
+
+.custom-shadow {
+    box-shadow: 0px 0px 10px 0px var(--shadow-color);
+}
+
+.card-header {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--header-background-color);
+    opacity: 1;
+}
+
+.card-footer {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--footer-background-color);
+    opacity: 1;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+input, select, textarea,
+.form-control,
+.form-select {
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 18px !important;
+}
+
+option{
+    background-color: var(--card-background-color) !important;
+    color: var(--text-color) !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--placeholder-color) !important;
+}
+
+input[disabled], textarea[disabled], select[disabled], .form-control[disabled], .form-select[disabled] {
+    background-color: var(--disabled-input-background-color);
+    color: var(--disabled-input-text-color);
+    border-color: var(--disabled-input-border-color);
+}
+
+.tooltip .tooltip-inner {
+    background-color: var(--tooltip-background-color);
+    color: var(--tooltip-text-color);
+    text-transform: uppercase !important;
+    font-size: bold !important;
+    border-radius: 18px !important;
+}
+
+.tooltip {
+    background-color: var(--tooltip-background-color) !important;
+    border-radius: 18px !important;
+    box-shadow: 0px 0px 10px 0px var(--tooltip-shadow-color);
+}
+
+.tooltip::after {
+    color: white !important;
+    border: var(--tooltip-background-color) transparent transparent !important;
+}
+
+.katex {
+    font-weight: bold;
+}
+
+.katex-container {
+    margin-bottom: 10px;
+}
+
+.mat-mdc-dialog-surface,
+.mdc-dialog__surface {
+    overflow: hidden !important;
+}
+
+/* Specific styles for mat-dialog */
+.mdc-dialog__surface {
+    background-color: var(--card-background-color) !important;
+}
+
+.mat-mdc-dialog-title {
+    color: var(--text-color) !important;
+}
+
+mat-dialog-content {
+    color: var(--text-color) !important;
+}
+
+mat-dialog-actions {
+    color: var(--text-color) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--card-background-color);
+    color: var(--text-color) !important;
+}
+
+.accordion-button {
+    background-color: var(--card-background-color);
+    color: var(--text-color) !important;
+}
+
+.accordion-collapse{
+    background-color: var(--card-background-color);
+    color: var(--text-color) !important;
+}
+
+.mat-horizontal-stepper-wrapper,
+.mat-vertical-stepper-wrapper {
+    background-color: var(--card-background-color);
+}
+
+.mat-step-icon-selected {
+    background-color: var(--primary-color) !important;
+}
+
+.print-header {
+    color: var(--primary-color);
+    font-weight: 800;
+    display: none;
+}
+
+.print-header span {
+    color: black;
+}
+
+.invalid-input {
+    border: 2px solid var(--invalid-input-border-color);
+    background-color: var(--invalid-input-background-color);
+}
+
+footer{
+    background-color: var(--footer-background-color) !important;
+}
+
+
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+@media screen and (max-width: 1100px) {
+    .tooltip {
+        display: none !important;
+    }
+}
+
+@media print {
+    * {
+        font-size: 8px;
+    }
+    .print-header {
+        display: block;
+        top: 0;
+        z-index: 99999;
+        font-size: 20px;
+    }
+    .print-header span {
+        font-size: 20px;
+    }
+    nav {
+        display: none !important;
+    }
+    footer {
+        display: none !important;
+    }
+    .container {
+        min-width: 100% !important;
+    }
+    table {
+        font-size: 8px !important;
+    }
+}
