@@ -11,7 +11,11 @@ export class CommonLayoutComponent implements OnInit {
 
   isDarkMode = false;
 
-  constructor(private themeService: ThemeService, private languageSwitcher: LanguageSwitcherService) {}
+  currentLang!: 'en' | 'es';
+
+  constructor(private themeService: ThemeService, private languageSwitcher: LanguageSwitcherService) {
+    this.currentLang = this.languageSwitcher.getCurrentLanguage();
+  }
 
   ngOnInit() {
     this.themeService.isDarkMode$.subscribe(isDark => {
@@ -23,11 +27,8 @@ export class CommonLayoutComponent implements OnInit {
     this.themeService.toggleTheme();
   }
 
-  changeToEnglish() {
-    this.languageSwitcher.switchLanguage('en');
-  }
-
-  changeToSpanish() {
-    this.languageSwitcher.switchLanguage('es');
+  changeLanguage(event: Event) {
+    const targetLang = (event.target as HTMLSelectElement).value as 'en' | 'es';
+    this.languageSwitcher.switchLanguage(targetLang);
   }
 }

@@ -18,6 +18,15 @@ export class LanguageSwitcherService {
     }
   }
 
+  getCurrentLanguage(): 'en' | 'es' {
+    if (isPlatformBrowser(this.platformId)) {
+      const currentUrl = this.document.location.href;
+      const langMatch = currentUrl.match(/\/(en|es)\//);
+      return (langMatch && langMatch[1]) ? langMatch[1] as 'en' | 'es' : 'en';
+    }
+    return 'en';
+  }
+
   private getNewUrl(currentUrl: string, targetLang: 'en' | 'es'): string {
     return currentUrl.replace(/\/(en|es)\//, `/${targetLang}/`);
   }
