@@ -191,6 +191,11 @@ input, select, textarea,
     border-radius: 18px !important;
 }
 
+option{
+    background-color: var(--card-background-color) !important;
+    color: var(--text-color) !important;
+}
+
 input::placeholder, textarea::placeholder {
     color: var(--placeholder-color) !important;
 }

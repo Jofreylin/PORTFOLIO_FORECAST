@@ -13,9 +13,10 @@
     border-end-end-radius: 40px;
     border-end-start-radius: 40px;
     margin-bottom: 2rem ;
+    padding: 25px;
 }
 
-.nav-item {
+.nav-item, .theme-item {
     padding: 0;
     cursor: pointer;
 }
@@ -29,6 +30,38 @@
     padding-right: 35px !important;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+.theme-item a{
+    color: var(--navbar-text-color) !important;
+    border-radius: 15px;
+    border: 2px solid var(--light-border-color) !important;
+    font-weight: bold;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+select{
+    color: var(--navbar-text-color);
+    border: 2px solid var(--light-border-color) !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+option{
+    color: var(--navbar-text-color) !important;
+    font-weight: bold;
+}
+
+option:hover{
+    color: var(--navbar-hover-text-color) !important;
+    background-color: var(--navbar-hover-background-color) !important;
 }
 
 .nav-item .active {
@@ -66,9 +99,19 @@ main {
     flex: 1;
 }
 
+.theme-btn{
+    display: none;
+}
+
 
 @media screen and (max-width: 600px){
     .navbar{
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .theme-btn{
+        display: block;
     }
 }
