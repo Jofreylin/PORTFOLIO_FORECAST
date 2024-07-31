@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ThemeService } from './services/theme.service';
 declare var $: any;
 
 @Component({
@@ -7,20 +6,12 @@ declare var $: any;
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit {
   
-  isDarkMode = false;
-
-  constructor(private themeService: ThemeService) {}
+  constructor() {}
 
   ngOnInit() {
     
   }
 
-  ngAfterViewInit(): void {
-    this.themeService.isDarkMode$.subscribe(isDark => {
-      this.isDarkMode = isDark;
-    });
-    this.themeService.applyInitialTheme();
-  }
 }
