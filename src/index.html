@@ -33,9 +33,20 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  
+
 </head>
 <body>
   <h5 class="print-header  mx-0 mt-0 mb-4">forecaster<span>.byjofrey</span></h5>
   <app-root></app-root>
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      if(theme == 'dark'){
+        document.body.classList.add('dark-mode');
+      }
+    })();
+  </script>
 </body>
 </html>
