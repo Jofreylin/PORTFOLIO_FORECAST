@@ -23,8 +23,8 @@
             "permanent": true
         },
         {
-            "source": "/:path*",
-            "destination": "/en/:path*",
+            "source": "/",
+            "destination": "/en/",
             "permanent": true
         }
     ]
