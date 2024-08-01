@@ -143,7 +143,12 @@
             "permanent": true
         },
         {
-            "source": "/:path*",
+            "source": "/",
+            "status": 404,
+            "destination": "/en/"
+        },
+        {
+            "source": "/",
             "destination": "/en/",
             "permanent": true
         }
