@@ -7,10 +7,6 @@
         {
             "source": "/en/:path*",
             "destination": "/en/index.html"
-        },
-        {
-            "source": "/",
-            "destination": "/en/index.html"
         }
     ],
     "redirects": [
@@ -19,26 +15,17 @@
             "has": [
                 {
                     "type": "header",
-                    "key": "accept-language",
-                    "value": "(^|,)\\s*es(;|,|$)"
+                    "key": "X-Vercel-IP-Country",
+                    "value": "DO"
                 }
             ],
-            "destination": "/es/"
+            "destination": "/es/",
+            "permanent": true
         },
         {
-            "source": "/",
-            "has": [
-                {
-                    "type": "header",
-                    "key": "accept-language",
-                    "value": "(^|,)\\s*en(;|,|$)"
-                }
-            ],
-            "destination": "/en/"
-        },
-        {
-            "source": "/",
-            "destination": "/en/"
+            "source": "/:path*",
+            "destination": "/en/:path*",
+            "permanent": true
         }
     ]
 }
