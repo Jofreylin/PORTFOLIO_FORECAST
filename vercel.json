@@ -7,6 +7,10 @@
         {
             "source": "/en/:path*",
             "destination": "/en/index.html"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/en/"
         }
     ],
     "redirects": [
@@ -141,11 +145,6 @@
             ],
             "destination": "/es/",
             "permanent": true
-        },
-        {
-            "source": "/",
-            "status": 404,
-            "destination": "/en/"
         },
         {
             "source": "/",
