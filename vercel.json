@@ -9,8 +9,8 @@
             "destination": "/en/index.html"
         },
         {
-            "source": "/",
-            "destination": "/en/index.html"
+            "source": "/(.*)",
+            "destination": "/en/"
         }
     ],
     "redirects": [
@@ -19,26 +19,137 @@
             "has": [
                 {
                     "type": "header",
-                    "key": "accept-language",
-                    "value": "(^|,)\\s*es(;|,|$)"
+                    "key": "X-Vercel-IP-Country",
+                    "value": "DO"
                 }
             ],
-            "destination": "/es/"
+            "destination": "/es/",
+            "permanent": true
         },
         {
             "source": "/",
             "has": [
                 {
                     "type": "header",
-                    "key": "accept-language",
-                    "value": "(^|,)\\s*en(;|,|$)"
+                    "key": "X-Vercel-IP-Country",
+                    "value": "AR"
                 }
             ],
-            "destination": "/en/"
+            "destination": "/es/",
+            "permanent": true
         },
         {
             "source": "/",
-            "destination": "/en/"
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "CL"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "CO"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "CR"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "CU"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "EC"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "SV"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "MX"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "PA"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "X-Vercel-IP-Country",
+                    "value": "PR"
+                }
+            ],
+            "destination": "/es/",
+            "permanent": true
+        },
+        {
+            "source": "/",
+            "destination": "/en/",
+            "permanent": true
         }
     ]
 }

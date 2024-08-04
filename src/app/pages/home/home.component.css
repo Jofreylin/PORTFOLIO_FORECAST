@@ -1,5 +1,5 @@
 .conta-hero{
-    height: 65vh !important;
+    height: 55vh !important;
 }
 
 .image-container{
@@ -13,6 +13,10 @@
     object-fit: cover;
 }
 
+h1, h2, h5, p{
+    text-shadow: var(--background-color) 1px 0 6px;
+}
+
 @media screen and (max-width: 600px){
     .conta-hero{
         height: 70vh !important;
@@ -23,7 +27,7 @@
         padding-left: 20px !important;
         padding-right: 10px !important;
         position: absolute;
-        top: 25vh;
+        top: 20vh;
     }
 
     .image-container{
