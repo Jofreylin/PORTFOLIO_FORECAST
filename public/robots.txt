@@ -1,4 +1,5 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://forecaster.byjofrey.com/sitemap.xml
+Sitemap: https://forecaster.byjofrey.com/es/sitemap.xml
+Sitemap: https://forecaster.byjofrey.com/en/sitemap.xml
