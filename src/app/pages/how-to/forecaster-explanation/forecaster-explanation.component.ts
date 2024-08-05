@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-forecaster-explanation',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class ForecasterExplanationComponent {
 
+  constructor( private titleService: Title, private metaService: Meta
+  ) {
+
+    this.metaService.addTags([
+      { name: 'description', content: $localize`Learn how to use the Investment Forecaster By Jofrey.` },
+    ]);
+
+  }
 }

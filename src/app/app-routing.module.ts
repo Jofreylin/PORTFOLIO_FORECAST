@@ -14,11 +14,13 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
+    title: $localize`Investment Forecaster by Jofrey - Grow Your Investments with Compound Interest`
   },
   {
     path: '',
     component: CommonLayoutComponent,
+    title: $localize`Investment Forecaster by Jofrey - Grow Your Investments with Compound Interest`,
     children: [
       {
         path: 'home',
@@ -26,32 +28,45 @@ const routes: Routes = [
       },
       {
         path: 'calculator',
-        component: CalculatorComponent
+        component: CalculatorComponent,
+        title: $localize`Dividend and Stock Returns Forecaster - Grow Your Investments`,
       },
       {
         path: "disclaimer",
-        component: DisclaimerComponent
+        component: DisclaimerComponent,
+        title: $localize`Disclaimer`,
       },
       {
         path: 'how-to',
-        component: HowToComponent
-      },
-      {
-        path: 'how-to/dividend-cagr',
-        component: DividendCagrPageComponent
-      },
-      {
-        path: 'how-to/share-cagr',
-        component: ShareCagrPageComponent
-      },
-      {
-        path: 'how-to/forecaster-exp',
-        component: ForecasterExplanationComponent
-      },
-      {
-        path: 'how-to/compound-interest',
-        component: CompoundInterestComponent
+        title: $localize`How to - Financial explanations and formulas`,
+        children: [
+          {
+            path: '',
+            component: HowToComponent,
+          },
+          {
+            path: 'dividend-cagr',
+            component: DividendCagrPageComponent,
+            title: $localize`How to calculate Dividend CAGR (Compound Annual Growth Rate)`,
+          },
+          {
+            path: 'share-cagr',
+            component: ShareCagrPageComponent,
+            title: $localize`How to calculate Share Price CAGR (Compound Annual Growth Rate)`,
+          },
+          {
+            path: 'forecaster-exp',
+            component: ForecasterExplanationComponent,
+            title: $localize`How to use Investment Forecaster By Jofrey`,
+          },
+          {
+            path: 'compound-interest',
+            component: CompoundInterestComponent,
+            title: $localize`How to calculate Compound Interest`,
+          }
+        ]
       }
+      
     ]
   }
 ];
