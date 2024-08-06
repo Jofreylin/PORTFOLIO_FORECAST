@@ -6,7 +6,7 @@
     "start": "ng serve",
     "start:es": "ng serve --configuration development-es",
     "build": "ng build --configuration production",
-    "build:localize": "ng build --localize --configuration production",
+    "build:localize": "ng build --localize --configuration production && node generate-sitemaps.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:PORTFOLIO_FORECAST": "node dist/portfolio-forecast/server/server.mjs"
