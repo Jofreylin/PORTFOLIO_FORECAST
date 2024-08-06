@@ -42,8 +42,21 @@ const generateSitemapContent = (locale) => {
 </urlset>`;
 };
 
+const generateRobotsContent = (locale) => {
+    const baseUrl = baseUrls[locale];
+    return `User-agent: *
+Disallow:
+
+Sitemap: ${baseUrl}/sitemap.xml
+`
+};
+
 Object.keys(baseUrls).forEach(locale => {
   const sitemapContent = generateSitemapContent(locale);
   const outputPath = path.join(__dirname, `dist/portfolio-forecast/browser/${locale}/sitemap.xml`);
   fs.writeFileSync(outputPath, sitemapContent);
+
+  const robotContent = generateRobotsContent(locale);
+  const outputRobotPath = path.join(__dirname, `dist/portfolio-forecast/browser/${locale}/robots.txt`);
+  fs.writeFileSync(outputRobotPath, robotContent);
 });
