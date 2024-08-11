@@ -38,24 +38,10 @@ export class CalculatorComponent implements AfterViewInit {
     private dialog: MatDialog, private titleService: Title, private metaService: Meta
   ) {
 
-    this.titleService.setTitle($localize`Dividend and Stock Returns Forecaster - Grow Your Investments`);
-
     this.metaService.addTags([
       { name: 'description', content: $localize`Use our Dividend and Stock Returns Forecaster to see how your investments can grow over time using compound interest. Calculate potential returns with various inputs for average share price, initial investment amount, monthly contribution, holding years, and more.` },
-      { name: 'keywords', content: $localize`dividend, stock returns, forecaster, investment, compound interest, share price, initial investment, monthly contribution, CAGR, DRIP` },
-      { name: 'author', content: $localize`Jofreylin Perez Valdez` },
-      { property: 'og:title', content: $localize`Dividend and Stock Returns Forecaster - Grow Your Investments` },
-      { property: 'og:description', content: $localize`See how your investments can grow over time using compound interest with our Dividend and Stock Returns Forecaster. Input your data to calculate potential returns.` },
-      { property: 'og:type', content: `website` },
-      { property: 'og:url', content: `https://forecaster.byjofrey.com/calculator` },
-      { property: 'og:image', content: `https://forecaster.byjofrey.com/assets/images/principal.png` },
-      { property: 'og:site_name', content: `By Jofrey` },
-      // { name: 'twitter:card', content: $localize`summary_large_image` },
-      // { name: 'twitter:title', content: $localize`Dividend and Stock Returns Forecaster - Grow Your Investments` },
-      // { name: 'twitter:description', content: $localize`Calculate your potential investment returns using our Dividend and Stock Returns Forecaster with compound interest.` },
-      // { name: 'twitter:image', content: $localize`https://www.yourwebsite.com/path/to/forecaster-image.png` },
-      // { name: 'twitter:site', content: $localize`@yourtwitterhandle` }
-    ]);
+      { name: 'author', content: $localize`Jofreylin Perez Valdez` }
+    ])
 
     this.valuesForm = this.fb.group({
       averageSharePrice: [null],

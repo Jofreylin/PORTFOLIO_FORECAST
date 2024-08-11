@@ -2,22 +2,115 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="1060999950293472159" datatype="html">
+        <source>Investment Forecaster by Jofrey - Grow Your Investments with Compound Interest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5346720578628705978" datatype="html">
+        <source>Dividend and Stock Returns Forecaster - Grow Your Investments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2598703394778941061" datatype="html">
+        <source>Disclaimer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3995591685580842919" datatype="html">
+        <source>How to - Financial explanations and formulas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8140920857468017703" datatype="html">
+        <source>How to calculate Dividend CAGR (Compound Annual Growth Rate)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="453049729037237639" datatype="html">
+        <source>How to calculate Share Price CAGR (Compound Annual Growth Rate)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4330042079003878628" datatype="html">
+        <source>How to use Investment Forecaster By Jofrey</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="118048097346295678" datatype="html">
+        <source>How to calculate Compound Interest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7302166962530857134" datatype="html">
+        <source>Use our Dividend and Stock Returns Forecaster to see how your investments can grow over time using compound interest. Calculate potential returns with various inputs for average share price, initial investment amount, monthly contribution, holding years, and more.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3838796332498112362" datatype="html">
+        <source>dividend, stock returns, forecaster, investment, compound interest, share price, initial investment, monthly contribution, CAGR, DRIP, investment forecaster, compound interest, financial growth, finance, yahoo finance, google finance, apple finance, Jofreylin Perez Valdez, By Jofrey, calculator, estimating tools, dominican republic, latam</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2092932773061568591" datatype="html">
+        <source>Jofreylin Perez Valdez</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="7890367100871534070" datatype="html">
         <source>Forecaster</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layouts/common-layout/common-layout.component.html</context>
-          <context context-type="linenumber">16,17</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2066679880088196758" datatype="html">
         <source>How to</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layouts/common-layout/common-layout.component.html</context>
-          <context context-type="linenumber">19,20</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1694073859578581253" datatype="html">
@@ -186,61 +279,15 @@
           <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5346720578628705978" datatype="html">
-        <source>Dividend and Stock Returns Forecaster - Grow Your Investments</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
-          <context context-type="linenumber">41</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
-          <context context-type="linenumber">47</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7302166962530857134" datatype="html">
-        <source>Use our Dividend and Stock Returns Forecaster to see how your investments can grow over time using compound interest. Calculate potential returns with various inputs for average share price, initial investment amount, monthly contribution, holding years, and more.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
-          <context context-type="linenumber">44</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4907727529030286359" datatype="html">
-        <source>dividend, stock returns, forecaster, investment, compound interest, share price, initial investment, monthly contribution, CAGR, DRIP</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2092932773061568591" datatype="html">
-        <source>Jofreylin Perez Valdez</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
-          <context context-type="linenumber">46</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8519900296088409115" datatype="html">
-        <source>See how your investments can grow over time using compound interest with our Dividend and Stock Returns Forecaster. Input your data to calculate potential returns.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
-          <context context-type="linenumber">48</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="3309141365072639679" datatype="html">
         <source>Web Storage is not supported in this environment.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
-          <context context-type="linenumber">136</context>
+          <context context-type="linenumber">122</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/calculator/calculator.component.ts</context>
-          <context context-type="linenumber">156</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2598703394778941061" datatype="html">
-        <source>Disclaimer</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
-          <context context-type="linenumber">4,5</context>
+          <context context-type="linenumber">142</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6009227261013837359" datatype="html">
@@ -283,6 +330,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.html</context>
           <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4634668845187148631" datatype="html">
+        <source>Disclaimer, terms and conditions.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/disclaimer/disclaimer.component.ts</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5772381599291172088" datatype="html">
@@ -485,6 +539,13 @@
           <context context-type="linenumber">188</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1033717731298636406" datatype="html">
+        <source>Understanding compound interest and how to use it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/how-to/compound-interest/compound-interest.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1934224145102845561" datatype="html">
         <source>How to calculate Dividend Compound Annual Growth Rate</source>
         <context-group purpose="location">
@@ -493,7 +554,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1637016657178419179" datatype="html">
@@ -759,6 +820,13 @@
           <context context-type="linenumber">178,179</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="3840717932089487607" datatype="html">
+        <source>Learn how to use the Investment Forecaster By Jofrey.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/how-to/forecaster-explanation/forecaster-explanation.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="229884595039974203" datatype="html">
         <source>Explanations and formulas</source>
         <context-group purpose="location">
@@ -784,11 +852,11 @@
         <source><x id="INTERPOLATION" equiv-text="{{item.title}}"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.html</context>
-          <context context-type="linenumber">14,15</context>
+          <context context-type="linenumber">15,16</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.html</context>
-          <context context-type="linenumber">17,18</context>
+          <context context-type="linenumber">18,19</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cagr-calculation-modal/cagr-calculation-modal.component.html</context>
@@ -799,53 +867,60 @@
         <source>See how</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.html</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8796874304709690884" datatype="html">
         <source>How to use our forecaster to estimate your investments growth</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4285323596298786167" datatype="html">
         <source>Compound Interest</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5459438831012284085" datatype="html">
         <source>What is compound interest and how it works</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3735931747079119520" datatype="html">
         <source>Dividend CAGR</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="936558913139134905" datatype="html">
         <source>Share Price CAGR</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3415536293985720454" datatype="html">
         <source>How to calculate Share Price Compound Annual Growth Rate</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/how-to/share-cagr-page/share-cagr-page.component.html</context>
           <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6025700564344085107" datatype="html">
+        <source>Explanations and formulas to determine the growth of your investments.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/how-to/how-to.component.ts</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3761674675504419686" datatype="html">

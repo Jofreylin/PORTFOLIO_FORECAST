@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-how-to',
@@ -29,5 +30,13 @@ export class HowToComponent {
       route: '/how-to/share-cagr'
     }
   ];
+
+  constructor( private titleService: Title, private metaService: Meta
+  ) {
+    this.metaService.addTags([
+      { name: 'description', content: $localize`Explanations and formulas to determine the growth of your investments.` },
+    ]);
+
+  }
 
 }
