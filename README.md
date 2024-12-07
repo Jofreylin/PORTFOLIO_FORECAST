@@ -5,6 +5,9 @@
  ### Introduction
  **Investment Forecaster** is a professional-grade Angular 18 web application designed to help investors visualize and project the long-term growth of their stock market investments. It allows you to simulate how your portfolio can evolve over time considering dividend reinvestments, compound growth rates, and various other factors. With automatic language detection (English/Spanish) based on user location, it offers a tailored user experience globally.
 
+**Live App:** [https://forecaster.byjofrey.com/](https://forecaster.byjofrey.com/)  
+**XLIFF Tools Reference:** [https://github.com/Jofreylin/WEB_XLIFF_TOOLS](https://github.com/Jofreylin/WEB_XLIFF_TOOLS)
+
  ### What the Application Does
  - **Forecast Investment Growth Over Time:** Input your initial investment, monthly contributions, expected dividend yield, holding period, dividend CAGR, and share price CAGR to estimate how your portfolio might grow.
  - **Interactive Charts & Detailed Tables:** Get visual insights into portfolio evolution through dynamic charts and comprehensive data tables.
@@ -21,7 +24,7 @@
  - **Utilities:** ngx-mask 17.1.1 (for input formatting), ngx-spinner 17.0.0 (loading indicators)
  - **Icons & Math:** @fortawesome/fontawesome-free 6.5.2 for icons, katex 0.16.11 for formula rendering
  - **Node.js 20 Required:** Please ensure Node.js version 20 or above is installed.
- - **Internationalization:** Built-in Angular i18n, combined with external tools (XLIFF Tools) for automatic translation of `.xlf` files.
+ - **Internationalization:** Built-in Angular i18n, combined with external tools ([XLIFF Tools](https://github.com/Jofreylin/WEB_XLIFF_TOOLS)) for automatic translation of `.xlf` files.
 
  ### System Sections (with Reference Images)
  Below are the main sections of the system, each accompanied by a reference image placeholder. 
@@ -102,7 +105,7 @@
  - **Utilidades:** ngx-mask 17.1.1 (enmascarado de inputs), ngx-spinner 17.0.0 (spinners de carga)
  - **Íconos & Matemáticas:** @fortawesome/fontawesome-free 6.5.2, katex 0.16.11
  - **Node.js 20 Requerido:** Asegúrate de tener Node.js 20 o superior instalado.
- - **Internacionalización:** i18n de Angular, con herramientas externas (XLIFF Tools) para la traducción automática de archivos `.xlf`.
+ - **Internacionalización:** i18n de Angular, con herramientas externas ([XLIFF Tools](https://github.com/Jofreylin/WEB_XLIFF_TOOLS)) para la traducción automática de archivos `.xlf`.
 
 
  ### Clonar y Ejecutar Localmente
