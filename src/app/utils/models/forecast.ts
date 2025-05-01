@@ -1,14 +1,20 @@
+import { ForecastType, FrequencyType, HoldingPeriodType } from './enums';
+
 export interface ForecastPost {
+  forecastType: ForecastType, 
   averageSharePrice: number,
   investmentAmount: number,
-  monthlyContribution: number,
-  years: number,
+  periodContribution: number, 
+  holdingTime: number, 
+  holdingPeriodType: HoldingPeriodType, 
   expectedDividendYield: number,
   annualTaxRate: number,
   dividendCAGR: number,
   sharePriceCAGR: number,
-  dividendDistributionFrequency: number,
-  drip: boolean
+  dividendDistributionFrequency: FrequencyType,
+  drip: boolean,
+  interestRate?: number,
+  contributionFrequency?: FrequencyType 
 }
 
 export interface ValuesCAGR {
