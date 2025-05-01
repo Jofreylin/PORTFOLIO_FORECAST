@@ -5,6 +5,9 @@
  ### Introduction
  **Investment Forecaster** is a professional-grade Angular 18 web application designed to help investors visualize and project the long-term growth of their stock market investments. It allows you to simulate how your portfolio can evolve over time considering dividend reinvestments, compound growth rates, and various other factors. With automatic language detection (English/Spanish) based on user location, it offers a tailored user experience globally.
 
+**Live App:** [https://forecaster.byjofrey.com/](https://forecaster.byjofrey.com/)  
+**XLIFF Tools Reference:** [https://github.com/Jofreylin/WEB_XLIFF_TOOLS](https://github.com/Jofreylin/WEB_XLIFF_TOOLS)
+
  ### What the Application Does
  - **Forecast Investment Growth Over Time:** Input your initial investment, monthly contributions, expected dividend yield, holding period, dividend CAGR, and share price CAGR to estimate how your portfolio might grow.
  - **Interactive Charts & Detailed Tables:** Get visual insights into portfolio evolution through dynamic charts and comprehensive data tables.
@@ -21,42 +24,28 @@
  - **Utilities:** ngx-mask 17.1.1 (for input formatting), ngx-spinner 17.0.0 (loading indicators)
  - **Icons & Math:** @fortawesome/fontawesome-free 6.5.2 for icons, katex 0.16.11 for formula rendering
  - **Node.js 20 Required:** Please ensure Node.js version 20 or above is installed.
- - **Internationalization:** Built-in Angular i18n, combined with external tools (XLIFF Tools) for automatic translation of `.xlf` files.
+ - **Internationalization:** Built-in Angular i18n, combined with external tools ([XLIFF Tools](https://github.com/Jofreylin/WEB_XLIFF_TOOLS)) for automatic translation of `.xlf` files.
 
  ### System Sections (with Reference Images)
- Below are the main sections of the system, each accompanied by a reference image placeholder. Please replace `./screenshots/your_image.png` with the actual image files later.
+ Below are the main sections of the system, each accompanied by a reference image placeholder. 
 
  1. **Home Page / Landing Page**  
     Introduces the concept of projecting investment growth and invites the user to start exploring.  
-    ![Home Page](./screenshots/home_page.png)
+    ![screenshot](./screenshots/home.png)
 
  2. **Forecaster (Calculator) Page**  
     The core of the application. Users enter parameters like initial investment, monthly contributions, dividend yield, holding years, dividend CAGR, and share price CAGR. The app then generates growth projections.  
-    ![Forecaster Page](./screenshots/forecaster_page.png)
+    ![screenshot](./screenshots/forecaster.png)
 
  3. **Results (Charts & Tables)**  
     After inputting data and clicking "Generate," view the results as interactive charts showing portfolio growth over time and tables detailing annual dividends, reinvestments, and returns.  
-    ![Results Charts & Tables](./screenshots/results_page.png)
+    ![screenshot](./screenshots/chart.png)
+     ![screenshot](./screenshots/table.png)
 
- 4. **Explanations and Formulas (How to)**  
+ 5. **Explanations and Formulas (How to)**  
     A dedicated section that provides explanations of key financial concepts and formulas. It features several subsections for deeper learning.  
-    ![Explanations & Formulas](./screenshots/how_to_page.png)
+    ![Explanations & Formulas](./screenshots/explanations.png)
 
- 5. **Compound Interest Explanation**  
-    Learn what compound interest is, how it works, and its impact on investment growth. A formula is provided, rendered using KaTeX, to understand the math behind compounding.  
-    ![Compound Interest Explanation](./screenshots/compound_interest_page.png)
-
- 6. **Dividend CAGR Explanation**  
-    Understand how to calculate the Dividend Compound Annual Growth Rate. The section includes an interactive calculator to help you quickly compute the CAGR for dividends.  
-    ![Dividend CAGR Explanation](./screenshots/dividend_cagr_page.png)
-
- 7. **Share Price CAGR Explanation**  
-    Similar to the dividend CAGR section, here you learn how to calculate the CAGR for a stock's share price, along with an interactive calculator.  
-    ![Share Price CAGR Explanation](./screenshots/share_price_cagr_page.png)
-
- 8. **How to Use Our Investment Forecaster**  
-    A step-by-step guide explaining each input field in detail, ensuring you understand how to make the most accurate and useful projections for your investment scenario.  
-    ![How to Use the Forecaster](./screenshots/how_to_forecaster_guide.png)
 
 
 
@@ -78,7 +67,7 @@
 
  4. **Start the Development Server:**
     ```bash
-    npm start
+    ng serve
     ```
     Access the application at:
     ```
@@ -116,43 +105,7 @@
  - **Utilidades:** ngx-mask 17.1.1 (enmascarado de inputs), ngx-spinner 17.0.0 (spinners de carga)
  - **Íconos & Matemáticas:** @fortawesome/fontawesome-free 6.5.2, katex 0.16.11
  - **Node.js 20 Requerido:** Asegúrate de tener Node.js 20 o superior instalado.
- - **Internacionalización:** i18n de Angular, con herramientas externas (XLIFF Tools) para la traducción automática de archivos `.xlf`.
-
- ### Secciones del Sistema (con Referencias de Imágenes)
- A continuación se detallan las principales secciones del sistema, cada una con una imagen de referencia. Posteriormente puede reemplazar `./screenshots/your_image.png` con las imágenes reales.
-
- 1. **Página de Inicio (Home)**  
-    Presenta el concepto de proyectar el crecimiento de las inversiones e invita a comenzar la exploración.  
-    ![Página de Inicio](./screenshots/home_page_es.png)
-
- 2. **Pronosticador (Calculadora)**  
-    El núcleo de la aplicación. Aquí ingresas datos como inversión inicial, aportes mensuales, rendimiento de dividendos, años, CAGR de dividendos y precio. La app genera proyecciones de crecimiento.  
-    ![Pronosticador](./screenshots/forecaster_page_es.png)
-
- 3. **Resultados (Gráficos & Tablas)**  
-    Tras ingresar datos y presionar "Generate", obtienes gráficos interactivos del crecimiento del portafolio y tablas detalladas con dividendos, reinversiones y retornos.  
-    ![Resultados](./screenshots/results_page_es.png)
-
- 4. **Explicaciones y Fórmulas (Cómo Hacer)**  
-    Una sección dedicada a explicar conceptos financieros clave y sus fórmulas. Incluye subsecciones para un aprendizaje más profundo.  
-    ![Explicaciones y Fórmulas](./screenshots/how_to_page_es.png)
-
- 5. **Explicación del Interés Compuesto**  
-    Aprende qué es el interés compuesto, cómo funciona y su impacto en el crecimiento de las inversiones. Se incluye una fórmula representada con KaTeX.  
-    ![Interés Compuesto](./screenshots/compound_interest_page_es.png)
-
- 6. **Explicación del CAGR de Dividendos**  
-    Comprende cómo calcular la Tasa de Crecimiento Anual Compuesta de los dividendos. Incluye una calculadora interactiva para ayudarte en el cálculo.  
-    ![CAGR de Dividendos](./screenshots/dividend_cagr_page_es.png)
-
- 7. **Explicación del CAGR del Precio de las Acciones**  
-    Aprende a calcular el CAGR para el precio de una acción. También cuenta con una calculadora interactiva.  
-    ![CAGR del Precio de las Acciones](./screenshots/share_price_cagr_page_es.png)
-
- 8. **Cómo Utilizar el Pronosticador de Inversiones**  
-    Una guía paso a paso detallando cada campo de entrada, asegurando que puedas usar la herramienta de forma eficaz y obtener proyecciones más precisas.  
-    ![Guía del Pronosticador](./screenshots/how_to_forecaster_guide_es.png)
-
+ - **Internacionalización:** i18n de Angular, con herramientas externas ([XLIFF Tools](https://github.com/Jofreylin/WEB_XLIFF_TOOLS)) para la traducción automática de archivos `.xlf`.
 
 
  ### Clonar y Ejecutar Localmente
@@ -173,7 +126,7 @@
 
  4. **Iniciar el Servidor de Desarrollo:**
     ```bash
-    npm start
+    ng serve
     ```
     Accede a la aplicación en:
     ```
